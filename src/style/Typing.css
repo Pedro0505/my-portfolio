@@ -14,7 +14,7 @@ section .text-typing {
   color: var(--ligth);
   display: inline-block;
   max-width: fit-content;
-  animation: typing 2s ease-in-out forwards, blink 1s ease infinite;
+  animation: typing 2s ease-in-out forwards, blink 1s cubic-bezier(0, 1.13, 0, 1.35) infinite;
   overflow: hidden;
   white-space: nowrap;
   max-height: fit-content;
