@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  margin-top: auto;
+  background-color: rgb(44 43 43);
+  justify-content: space-between;
+}
+
+footer h3 {
+  color: white;
+  margin: 15px 40px;
+}
+
+footer h3 a {
+  text-decoration: none;
+}

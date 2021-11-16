@@ -1,0 +1,36 @@
+:root {
+  --dark: rgb(44 43 43);
+  --ligth: #fff;
+}
+
+.contanier h1 {
+  color: var(--ligth);
+}
+
+.contanier .project-contanier {
+  display: flex;
+}
+
+.contanier .project-contanier section {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 350px;
+  color: var(--ligth);
+  background-color: var(--dark);
+  margin: 30px;
+}
+
+.contanier .project-contanier p {
+  width: 300px;
+}
+
+.contanier section img {
+  width: 300px;
+  margin: 10px 0;
+}
+
+.contanier .project-contanier section img,
+.contanier .project-contanier section p {
+  margin-left: 15px;
+}

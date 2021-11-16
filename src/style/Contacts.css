@@ -1,0 +1,75 @@
+.contanier-contacts section a {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.contanier-contacts section img:hover {
+  width: 170px;
+  transition: 500ms;
+}
+
+.contanier-contacts section {
+  display: flex;
+  justify-content: center;
+}
+
+.contanier-contacts section h1 {
+  font-size: 80px;
+}
+
+.contanier-contacts section h1,
+.contanier-contacts a p {
+  animation: revel 100ms 1s forwards;
+  color: black;
+  display: inline-block;
+  position: relative;
+  opacity: 0%;
+}
+
+.contanier-contacts section h1::after,
+.contanier-contacts section a p::after {
+  content: "";
+  animation: revealing 1s ease forwards;
+  animation-delay: 500ms;
+  background-color: crimson;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+.link-contanier {
+  animation: git 1s ease-in-out forwards;
+}
+
+.contanier-contacts .link-contanier a {
+  margin: 30px;
+}
+
+@keyframes git {
+  to {
+    transform: translateY(calc(40vh - 150px));
+  }
+}
+
+@keyframes revel {
+  to {
+    color: white;
+    opacity: 100%;
+  }
+}
+
+@keyframes revealing {
+  50% {
+    left: 0;
+    width: 100%;
+  }
+
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}

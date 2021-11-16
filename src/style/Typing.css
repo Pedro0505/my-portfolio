@@ -1,0 +1,53 @@
+:root {
+  --dark: rgb(24 24 24);
+  --ligth: #fff;
+}
+
+section.contanier-typing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section .text-typing {
+  color: var(--ligth);
+  display: inline-block;
+  max-width: fit-content;
+  animation: typing 2s ease-in-out forwards, blink 1s ease infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  max-height: fit-content;
+}
+
+section h1.text-typing {
+  font-size: 33px;
+}
+
+section p.text-typing {
+  font-size: 25px;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right: 2px solid var(--ligth);
+  }
+
+  50% {
+    border-right: 2px var(--dark);
+  }
+
+  to {
+    border-right: 2px solid var(--ligth);
+  }
+}
