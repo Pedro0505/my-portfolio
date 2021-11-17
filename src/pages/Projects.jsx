@@ -43,21 +43,21 @@ class Projects extends Component {
               <img src={todoList} alt="Imagem de referencia de um projeto" />
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
+                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
               </p>
             </section>
             <section>
               <img src={todoList} alt="Imagem de referencia de um projeto" />
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
+                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
               </p>
             </section>
             <section>
               <img src={todoList} alt="Imagem de referencia de um projeto" />
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
+                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
               </p>
             </section>
           </section>

@@ -1,6 +1,5 @@
 :root {
   --dark: rgb(24 24 24);
-  --ligth: #fff;
 }
 
 section.contanier-typing {
@@ -11,7 +10,6 @@ section.contanier-typing {
 }
 
 section .text-typing {
-  color: var(--ligth);
   display: inline-block;
   max-width: fit-content;
   animation: typing 2s ease-in-out forwards, blink 1s cubic-bezier(0, 1.13, 0, 1.35) infinite;

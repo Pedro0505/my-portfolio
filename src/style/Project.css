@@ -1,10 +1,5 @@
 :root {
   --dark: rgb(44 43 43);
-  --ligth: #fff;
-}
-
-.contanier h1 {
-  color: var(--ligth);
 }
 
 .contanier .project-contanier {
@@ -16,7 +11,6 @@
   flex-direction: column;
   width: 330px;
   height: 350px;
-  color: var(--ligth);
   background-color: var(--dark);
   margin: 30px;
 }
@@ -27,7 +21,7 @@
 
 .contanier section img {
   width: 300px;
-  margin: 10px 0;
+  margin: 10px 0 25px;
 }
 
 .contanier .project-contanier section img,
