@@ -1,0 +1,30 @@
+.technologies {
+  animation: show 1s ease-in-out forwards;
+  display: flex;
+  max-width: 500px;
+}
+
+.card-technology {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  border-radius: 2px;
+}
+
+.bottom {
+  justify-content: center;
+}
+
+.card-technology p {
+  margin: 0 10px;
+}
+
+@keyframes show {
+  to {
+    transform: translateX(400px);
+  }
+
+  from {
+    transform: translateX(-480px);
+  }
+}
