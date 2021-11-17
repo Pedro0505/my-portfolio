@@ -56,7 +56,6 @@
 
 @keyframes revel {
   to {
-    color: white;
     opacity: 100%;
   }
 }
