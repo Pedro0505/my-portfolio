@@ -19,7 +19,7 @@
   font-size: 80px;
 }
 
-.contanier-contacts section h1,
+/* .contanier-contacts section h1,
 .contanier-contacts a p {
   animation: revel 100ms 1s forwards;
   display: inline-block;
@@ -38,11 +38,7 @@
   position: absolute;
   top: 0;
   width: 0;
-}
-
-.contacts-text {
-  color: #fff;
-}
+} */
 
 .link-contanier {
   animation: git 1s ease-in-out forwards;
@@ -52,7 +48,7 @@
   margin: 30px;
 }
 
-@keyframes git {
+/* @keyframes git {
   to {
     transform: translateY(calc(40vh - 150px));
   }
@@ -75,3 +71,4 @@
     width: 0%;
   }
 }
+ */
