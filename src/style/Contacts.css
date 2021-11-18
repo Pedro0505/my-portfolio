@@ -40,6 +40,10 @@
   width: 0;
 }
 
+.contacts-text {
+  color: #fff;
+}
+
 .link-contanier {
   animation: git 1s ease-in-out forwards;
 }

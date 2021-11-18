@@ -6,7 +6,7 @@ class Contacts extends Component {
     return (
       <main className="contanier-contacts">
         <section>
-          <h1>
+          <h1 className="contacts-text">
             Contatos
           </h1>
         </section>
@@ -17,7 +17,7 @@ class Contacts extends Component {
               alt="Logo GitHub"
               width="150"
             />
-            <p>
+            <p className="contacts-text">
               GitHub
             </p>
           </a>
@@ -27,7 +27,7 @@ class Contacts extends Component {
               alt="Logo do Linkedin"
               width="150"
             />
-            <p>
+            <p className="contacts-text">
               Linkedin
             </p>
           </a>
@@ -37,7 +37,7 @@ class Contacts extends Component {
               alt="Logo do Gmail"
               width="150"
             />
-            <p>
+            <p className="contacts-text">
               pedrohrds05@hotmail.com
             </p>
           </a>
