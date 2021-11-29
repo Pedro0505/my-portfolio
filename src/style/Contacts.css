@@ -21,7 +21,7 @@
 }
 
 .contanier-contacts section h1,
-.contanier-contacts a p {
+.contanier-contacts section a p {
   animation: revel 100ms 1s forwards;
   display: inline-block;
   position: relative;

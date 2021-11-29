@@ -1,5 +1,7 @@
+/* stylelint-disable color-function-notation */
 :root {
-  --dark: rgb(24 24 24);
+  --dark: rgb(30 30 30);
+  --ligth: rgba(255, 255, 255);
 }
 
 section.contanier-typing {
@@ -7,12 +9,13 @@ section.contanier-typing {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 1000px;
 }
 
 section .text-typing {
   display: inline-block;
   max-width: fit-content;
-  animation: typing 2s ease-in-out forwards, blink 1s cubic-bezier(0, 1.13, 0, 1.35) infinite;
+  animation: typing 2s ease-in-out forwards, blink 1s ease infinite;
   overflow: hidden;
   white-space: nowrap;
   max-height: fit-content;

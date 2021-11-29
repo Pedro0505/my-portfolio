@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import AboutMe from './pages/AboutMe';
 import Contacts from './pages/Contacts';
 import Home from './pages/Home';
@@ -12,15 +12,13 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <BrowserRouter>
-          <Header />
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/contacts" component={Contacts} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/about" component={AboutMe} />
-          </Switch>
-        </BrowserRouter>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/contacts" component={Contacts} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/about" component={AboutMe} />
+        </Switch>
         <Footer />
       </>
     );

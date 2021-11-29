@@ -19,7 +19,7 @@ class Technologys extends Component {
             <p>JavaScript</p>
           </div>
           <div className="card-technology">
-            <img width="35px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="Logo do React" />
+            <img width="26px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="Logo do React" />
             <p>React</p>
           </div>
         </section>

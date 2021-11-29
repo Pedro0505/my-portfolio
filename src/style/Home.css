@@ -7,5 +7,5 @@ img.profile-picture {
 .main-contanier {
   display: flex;
   justify-content: space-around;
-  margin-right: 150px;
+  margin-right: 130px;
 }
