@@ -7,6 +7,7 @@ import Projects from './pages/Projects';
 import Footer from './components/Footer';
 import './style/Main.css';
 import Header from './components/Header';
+import NotFound from './pages/NotFound';
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
           <Route path="/contacts" component={Contacts} />
           <Route path="/projects" component={Projects} />
           <Route path="/about" component={AboutMe} />
+          <Route path="/*" component={NotFound} />
         </Switch>
         <Footer />
       </>

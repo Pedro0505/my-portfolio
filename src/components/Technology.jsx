@@ -33,7 +33,6 @@ class Technologys extends Component {
             <p> Git </p>
           </div>
         </section>
-
       </>
     );
   }

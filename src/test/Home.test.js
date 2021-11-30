@@ -4,8 +4,8 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import App from './App';
-import renderWithRouter from './services/renderWithRouter';
+import App from '../App';
+import renderWithRouter from '../services/renderWithRouter';
 
 describe('Teste da página de Home', () => {
   test('Testando se o conteúdo do texto está correto', () => {
@@ -19,7 +19,7 @@ describe('Teste da página de Home', () => {
     const paragraph = screen.getByText(/Meu nome é Pedro, e esse é meu Portifolio./i);
     expect(paragraph).toBeInTheDocument();
   });
-  test('Testando se o conteúdo do texto está correto', () => {
+  test('Testando se a imagem aparece na tela', () => {
     renderWithRouter(<App />);
     const img = screen.getByRole('img', { name: /foto de perfil/i });
     expect(img).toBeInTheDocument();
