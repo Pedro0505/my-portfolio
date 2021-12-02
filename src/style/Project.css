@@ -2,6 +2,10 @@
   --dark: rgb(44 43 43);
 }
 
+.main-project-container {
+  margin: 25px;
+}
+
 .contanier .project-contanier {
   display: flex;
 }

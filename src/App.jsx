@@ -8,11 +8,12 @@ import Footer from './components/Footer';
 import './style/Main.css';
 import Header from './components/Header';
 import NotFound from './pages/NotFound';
+import LanguageProvider from './context/LanguageProvider';
 
 class App extends React.Component {
   render() {
     return (
-      <>
+      <LanguageProvider>
         <Header />
         <Switch>
           <Route path="/" exact component={Home} />
@@ -22,7 +23,7 @@ class App extends React.Component {
           <Route path="/*" component={NotFound} />
         </Switch>
         <Footer />
-      </>
+      </LanguageProvider>
     );
   }
 }

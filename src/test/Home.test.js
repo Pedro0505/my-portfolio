@@ -16,7 +16,7 @@ describe('Teste da página de Home', () => {
     });
     expect(text).toBeInTheDocument();
 
-    const paragraph = screen.getByText(/Meu nome é Pedro, e esse é meu Portifolio./i);
+    const paragraph = screen.getByText(/Meu nome é Pedro, e esse é meu Portfólio./i);
     expect(paragraph).toBeInTheDocument();
   });
   test('Testando se a imagem aparece na tela', () => {
@@ -70,5 +70,26 @@ describe('Testando o footer', () => {
 
     const developed = screen.getByRole('heading', { level: 3, name: /feito com react e css/i });
     expect(developed).toBeInTheDocument();
+  });
+});
+
+describe('Testando a funcionalidade da seleção de linguas', () => {
+  test('Testando o heading', () => {
+    renderWithRouter(<App />);
+    const selected = screen.getByTestId('language-selected');
+    userEvent.selectOptions(selected, 'English');
+    const text = screen.getByRole('heading', {
+      level: 1,
+      name: /hello!! welcome/i,
+    });
+    expect(text).toBeInTheDocument();
+  });
+  test('Testando o paragrafo', () => {
+    renderWithRouter(<App />);
+    const selected = screen.getByTestId('language-selected');
+    userEvent.selectOptions(selected, 'English');
+
+    const paragraph = screen.getByText(/my name is Pedro, and this is my portfolio./i);
+    expect(paragraph).toBeInTheDocument();
   });
 });

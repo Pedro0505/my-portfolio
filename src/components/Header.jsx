@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.svg';
 import '../style/Header.css';
+import Language from './Language';
 
 class Header extends Component {
   render() {
@@ -16,6 +17,7 @@ class Header extends Component {
           <Link to="/about"> Sobre Mim </Link>
           <Link to="/contacts"> Contatos </Link>
           <Link to="/projects"> Projetos </Link>
+          <Language />
         </nav>
       </header>
     );

@@ -5,7 +5,7 @@ import '../style/Project.css';
 class Projects extends Component {
   render() {
     return (
-      <>
+      <main className="main-project-container">
         <main className="contanier">
           <section>
             <h1 className="text-typing"> JavaScript Native </h1>
@@ -62,7 +62,7 @@ class Projects extends Component {
             </section>
           </section>
         </main>
-      </>
+      </main>
     );
   }
 }

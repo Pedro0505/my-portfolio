@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LanguageContext from '../context/LanguageContext';
 import dataContacts from '../services/dataContacts';
 import '../style/Contacts.css';
 
@@ -29,5 +30,7 @@ class Contacts extends Component {
     );
   }
 }
+
+Contacts.contextType = LanguageContext;
 
 export default Contacts;
