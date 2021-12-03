@@ -5,10 +5,13 @@ import '../style/Contacts.css';
 
 class Contacts extends Component {
   render() {
+    const { language } = this.context;
     return (
       <main className="contanier-contacts">
         <section>
-          <h1>Contatos</h1>
+          {
+            language === 'Português' ? <h1>Contatos</h1> : <h1>Contacts</h1>
+          }
         </section>
         <section className="link-contanier">
           {

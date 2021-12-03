@@ -16,10 +16,10 @@ class App extends React.Component {
       <LanguageProvider>
         <Header />
         <Switch>
-          <Route path="/" exact component={Home} />
           <Route path="/contacts" component={Contacts} />
           <Route path="/projects" component={Projects} />
           <Route path="/about" component={AboutMe} />
+          <Route path="/" exact component={Home} />
           <Route path="/*" component={NotFound} />
         </Switch>
         <Footer />

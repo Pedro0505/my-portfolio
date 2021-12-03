@@ -3,11 +3,14 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../services/renderWithRouter';
-import Contacts from '../pages/Contacts';
+import App from '../App';
 
 beforeEach(() => {
-  renderWithRouter(<Contacts />);
+  renderWithRouter(<App />);
+  const btnLink = screen.getByRole('link', { name: /contatos/i });
+  userEvent.click(btnLink);
 });
 
 describe('Teste da página de Contatos', () => {
