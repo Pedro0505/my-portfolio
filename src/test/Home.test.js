@@ -92,4 +92,19 @@ describe('Testando a funcionalidade da seleção de linguas', () => {
     const paragraph = screen.getByText(/my name is Pedro, and this is my portfolio./i);
     expect(paragraph).toBeInTheDocument();
   });
+  test('Testando a navegação', () => {
+    renderWithRouter(<App />);
+    const selected = screen.getByTestId('language-selected');
+    userEvent.selectOptions(selected, 'English');
+
+    const btnHomePage = screen.getByRole('link', { name: /home/i });
+    const btnAboutMe = screen.getByRole('link', { name: /about me/i });
+    const btnContacts = screen.getByRole('link', { name: /contacts/i });
+    const btnProjects = screen.getByRole('link', { name: /projects/i });
+
+    expect(btnHomePage).toBeInTheDocument();
+    expect(btnAboutMe).toBeInTheDocument();
+    expect(btnContacts).toBeInTheDocument();
+    expect(btnProjects).toBeInTheDocument();
+  });
 });

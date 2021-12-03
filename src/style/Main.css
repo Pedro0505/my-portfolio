@@ -15,3 +15,16 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(30 30 30);
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 15px;
+}

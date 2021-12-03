@@ -1,6 +1,8 @@
 .technologies {
   animation: show 1s ease-in-out forwards;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 500px;
 }
 
