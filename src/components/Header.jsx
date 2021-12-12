@@ -7,7 +7,8 @@ import Language from './Language';
 
 class Header extends Component {
   render() {
-    const { language } = this.context;
+    const { language, Translation } = this.context;
+    const { header } = Translation[language];
     return (
       <header>
         <section>
@@ -16,23 +17,10 @@ class Header extends Component {
         </section>
         <section>
           <nav>
-            {
-              language === 'Português' ? (
-                <>
-                  <Link to="/">Página Inicial</Link>
-                  <Link to="/about"> Sobre Mim </Link>
-                  <Link to="/contacts"> Contatos </Link>
-                  <Link to="/projects"> Projetos </Link>
-                </>
-              ) : (
-                <>
-                  <Link to="/">Home</Link>
-                  <Link to="/about"> About Me </Link>
-                  <Link to="/contacts"> Contacts </Link>
-                  <Link to="/projects"> Projects </Link>
-                </>
-              )
-            }
+            <Link to="/">{ header.navHome }</Link>
+            <Link to="/about">{ header.navAbout }</Link>
+            <Link to="/contacts">{ header.navContacts }</Link>
+            <Link to="/projects">{ header.navProjects }</Link>
           </nav>
           <Language />
         </section>

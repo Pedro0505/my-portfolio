@@ -3,6 +3,7 @@ import LanguageContext from '../context/LanguageContext';
 
 function Language() {
   const { handleLanguage } = useContext(LanguageContext);
+
   return (
     <select data-testid="language-selected" onChange={({ target: { value } }) => handleLanguage(value)}>
       <option value="Português" className="choiceLanguage">Português</option>

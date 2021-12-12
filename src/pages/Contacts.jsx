@@ -5,13 +5,12 @@ import '../style/Contacts.css';
 
 class Contacts extends Component {
   render() {
-    const { language } = this.context;
+    const { language, Translation } = this.context;
+    const { contacts } = Translation[language];
     return (
       <main className="contanier-contacts">
         <section>
-          {
-            language === 'Português' ? <h1>Contatos</h1> : <h1>Contacts</h1>
-          }
+          <h1>{ contacts.h1 }</h1>
         </section>
         <section className="link-contanier">
           {
