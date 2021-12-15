@@ -5,14 +5,14 @@ const langague = {
       credits: 'Feito com React e CSS',
     },
     home: {
-      h1: 'Olá!! Seja Bem Vindo(a),',
-      p: 'Meu nome é Pedro, e esse é meu Portfólio.',
+      headingH1: 'Olá!! Seja Bem Vindo(a),',
+      paragraph: 'Meu nome é Pedro, e esse é meu Portfólio.',
     },
     notfound: {
-      h1: 'Você Foi Longe De Mais...',
+      headingH1: 'Você Foi Longe De Mais...',
     },
     contacts: {
-      h1: 'Contatos',
+      headingH1: 'Contatos',
     },
     header: {
       navHome: 'Página Inicial',
@@ -27,14 +27,14 @@ const langague = {
       credits: 'Made with React and CSS',
     },
     home: {
-      h1: 'Hello!! Welcome,',
-      p: 'My name is Pedro, and this is my Portfolio.',
+      headingH1: 'Hello!! Welcome,',
+      paragraph: 'My name is Pedro, and this is my Portfolio.',
     },
     notfound: {
-      h1: 'You\'ve Gone Too Far...',
+      headingH1: 'You\'ve Gone Too Far...',
     },
     contacts: {
-      h1: 'Contacts',
+      headingH1: 'Contacts',
     },
     header: {
       navHome: 'Home',

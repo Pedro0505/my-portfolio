@@ -6,11 +6,12 @@ import '../style/Contacts.css';
 class Contacts extends Component {
   render() {
     const { language, Translation } = this.context;
-    const { contacts } = Translation[language];
+    const { contacts: { headingH1 } } = Translation[language];
+
     return (
       <main className="contanier-contacts">
         <section>
-          <h1>{ contacts.h1 }</h1>
+          <h1>{ headingH1 }</h1>
         </section>
         <section className="link-contanier">
           {

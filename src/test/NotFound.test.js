@@ -4,12 +4,14 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
 import renderWithRouter from '../services/renderWithRouter';
-import NotFound from '../pages/NotFound';
 import App from '../App';
 
 describe('Teste da página Not Found', () => {
   test('Testando se o conteúdo do texto está correto', () => {
-    renderWithRouter(<NotFound />);
+    const { history } = renderWithRouter(<App />);
+
+    history.push('/wrongplace');
+
     const text = screen.getByRole('heading', {
       level: 1,
       name: /Você Foi Longe De Mais/i,
@@ -17,7 +19,10 @@ describe('Teste da página Not Found', () => {
     expect(text).toBeInTheDocument();
   });
   test('Testando se a imagem aparece na tela', () => {
-    renderWithRouter(<NotFound />);
+    const { history } = renderWithRouter(<App />);
+
+    history.push('/wrongplace');
+
     const img = screen.getByRole('img', { name: /not found/i });
     expect(img).toBeInTheDocument();
   });

@@ -6,10 +6,10 @@ import '../style/NotFound.css';
 export default class NotFound extends Component {
   render() {
     const { language, Translation } = this.context;
-    const { notfound } = Translation[language];
+    const { notfound: { headingH1 } } = Translation[language];
     return (
       <div className="conteiner-not-found">
-        <h1>{ notfound.h1 }</h1>
+        <h1>{ headingH1 }</h1>
         <img src={ImageNotFound} alt="Not Found" />
       </div>
     );
