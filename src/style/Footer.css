@@ -1,8 +1,9 @@
 footer {
   display: flex;
   margin-top: auto;
-  background-color: rgb(44 43 43);
+  background-color: rgb(45 51 59);
   justify-content: space-between;
+  color: white;
 }
 
 footer h3 {

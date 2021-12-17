@@ -8,7 +8,7 @@
 
 .contanier-contacts section img:hover {
   width: 170px;
-  transition: 500ms;
+  transition: all ease-in-out 500ms;
 }
 
 .contanier-contacts section {

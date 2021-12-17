@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import LanguageContext from './LanguageContext';
 import Translation from '../services/Translation';
-import saveLanguage from '../services/storage';
+import { saveLanguage } from '../services/storage';
 
 function LanguageProvider({ children }) {
   const [language, setLanguage] = useState('Português');

@@ -4,11 +4,22 @@
  * @param {string}
  */
 
-const saveLanguage = (idiom) => {
+export const saveLanguage = (idiom) => {
   const language = localStorage.getItem('language');
 
   if (!language) localStorage.setItem('language', idiom);
   localStorage.setItem('language', idiom);
 };
 
-export default saveLanguage;
+/**
+ * @name saveTheme
+ * @description add the theme chosen
+ * @param {string} { theme }
+ */
+
+export const saveTheme = (theme) => {
+  const getTheme = localStorage.getItem('theme');
+
+  if (!getTheme) localStorage.setItem('theme', theme);
+  localStorage.setItem('theme', theme);
+};

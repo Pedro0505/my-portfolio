@@ -7,19 +7,19 @@ class Technologys extends Component {
     return (
       <section className="technologies">
         {
-        dataTechnologys.map((e) => (
-          <div className="card-technology" key={e.id}>
-            <img
-              src={e.url}
-              alt={e.alt}
-              width={e.width}
-            />
-            <p>
-              { e.content }
-            </p>
-          </div>
-        ))
-      }
+          dataTechnologys.map((e) => (
+            <div className="card-technology" key={e.id}>
+              <img
+                src={e.url}
+                alt={e.alt}
+                width={e.width}
+              />
+              <p>
+                { e.content }
+              </p>
+            </div>
+          ))
+        }
       </section>
     );
   }

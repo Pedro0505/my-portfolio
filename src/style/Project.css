@@ -17,6 +17,7 @@
   height: 350px;
   background-color: var(--dark);
   margin: 30px;
+  color: white;
 }
 
 .contanier .project-contanier p {
