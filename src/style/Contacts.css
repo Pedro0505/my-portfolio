@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+.contanier-contacts {
+  margin-top: 80px;
+}
+
 .contanier-contacts section img:hover {
   width: 170px;
   transition: all ease-in-out 500ms;
@@ -47,6 +51,12 @@
 
 .contanier-contacts .link-contanier a {
   margin: 30px;
+}
+
+@media screen and (max-width: 794px) {
+  .contanier-contacts section img {
+    width: 100px;
+  }
 }
 
 @keyframes git {

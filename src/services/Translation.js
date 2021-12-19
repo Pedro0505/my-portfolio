@@ -20,6 +20,10 @@ const langague = {
       navContacts: 'Contatos',
       navProjects: 'Projetos',
     },
+    aboutme: {
+      headingAbout: 'Um Pouco Sobre Mim...',
+      headingSkills: 'Minhas Habilidades',
+    },
   },
   English: {
     footer: {
@@ -41,6 +45,10 @@ const langague = {
       navAbout: 'About Me',
       navContacts: 'Contacts',
       navProjects: 'Projects',
+    },
+    aboutme: {
+      headingAbout: 'A Little About Myself...',
+      headingSkills: 'My skills',
     },
   },
 };

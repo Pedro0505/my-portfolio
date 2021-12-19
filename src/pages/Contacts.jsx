@@ -1,20 +1,21 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
 import { LanguageContext } from '../context/LanguageContext';
+import { ThemeContext } from '../context/ThemeContext';
 import dataContacts from '../services/dataContacts';
 import '../style/Contacts.css';
 
-class Contacts extends Component {
-  render() {
-    const { language, Translation } = this.context;
-    const { contacts: { headingH1 } } = Translation[language];
+function Contacts() {
+  const { language, Translation } = useContext(LanguageContext);
+  const { theme } = useContext(ThemeContext);
+  const { contacts: { headingH1 } } = Translation[language];
 
-    return (
-      <main className="contanier-contacts">
-        <section>
-          <h1>{ headingH1 }</h1>
-        </section>
-        <section className="link-contanier">
-          {
+  return (
+    <main className="contanier-contacts">
+      <section>
+        <h1>{ headingH1 }</h1>
+      </section>
+      <section className="link-contanier">
+        {
             dataContacts.map((e) => (
               <a href={e.url} key={e.id} target="_blank" rel="noreferrer">
                 <img
@@ -22,18 +23,15 @@ class Contacts extends Component {
                   alt={e.alt}
                   width={e.width}
                 />
-                <p>
+                <p className={(theme === 'dark') ? 'ligth' : 'dark'}>
                   { e.content }
                 </p>
               </a>
             ))
           }
-        </section>
-      </main>
-    );
-  }
+      </section>
+    </main>
+  );
 }
-
-Contacts.contextType = LanguageContext;
 
 export default Contacts;

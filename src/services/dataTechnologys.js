@@ -17,9 +17,9 @@ const dataTechnologys = [
   },
   {
     id: 2,
-    images: 'https://marcas-logos.net/wp-content/uploads/2020/11/JavaScript-logo.png',
+    images: 'https://digitalents.com.br/wp-content/uploads/2016/03/js-logo.png',
     content: 'JavaScript',
-    width: '40px',
+    width: '24px',
     alt: 'Logo do JavaScript',
     url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=javascript&sort=',
   },
@@ -45,6 +45,14 @@ const dataTechnologys = [
     content: 'Git',
     width: '22px',
     alt: 'Logo do Git',
+    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=javascript&sort=',
+  },
+  {
+    id: 6,
+    images: 'http://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png',
+    content: 'Redux',
+    width: '22px',
+    alt: 'Logo do Redux',
     url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=javascript&sort=',
   },
 ];

@@ -7,25 +7,11 @@ class Projects extends Component {
     return (
       <main className="main-project-container">
         <main className="contanier">
-          <section>
+          <section className="javascript-container">
             <h1 className="text-typing"> JavaScript Native </h1>
           </section>
           <section className="project-contanier">
-            <section>
-              <img src={todoList} alt="Imagem de referencia de um projeto" />
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
-              </p>
-            </section>
-            <section>
-              <img src={todoList} alt="Imagem de referencia de um projeto" />
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
-              </p>
-            </section>
-            <section>
+            <section className="card-project">
               <img src={todoList} alt="Imagem de referencia de um projeto" />
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -39,21 +25,7 @@ class Projects extends Component {
             <h1 className="text-typing"> React </h1>
           </section>
           <section className="project-contanier">
-            <section>
-              <img src={todoList} alt="Imagem de referencia de um projeto" />
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
-              </p>
-            </section>
-            <section>
-              <img src={todoList} alt="Imagem de referencia de um projeto" />
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
-              </p>
-            </section>
-            <section>
+            <section className="card-project">
               <img src={todoList} alt="Imagem de referencia de um projeto" />
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.

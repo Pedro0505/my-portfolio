@@ -10,7 +10,15 @@
   display: flex;
 }
 
-.contanier .project-contanier section {
+.card-project {
+  border: 1px solid white;
+}
+
+.javascript-container {
+  margin-top: 70px;
+}
+
+.contanier .project-contanier .card-project {
   display: flex;
   flex-direction: column;
   width: 330px;
@@ -24,12 +32,12 @@
   width: 300px;
 }
 
-.contanier section img {
+.contanier .card-project img {
   width: 300px;
   margin: 10px 0 25px;
 }
 
-.contanier .project-contanier section img,
-.contanier .project-contanier section p {
+.contanier .project-contanier .card-project img,
+.contanier .project-contanier .card-project p {
   margin-left: 15px;
 }
