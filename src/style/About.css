@@ -1,3 +1,4 @@
+/* stylelint-disable alpha-value-notation */
 .technologies {
   animation: show 1s ease-in-out forwards;
   display: flex;
@@ -11,6 +12,11 @@
   align-items: center;
   margin: 10px;
   border-radius: 2px;
+  text-decoration: none;
+}
+
+.card-technology:hover {
+  background-color: rgb(169 169 169);
 }
 
 .card-technology p {
@@ -25,4 +31,12 @@
   from {
     transform: translateX(-480px);
   }
+}
+
+.ligth {
+  color: black;
+}
+
+.dark {
+  color: white;
 }

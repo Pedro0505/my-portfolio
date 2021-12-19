@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../style/Typing.css';
 import '../style/Home.css';
-import LanguageContext from '../context/LanguageContext';
+import { LanguageContext } from '../context/LanguageContext';
 
 class Home extends Component {
   render() {

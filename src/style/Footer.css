@@ -14,3 +14,13 @@ footer h3 a {
   text-decoration: none;
   color: purple;
 }
+
+@media screen and (max-width: 794px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer h3 {
+    font-size: 13px;
+  }
+}

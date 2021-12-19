@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LanguageContext from '../context/LanguageContext';
+import { LanguageContext } from '../context/LanguageContext';
 import '../style/Footer.css';
 
 class Footer extends Component {

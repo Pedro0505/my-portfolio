@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LanguageContext from '../context/LanguageContext';
+import { LanguageContext } from '../context/LanguageContext';
 import ImageNotFound from '../images/ImageNotFound.svg';
 import '../style/NotFound.css';
 

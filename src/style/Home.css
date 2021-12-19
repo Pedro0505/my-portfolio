@@ -9,3 +9,16 @@ img.profile-picture {
   justify-content: space-around;
   margin-right: 130px;
 }
+
+@media screen and (max-width: 794px) {
+  .profile-picture {
+    width: 140px;
+    height: 140px;
+  }
+
+  .main-contanier {
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+}

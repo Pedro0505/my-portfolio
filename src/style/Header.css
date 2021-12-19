@@ -3,7 +3,7 @@
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   height: 70px;
   display: flex;
   background-color: var(--dark);
@@ -31,12 +31,6 @@ header nav a {
   font-family: "Press Start 2P", cursive;
 }
 
-header section button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 header nav a:hover {
   color: black;
   background-color: white;
@@ -47,4 +41,14 @@ header section select {
   color: white;
   background-color: var(--dark);
   margin-right: 20px;
+}
+
+@media screen and (max-width: 794px) {
+  header section nav {
+    display: none;
+  }
+
+  header section h1 {
+    display: none;
+  }
 }

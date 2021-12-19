@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LanguageContext from '../context/LanguageContext';
+import { LanguageContext } from '../context/LanguageContext';
 import dataContacts from '../services/dataContacts';
 import '../style/Contacts.css';
 

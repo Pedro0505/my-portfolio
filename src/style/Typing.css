@@ -9,7 +9,7 @@ section.contanier-typing {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1000px;
+  width: 100vw;
 }
 
 section .text-typing {
@@ -50,5 +50,15 @@ section p.text-typing {
 
   to {
     border-right: 2px solid var(--ligth);
+  }
+}
+
+@media screen and (max-width: 794px) {
+  section p.text-typing {
+    font-size: 0.95em;
+  }
+
+  section h1.text-typing {
+    font-size: 20px;
   }
 }
