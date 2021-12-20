@@ -14,8 +14,17 @@ export function NavBarProvider({ children }) {
     }
   }
 
+  function handleClick() {
+    setToogleNav('hide');
+    window.scrollTo(0, 0);
+  }
+
+  const context = {
+    toggleNav, toogleAppears, handleClick, setToogleNav,
+  };
+
   return (
-    <NavBarContext.Provider value={{ toggleNav, toogleAppears, setToogleNav }}>
+    <NavBarContext.Provider value={context}>
       { children }
     </NavBarContext.Provider>
   );

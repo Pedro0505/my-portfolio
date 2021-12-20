@@ -10,7 +10,7 @@ import Theme from './Theme';
 
 function Header() {
   const { language, Translation } = useContext(LanguageContext);
-  const { setToogleNav } = useContext(NavBarContext);
+  const { setToogleNav, handleClick } = useContext(NavBarContext);
 
   window.addEventListener('resize', () => {
     if (window.innerWidth > 794) {
@@ -33,10 +33,10 @@ function Header() {
       </section>
       <section>
         <nav>
-          <Link to="/">{ navHome }</Link>
-          <Link to="/about">{ navAbout }</Link>
-          <Link to="/contacts">{ navContacts }</Link>
-          <Link to="/projects">{ navProjects }</Link>
+          <Link onClick={handleClick} to="/">{ navHome }</Link>
+          <Link onClick={handleClick} to="/about">{ navAbout }</Link>
+          <Link onClick={handleClick} to="/contacts">{ navContacts }</Link>
+          <Link onClick={handleClick} to="/projects">{ navProjects }</Link>
         </nav>
         <Language />
         <Theme />

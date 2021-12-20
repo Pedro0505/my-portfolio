@@ -13,7 +13,7 @@ const dataTechnologys = [
     content: 'CSS',
     width: '25px',
     alt: 'Logo do CSS',
-    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=javascript&sort=',
+    url: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS',
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const dataTechnologys = [
     content: 'React',
     width: '26px',
     alt: 'Logo do React',
-    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=javascript&sort=',
+    url: 'https://pt-br.reactjs.org/',
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const dataTechnologys = [
     content: 'GitHub',
     width: '22px',
     alt: 'Logo do GitHub',
-    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=javascript&sort=',
+    url: 'https://github.com/',
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const dataTechnologys = [
     content: 'Git',
     width: '22px',
     alt: 'Logo do Git',
-    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=javascript&sort=',
+    url: 'https://git-scm.com/',
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const dataTechnologys = [
     content: 'Redux',
     width: '22px',
     alt: 'Logo do Redux',
-    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=javascript&sort=',
+    url: 'https://redux.js.org/',
   },
 ];
 

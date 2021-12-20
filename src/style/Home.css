@@ -14,8 +14,8 @@ img.profile-picture {
 
 @media screen and (max-width: 1034px) {
   .profile-picture {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
   }
 
   .main-contanier {

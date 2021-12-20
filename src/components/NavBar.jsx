@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { LanguageContext } from '../context/LanguageContext';
@@ -7,7 +8,7 @@ import ButtonNav from './ButtonNav';
 
 function NavBar() {
   const { language, Translation } = useContext(LanguageContext);
-  const { toggleNav, setToogleNav } = useContext(NavBarContext);
+  const { toggleNav, handleClick } = useContext(NavBarContext);
 
   const {
     header:
@@ -15,6 +16,7 @@ function NavBar() {
       navAbout, navHome, navContacts, navProjects,
     },
   } = Translation[language];
+
   return (
     <>
       <nav className="nav-bar" style={(toggleNav === 'hide') ? { display: 'none' } : { display: 'flex' }}>
@@ -22,12 +24,12 @@ function NavBar() {
           <ButtonNav />
           <h2>Pedro Henrique</h2>
         </section>
-        <section className="links-group">
-          <Link onClick={() => setToogleNav('hide')} to="/">{ navHome }</Link>
-          <Link onClick={() => setToogleNav('hide')} to="/about">{ navAbout }</Link>
-          <Link onClick={() => setToogleNav('hide')} to="/contacts">{ navContacts }</Link>
-          <Link onClick={() => setToogleNav('hide')} to="/projects">{ navProjects }</Link>
-        </section>
+        <nav className="links-group">
+          <Link onClick={handleClick} to="/">{ navHome }</Link>
+          <Link onClick={handleClick} to="/about">{ navAbout }</Link>
+          <Link onClick={handleClick} to="/contacts">{ navContacts }</Link>
+          <Link onClick={handleClick} to="/projects">{ navProjects }</Link>
+        </nav>
       </nav>
     </>
   );
