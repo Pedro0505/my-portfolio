@@ -49,7 +49,7 @@ const dataTechnologys = [
   },
   {
     id: 6,
-    images: 'http://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png',
+    images: 'https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png',
     content: 'Redux',
     width: '22px',
     alt: 'Logo do Redux',

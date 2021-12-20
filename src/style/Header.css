@@ -10,7 +10,7 @@ header {
   color: white;
   justify-content: space-between;
   position: fixed;
-  z-index: 999999;
+  z-index: 9;
 }
 
 header section h1 {
@@ -38,6 +38,11 @@ header nav a:hover {
   background-color: white;
 }
 
+.menu-button {
+  margin-left: 15px;
+  display: none;
+}
+
 header section select {
   border-radius: 2px;
   color: white;
@@ -52,5 +57,9 @@ header section select {
 
   header section h1 {
     display: none;
+  }
+
+  .menu-button {
+    display: block;
   }
 }

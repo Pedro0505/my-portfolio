@@ -55,7 +55,12 @@
 
 @media screen and (max-width: 794px) {
   .contanier-contacts section img {
-    width: 100px;
+    width: 70px;
+  }
+
+  .contanier-contacts section img:hover {
+    width: 90px;
+    transition: all ease-in-out 500ms;
   }
 }
 

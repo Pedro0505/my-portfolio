@@ -9,9 +9,10 @@ img.profile-picture {
   justify-content: space-around;
   margin-right: 130px;
   margin-top: 70px;
+  width: 100vw;
 }
 
-@media screen and (max-width: 794px) {
+@media screen and (max-width: 1034px) {
   .profile-picture {
     width: 140px;
     height: 140px;
@@ -20,6 +21,6 @@ img.profile-picture {
   .main-contanier {
     align-items: center;
     flex-direction: column;
-    margin: 0;
+    margin: 220px 0;
   }
 }

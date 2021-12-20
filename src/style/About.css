@@ -28,11 +28,12 @@
 .card-technology {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 10px;
   border-radius: 2px;
   text-decoration: none;
   width: 150px;
-  height: fit-content;
+  height: 35px;
 }
 
 .card-technology p {

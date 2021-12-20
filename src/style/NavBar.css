@@ -1,0 +1,63 @@
+.nav-bar {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(31 31 31);
+  width: 100vw;
+  height: 40vh;
+  position: fixed;
+  z-index: 99999;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-bar a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+  width: fit-content;
+  padding: 7px;
+}
+
+.nav-bar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.links-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header-nav img {
+  margin-right: 30px;
+}
+
+.header-nav h2 {
+  font-size: 20px;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+}
+
+@media screen and (min-width: 794px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar a {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .links-group {
+    flex-direction: row;
+  }
+}
