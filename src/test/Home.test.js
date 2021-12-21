@@ -7,6 +7,8 @@ import userEvent from '@testing-library/user-event';
 import App from '../App';
 import renderWithRouter from '../services/renderWithRouter';
 
+window.scrollTo = jest.fn();
+
 describe('Teste da página de Home', () => {
   test('Testando se o conteúdo do texto está correto', () => {
     renderWithRouter(<App />);
@@ -28,6 +30,16 @@ describe('Teste da página de Home', () => {
 });
 
 describe('Testando a navegação da paǵina', () => {
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
+
+  afterAll(() => {
+    jest.clearAllMocks();
+  });
+  it('renders without crashing', () => {
+    window.scrollTo = jest.fn();
+  });
   test('Testando o link de Página Inicial da paǵina', () => {
     const { history } = renderWithRouter(<App />);
     const btnHomePage = screen.getByRole('link', { name: /página inicial/i });
@@ -74,6 +86,16 @@ describe('Testando o footer', () => {
 });
 
 describe('Testando a funcionalidade da seleção de linguas', () => {
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
+
+  afterAll(() => {
+    jest.clearAllMocks();
+  });
+  it('renders without crashing', () => {
+    window.scrollTo = jest.fn();
+  });
   test('Testando o heading', () => {
     renderWithRouter(<App />);
     const selected = screen.getByTestId('language-selected');

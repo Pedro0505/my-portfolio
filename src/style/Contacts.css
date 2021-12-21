@@ -62,6 +62,16 @@
     width: 90px;
     transition: all ease-in-out 500ms;
   }
+
+  .contanier-contacts section h1 {
+    font-size: 50px;
+  }
+
+  .contanier-contacts section h1::after,
+  .contanier-contacts section a p::after {
+    content: "";
+    position: static;
+  }
 }
 
 @keyframes git {

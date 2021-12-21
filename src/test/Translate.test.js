@@ -7,11 +7,23 @@ import userEvent from '@testing-library/user-event';
 import App from '../App';
 import renderWithRouter from '../services/renderWithRouter';
 
+window.scrollTo = jest.fn();
+
 beforeEach(() => {
   renderWithRouter(<App />);
 });
 
 describe('Testando a funcionalidade da seleção de linguas', () => {
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
+
+  afterAll(() => {
+    jest.clearAllMocks();
+  });
+  it('renders without crashing', () => {
+    window.scrollTo = jest.fn();
+  });
   test('Testando o heading', () => {
     const selected = screen.getByTestId('language-selected');
     userEvent.selectOptions(selected, 'English');

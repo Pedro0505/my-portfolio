@@ -7,6 +7,8 @@ import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../services/renderWithRouter';
 import App from '../App';
 
+window.scrollTo = jest.fn();
+
 beforeEach(() => {
   renderWithRouter(<App />);
   const btnLink = screen.getByRole('link', { name: /contatos/i });
@@ -14,6 +16,16 @@ beforeEach(() => {
 });
 
 describe('Teste da página de Contatos', () => {
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
+
+  afterAll(() => {
+    jest.clearAllMocks();
+  });
+  it('renders without crashing', () => {
+    window.scrollTo = jest.fn();
+  });
   test('Testando se o conteúdo do texto está correto', () => {
     const text = screen.getByRole('heading', {
       level: 1,

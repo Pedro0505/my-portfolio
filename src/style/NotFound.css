@@ -4,8 +4,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 70px;
 }
 
 .conteiner-not-found img {
-  width: 600px;
+  width: 100vw;
+  height: 50vh;
+}
+
+@media screen and (max-width: 794px) {
+  .conteiner-not-found h1 {
+    font-size: 20px;
+  }
 }

@@ -46,16 +46,6 @@
   color: white;
 }
 
-@media screen and (min-width: 794px) {
-  .nav-bar {
-    display: none;
-  }
-
-  .nav-bar a {
-    display: none;
-  }
-}
-
 @media screen and (max-height: 500px) {
   .links-group {
     flex-direction: row;
