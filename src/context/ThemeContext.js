@@ -5,7 +5,7 @@ import { saveTheme } from '../services/storage';
 export const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState('');
+  const [theme, setTheme] = useState('ligth');
 
   function toogleTheme(themeParam) {
     saveTheme(themeParam);

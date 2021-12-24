@@ -8,7 +8,8 @@
   position: fixed;
   z-index: 99999;
   flex-direction: column;
-  transition: 0.5s ease-in-out;
+  transform: translateY(-40vh);
+  transition: ease-in-out 800ms;
 }
 
 .nav-bar a {
@@ -46,8 +47,8 @@
   color: white;
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 568px) {
   .links-group {
-    flex-direction: row;
+    flex-flow: wrap row;
   }
 }

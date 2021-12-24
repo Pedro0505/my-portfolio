@@ -11,8 +11,8 @@ window.scrollTo = jest.fn();
 
 beforeEach(() => {
   renderWithRouter(<App />);
-  const btnLink = screen.getByRole('link', { name: /contatos/i });
-  userEvent.click(btnLink);
+  const btnLink = screen.getAllByRole('link', { name: /contatos/i });
+  userEvent.click(btnLink[1]);
 });
 
 describe('Teste da página de Contatos', () => {

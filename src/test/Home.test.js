@@ -42,34 +42,34 @@ describe('Testando a navegação da paǵina', () => {
   });
   test('Testando o link de Página Inicial da paǵina', () => {
     const { history } = renderWithRouter(<App />);
-    const btnHomePage = screen.getByRole('link', { name: /página inicial/i });
-    expect(btnHomePage).toBeInTheDocument();
+    const btnHomePage = screen.getAllByRole('link', { name: /página inicial/i });
+    expect(btnHomePage[1]).toBeInTheDocument();
 
-    userEvent.click(btnHomePage);
+    userEvent.click(btnHomePage[1]);
     expect(history.location.pathname).toBe('/');
   });
   test('Testando o link de Sobre Mim da paǵina', () => {
     const { history } = renderWithRouter(<App />);
-    const btnAboutMe = screen.getByRole('link', { name: /sobre mim/i });
-    expect(btnAboutMe).toBeInTheDocument();
+    const btnAboutMe = screen.getAllByRole('link', { name: /sobre mim/i });
+    expect(btnAboutMe[1]).toBeInTheDocument();
 
-    userEvent.click(btnAboutMe);
+    userEvent.click(btnAboutMe[1]);
     expect(history.location.pathname).toBe('/about');
   });
   test('Testando o link de Contatos da paǵina', () => {
     const { history } = renderWithRouter(<App />);
-    const btnContacts = screen.getByRole('link', { name: /contatos/i });
-    expect(btnContacts).toBeInTheDocument();
+    const btnContacts = screen.getAllByRole('link', { name: /contatos/i });
+    expect(btnContacts[1]).toBeInTheDocument();
 
-    userEvent.click(btnContacts);
+    userEvent.click(btnContacts[1]);
     expect(history.location.pathname).toBe('/contacts');
   });
   test('Testando o link de Projetos da paǵina', () => {
     const { history } = renderWithRouter(<App />);
-    const btnProjects = screen.getByRole('link', { name: /projetos/i });
-    expect(btnProjects).toBeInTheDocument();
+    const btnProjects = screen.getAllByRole('link', { name: /projetos/i });
+    expect(btnProjects[1]).toBeInTheDocument();
 
-    userEvent.click(btnProjects);
+    userEvent.click(btnProjects[1]);
     expect(history.location.pathname).toBe('/projects');
   });
 });
@@ -119,14 +119,14 @@ describe('Testando a funcionalidade da seleção de linguas', () => {
     const selected = screen.getByTestId('language-selected');
     userEvent.selectOptions(selected, 'English');
 
-    const btnHomePage = screen.getByRole('link', { name: /home/i });
-    const btnAboutMe = screen.getByRole('link', { name: /about me/i });
-    const btnContacts = screen.getByRole('link', { name: /contacts/i });
-    const btnProjects = screen.getByRole('link', { name: /projects/i });
+    const btnHomePage = screen.getAllByRole('link', { name: /home/i });
+    const btnAboutMe = screen.getAllByRole('link', { name: /about me/i });
+    const btnContacts = screen.getAllByRole('link', { name: /contacts/i });
+    const btnProjects = screen.getAllByRole('link', { name: /projects/i });
 
-    expect(btnHomePage).toBeInTheDocument();
-    expect(btnAboutMe).toBeInTheDocument();
-    expect(btnContacts).toBeInTheDocument();
-    expect(btnProjects).toBeInTheDocument();
+    expect(btnHomePage[1]).toBeInTheDocument();
+    expect(btnAboutMe[1]).toBeInTheDocument();
+    expect(btnContacts[1]).toBeInTheDocument();
+    expect(btnProjects[1]).toBeInTheDocument();
   });
 });

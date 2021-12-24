@@ -19,6 +19,12 @@ export function NavBarProvider({ children }) {
     window.scrollTo(0, 0);
   }
 
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 794) {
+      setToogleNav('hide');
+    }
+  });
+
   const context = {
     toggleNav, toogleAppears, handleClick, setToogleNav,
   };

@@ -10,20 +10,15 @@ function NavBar() {
 
   return (
     <>
-      {
-        toggleNav !== 'hide' && (
-        <nav className="nav-bar">
-          <section className="header-nav">
-            <ButtonNav />
-            <h2>Pedro Henrique</h2>
-          </section>
-          <nav className="links-group">
-            <LinkNavigation />
-          </nav>
+      <nav className="nav-bar" style={(toggleNav !== 'hide') ? { transform: 'translateY(0)' } : { transform: 'translateY(-40vh)' }}>
+        <section className="header-nav">
+          <ButtonNav />
+          <h2>Pedro Henrique</h2>
+        </section>
+        <nav className="links-group">
+          <LinkNavigation />
         </nav>
-
-        )
-      }
+      </nav>
     </>
   );
 }

@@ -18,6 +18,20 @@ class Projects extends Component {
                 Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
               </p>
             </section>
+            <section className="card-project">
+              <img src={todoList} alt="Imagem de referencia de um projeto" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
+              </p>
+            </section>
+            <section className="card-project">
+              <img src={todoList} alt="Imagem de referencia de um projeto" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
+              </p>
+            </section>
           </section>
         </main>
         <main className="contanier">
@@ -25,6 +39,20 @@ class Projects extends Component {
             <h1 className="text-typing"> React </h1>
           </section>
           <section className="project-contanier">
+            <section className="card-project">
+              <img src={todoList} alt="Imagem de referencia de um projeto" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
+              </p>
+            </section>
+            <section className="card-project">
+              <img src={todoList} alt="Imagem de referencia de um projeto" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
+              </p>
+            </section>
             <section className="card-project">
               <img src={todoList} alt="Imagem de referencia de um projeto" />
               <p>

@@ -55,7 +55,17 @@ section p.text-typing {
 
 @media screen and (max-width: 794px) {
   section p.text-typing {
-    font-size: 0.95em;
+    font-size: 0.88em;
+  }
+
+  section h1.text-typing {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section p.text-typing {
+    font-size: 0.8em;
   }
 
   section h1.text-typing {

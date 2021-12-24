@@ -44,15 +44,15 @@ describe('Testando a funcionalidade da seleção de linguas', () => {
     const selected = screen.getByTestId('language-selected');
     userEvent.selectOptions(selected, 'English');
 
-    const btnHomePage = screen.getByRole('link', { name: /home/i });
-    const btnAboutMe = screen.getByRole('link', { name: /about me/i });
-    const btnContacts = screen.getByRole('link', { name: /contacts/i });
-    const btnProjects = screen.getByRole('link', { name: /projects/i });
+    const btnHomePage = screen.getAllByRole('link', { name: /home/i });
+    const btnAboutMe = screen.getAllByRole('link', { name: /about me/i });
+    const btnContacts = screen.getAllByRole('link', { name: /contacts/i });
+    const btnProjects = screen.getAllByRole('link', { name: /projects/i });
 
-    expect(btnHomePage).toBeInTheDocument();
-    expect(btnAboutMe).toBeInTheDocument();
-    expect(btnContacts).toBeInTheDocument();
-    expect(btnProjects).toBeInTheDocument();
+    expect(btnHomePage[1]).toBeInTheDocument();
+    expect(btnAboutMe[1]).toBeInTheDocument();
+    expect(btnContacts[1]).toBeInTheDocument();
+    expect(btnProjects[1]).toBeInTheDocument();
   });
   test('Testando o footer', () => {
     const selected = screen.getByTestId('language-selected');
@@ -68,8 +68,8 @@ describe('Testando a funcionalidade da seleção de linguas', () => {
     const selected = screen.getByTestId('language-selected');
     userEvent.selectOptions(selected, 'English');
 
-    const btnLink = screen.getByRole('link', { name: /contacts/i });
-    userEvent.click(btnLink);
+    const btnLink = screen.getAllByRole('link', { name: /contacts/i });
+    userEvent.click(btnLink[1]);
 
     const credits = screen.getByRole('heading', { level: 1, name: /contacts/i });
     expect(credits).toBeInTheDocument();
