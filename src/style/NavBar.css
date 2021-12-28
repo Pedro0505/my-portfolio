@@ -9,7 +9,7 @@
   z-index: 99999;
   flex-direction: column;
   transform: translateY(-40vh);
-  transition: ease-in-out 800ms;
+  transition: ease-in-out 500ms;
 }
 
 .nav-bar a {
