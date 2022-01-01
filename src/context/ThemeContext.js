@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { createContext, useEffect, useState } from 'react';
-import { saveTheme } from '../services/storage';
+import handleSave from '../services/storage';
 
 export const ThemeContext = createContext();
 
@@ -8,7 +8,7 @@ export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState('ligth');
 
   function toogleTheme(themeParam) {
-    saveTheme(themeParam);
+    handleSave(themeParam, 'theme');
     if (themeParam === 'dark') {
       setTheme('ligth');
       document.querySelector('body').style.color = 'white';

@@ -26,7 +26,7 @@ export function NavBarProvider({ children }) {
   });
 
   const context = {
-    toggleNav, toogleAppears, handleClick, setToogleNav,
+    toggleNav, toogleAppears, handleClick,
   };
 
   return (

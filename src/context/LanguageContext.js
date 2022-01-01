@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useState, createContext } from 'react';
 import Translation from '../services/Translation';
-import { saveLanguage } from '../services/storage';
+import handleSave from '../services/storage';
 
 export const LanguageContext = createContext();
 
@@ -14,7 +14,7 @@ export function LanguageProvider({ children }) {
   }, []);
 
   function handleLanguage(idiom) {
-    saveLanguage(idiom);
+    handleSave(idiom, 'language');
     setLanguage(idiom);
   }
 
