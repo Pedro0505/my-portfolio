@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../context/LanguageContext';
 import { ThemeContext } from '../context/ThemeContext';
-import dataContacts from '../services/dataContacts';
+import ContactsInfo from '../services/ContactsInfo';
 import '../style/Contacts.css';
 
 function Contacts() {
@@ -16,7 +16,7 @@ function Contacts() {
       </section>
       <section className="link-contanier">
         {
-            dataContacts.map((e) => (
+            ContactsInfo.map((e) => (
               <a href={e.url} key={e.id} target="_blank" rel="noreferrer">
                 <img
                   src={e.image}

@@ -7,13 +7,7 @@ import { NavBarContext } from '../context/NavBarContext';
 function LinkNavigation() {
   const { language, Translation } = useContext(LanguageContext);
   const { handleClick } = useContext(NavBarContext);
-
-  const {
-    header:
-    {
-      navAbout, navHome, navContacts, navProjects,
-    },
-  } = Translation[language];
+  const { header: { navAbout, navHome, navContacts, navProjects } } = Translation[language];
 
   return (
     <>

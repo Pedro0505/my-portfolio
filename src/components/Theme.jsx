@@ -8,7 +8,7 @@ function Theme() {
   const { toogleTheme, theme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
   return (
-    <button type="button" onClick={() => toogleTheme(theme)} className="style-button">
+    <button data-testid="handle-theme" type="button" onClick={() => toogleTheme(theme)} className="style-button">
       <img
         src={theme === 'ligth' ? sun : moon}
         alt="Logo"

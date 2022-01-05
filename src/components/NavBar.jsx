@@ -10,7 +10,7 @@ function NavBar() {
 
   return (
     <>
-      <nav className="nav-bar" style={(toggleNav !== 'hide') ? { transform: 'translateY(0)' } : { transform: 'translateY(-40vh)' }}>
+      <nav className={((toggleNav !== 'hide') ? 'show nav-bar' : 'hide nav-bar')}>
         <section className="header-nav">
           <ButtonNav />
           <h2>Pedro Henrique</h2>

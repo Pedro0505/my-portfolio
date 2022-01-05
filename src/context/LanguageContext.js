@@ -9,7 +9,7 @@ export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState('Português');
 
   useEffect(() => {
-    const choice = localStorage.getItem('language') ? localStorage.getItem('language') : 'Português';
+    const choice = localStorage.getItem('language') || 'Português';
     setLanguage(choice);
   }, []);
 

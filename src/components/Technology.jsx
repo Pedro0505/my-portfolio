@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import dataTechnologys from '../services/dataTechnologys';
+import TechnologysInfo from '../services/TechnologysInfo';
 import '../style/About.css';
 import { ThemeContext } from '../context/ThemeContext';
 
@@ -9,7 +9,7 @@ class Technologys extends Component {
     return (
       <section className="technologies">
         {
-          dataTechnologys.map((e) => (
+          TechnologysInfo.map((e) => (
             <a href={e.url} className="card-technology" key={e.id} target="_blank" rel="noreferrer">
               <img
                 src={e.images}

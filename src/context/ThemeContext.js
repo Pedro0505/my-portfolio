@@ -21,8 +21,8 @@ export function ThemeProvider({ children }) {
   }
 
   useEffect(() => {
-    const localTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'ligth';
-    toogleTheme(localTheme);
+    const choice = localStorage.getItem('theme') || 'ligth';
+    toogleTheme(choice);
   }, []);
 
   return (

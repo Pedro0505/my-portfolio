@@ -9,15 +9,15 @@
   z-index: 99999;
   flex-direction: column;
   transform: translateY(-40vh);
-  transition: ease-in-out 500ms;
+  transition: ease-in-out 100ms;
 }
 
 .nav-bar a {
   margin-left: 15px;
   text-decoration: none;
   color: white;
-  width: fit-content;
   padding: 7px;
+  width: fit-content;
 }
 
 .nav-bar a:hover {
@@ -45,6 +45,14 @@
   font-size: 20px;
   font-family: "Press Start 2P", cursive;
   color: white;
+}
+
+.hide {
+  transform: translateY(-4 0);
+}
+
+.show {
+  transform: translateY(0);
 }
 
 @media screen and (max-height: 568px) {

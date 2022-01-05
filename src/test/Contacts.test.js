@@ -23,7 +23,7 @@ describe('Teste da página de Contatos', () => {
   afterAll(() => {
     jest.clearAllMocks();
   });
-  it('renders without crashing', () => {
+  test('Arrumando o problema do scrollTo', () => {
     window.scrollTo = jest.fn();
   });
   test('Testando se o conteúdo do texto está correto', () => {

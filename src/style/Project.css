@@ -18,14 +18,14 @@
   display: flex;
   flex-direction: column;
   width: 330px;
-  height: 350px;
+  height: fit-content;
   background-color: var(--dark);
   margin: 30px;
   color: white;
 }
 
 .contanier .project-contanier p {
-  width: 300px;
+  margin-bottom: 50px;
 }
 
 .contanier .card-project img {

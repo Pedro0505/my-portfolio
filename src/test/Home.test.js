@@ -37,7 +37,7 @@ describe('Testando a navegação da paǵina', () => {
   afterAll(() => {
     jest.clearAllMocks();
   });
-  it('renders without crashing', () => {
+  test('Arrumando o problema do scrollTo', () => {
     window.scrollTo = jest.fn();
   });
   test('Testando o link de Página Inicial da paǵina', () => {
@@ -93,7 +93,7 @@ describe('Testando a funcionalidade da seleção de linguas', () => {
   afterAll(() => {
     jest.clearAllMocks();
   });
-  it('renders without crashing', () => {
+  test('Arrumando o problema do scrollTo', () => {
     window.scrollTo = jest.fn();
   });
   test('Testando o heading', () => {
