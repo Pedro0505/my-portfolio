@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../context/LanguageContext';
 import { ThemeContext } from '../context/ThemeContext';
-import ContactsInfo from '../services/ContactsInfo';
+import ContactsInfo from '../assets/ContactsInfo';
 import '../style/Contacts.css';
 
 function Contacts() {

@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-bind */
 import React, { useContext } from 'react';
 import '../style/NavBar.css';
 import { NavBarContext } from '../context/NavBarContext';

@@ -1,6 +1,5 @@
-/* stylelint-disable color-function-notation */
 :root {
-  --dark: rgb(30 30 30);
+  --dark: rgb(30, 30, 30);
   --ligth: rgb(255, 255, 255);
 }
 

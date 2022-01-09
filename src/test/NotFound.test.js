@@ -1,5 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable no-undef */
 import React from 'react';
 import { screen } from '@testing-library/react';

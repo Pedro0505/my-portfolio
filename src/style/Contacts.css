@@ -1,4 +1,3 @@
-/* stylelint-disable alpha-value-notation */
 .contanier-contacts section a {
   align-items: center;
   display: flex;
@@ -29,7 +28,7 @@
   animation: revel 100ms 1s forwards;
   display: inline-block;
   position: relative;
-  opacity: 0%;
+  opacity: 0;
 }
 
 .contanier-contacts section h1::after,

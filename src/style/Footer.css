@@ -1,7 +1,7 @@
 footer {
   display: flex;
   margin-top: auto;
-  background-color: rgb(45 51 59);
+  background-color: rgb(45, 51, 59);
   justify-content: space-between;
   color: white;
 }

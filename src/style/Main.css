@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(34 39 46);
+  background-color: rgb(34, 39, 46);
   overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(34 39 46);
+  background: rgb(34, 39, 46);
 }
 
 ::-webkit-scrollbar-thumb {
