@@ -8,7 +8,7 @@
   position: fixed;
   z-index: 4;
   flex-direction: column;
-  transform: translateX(-60vw);
+  transform: translateX(-100vw);
   transition: ease-in-out 100ms;
 }
 
@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .header-nav h2 {
@@ -45,7 +45,7 @@
 }
 
 .hide {
-  transform: translateX(-60);
+  transform: translateX(-100);
 }
 
 .show {

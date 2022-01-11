@@ -1,16 +1,29 @@
 import PropTypes from 'prop-types';
-import React, { createContext, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
+import bodySelector from '../services/selector';
 
 export const NavBarContext = createContext();
 
 export function NavBarProvider({ children }) {
   const [toggleNav, setToogleNav] = useState('hide');
+  const [renderLinks, setRenderLinks] = useState('mount');
+
+  function unmountLinks() {
+    if (window.innerWidth < 794) return setRenderLinks('unmount');
+    return setRenderLinks('mount');
+  }
+
+  useEffect(() => {
+    unmountLinks();
+  }, []);
 
   function toogleAppears() {
     if (toggleNav === 'hide') {
       setToogleNav('show');
+      bodySelector([{ style: 'overflowY', value: 'hidden' }]);
     } else {
       setToogleNav('hide');
+      bodySelector([{ style: 'overflowY', value: 'visible' }]);
     }
   }
 
@@ -25,8 +38,10 @@ export function NavBarProvider({ children }) {
     }
   });
 
+  window.addEventListener('resize', unmountLinks);
+
   const context = {
-    toggleNav, toogleAppears, handleClick,
+    toggleNav, toogleAppears, handleClick, renderLinks,
   };
 
   return (

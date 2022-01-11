@@ -22,6 +22,14 @@ body {
   cursor: pointer;
 }
 
+.ligth {
+  color: black;
+}
+
+.dark {
+  color: white;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }

@@ -15,7 +15,7 @@ function NavBar() {
           <h2>Pedro Henrique</h2>
         </section>
         <nav className="links-group">
-          <LinkNavigation />
+          { toggleNav !== 'hide' && <LinkNavigation /> }
         </nav>
       </nav>
     </>

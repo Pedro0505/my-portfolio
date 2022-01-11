@@ -15,7 +15,7 @@
 .about-infos {
   margin-top: 110px;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
 }
 
 .contanier-about section h1 {
@@ -37,12 +37,4 @@
 
 .card-technology p {
   margin: 0 10px;
-}
-
-.ligth {
-  color: black;
-}
-
-.dark {
-  color: white;
 }

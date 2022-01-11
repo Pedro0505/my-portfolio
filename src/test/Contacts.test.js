@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -8,8 +10,8 @@ window.scrollTo = jest.fn();
 
 beforeEach(() => {
   renderWithRouter(<App />);
-  const btnLink = screen.getAllByRole('link', { name: /contatos/i });
-  userEvent.click(btnLink[1]);
+  const btnLink = screen.getByRole('link', { name: /contatos/i });
+  userEvent.click(btnLink);
 });
 
 describe('Teste da página de Contatos', () => {
