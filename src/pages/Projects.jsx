@@ -32,16 +32,16 @@ function Projects() {
           <button
             type="button"
             className="arrow-left"
-            onClick={ scrollListRigth }
+            onClick={ scrollListLeft }
           >
-            <ArrowForwardIos style={ { color: 'white' } } />
+            <ArrowBackIos style={ { color: 'white' } } />
           </button>
           <button
             type="button"
             className="arrow-rigth"
-            onClick={ scrollListLeft }
+            onClick={ scrollListRigth }
           >
-            <ArrowBackIos style={ { color: 'white' } } />
+            <ArrowForwardIos style={ { color: 'white' } } />
           </button>
           {
             ProjectsInfo.map(({ id, title, image, content }) => (
