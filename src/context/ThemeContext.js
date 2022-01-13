@@ -12,7 +12,10 @@ export function ThemeProvider({ children }) {
     handleSave(themeParam, 'theme');
     if (themeParam === 'dark') {
       setTheme('ligth');
-      const options = [{ style: 'color', value: 'white' }, { style: 'backgroundColor', value: 'rgb(21, 32, 43)' }];
+      const options = [
+        { style: 'color', value: 'white' },
+        { style: 'backgroundColor', value: 'rgb(21, 32, 43)' },
+      ];
       bodySelector(options);
     } else {
       setTheme('dark');
@@ -28,7 +31,7 @@ export function ThemeProvider({ children }) {
   }, []);
 
   return (
-    <ThemeContext.Provider value={{ theme, toogleTheme }}>
+    <ThemeContext.Provider value={ { theme, toogleTheme } }>
       { children }
     </ThemeContext.Provider>
   );

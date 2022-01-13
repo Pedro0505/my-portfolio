@@ -2,6 +2,8 @@ img.profile-picture {
   border-radius: 50%;
   margin: 50px;
   box-shadow: 0 0 0 2px black;
+  width: 30vw;
+  height: 30vw;
 }
 
 .main-contanier {
@@ -13,7 +15,7 @@ img.profile-picture {
 }
 
 @media screen and (max-width: 1034px) {
-  .profile-picture {
+  img.profile-picture {
     width: 150px;
     height: 150px;
   }

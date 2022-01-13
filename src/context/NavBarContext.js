@@ -7,14 +7,16 @@ export const NavBarContext = createContext();
 export function NavBarProvider({ children }) {
   const [toggleNav, setToogleNav] = useState('hide');
   const [renderLinks, setRenderLinks] = useState('mount');
+  const SCREEN = 794;
 
   function unmountLinks() {
-    if (window.innerWidth < 794) return setRenderLinks('unmount');
+    if (window.innerWidth < SCREEN) return setRenderLinks('unmount');
     return setRenderLinks('mount');
   }
 
   useEffect(() => {
     unmountLinks();
+    bodySelector([{ style: 'overflowY', value: 'visible' }]);
   }, []);
 
   function toogleAppears() {
@@ -29,11 +31,12 @@ export function NavBarProvider({ children }) {
 
   function handleClick() {
     setToogleNav('hide');
+    bodySelector([{ style: 'overflowY', value: 'visible' }]);
     window.scrollTo(0, 0);
   }
 
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 794) {
+    if (window.innerWidth > SCREEN) {
       setToogleNav('hide');
     }
   });
@@ -45,7 +48,7 @@ export function NavBarProvider({ children }) {
   };
 
   return (
-    <NavBarContext.Provider value={context}>
+    <NavBarContext.Provider value={ context }>
       { children }
     </NavBarContext.Provider>
   );

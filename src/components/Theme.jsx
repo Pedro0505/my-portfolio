@@ -8,11 +8,18 @@ function Theme() {
   const { toogleTheme, theme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
   return (
-    <button data-testid="btn-theme" type="button" onClick={() => toogleTheme(theme)} className="style-button spin">
+    <button
+      data-testid="btn-theme"
+      type="button"
+      onClick={ () => toogleTheme(theme) }
+      className="style-button spin"
+    >
       <img
-        src={theme === 'ligth' ? sun : moon}
+        src={ theme === 'ligth' ? sun : moon }
         alt="Logo"
-        title={language === 'Português' ? 'Mude a cor de tema da paǵina' : 'Change the page theme color'}
+        title={ language === 'Português' ? 'Mude a cor de tema da paǵina' : (
+          'Change the page theme color'
+        ) }
       />
     </button>
   );

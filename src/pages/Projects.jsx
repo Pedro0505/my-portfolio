@@ -1,42 +1,62 @@
-import React, { Component } from 'react';
-import todoList from '../images/todo-list.png';
+import React, { useState } from 'react';
+import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
+import ArrowForwardIos from '@material-ui/icons/ArrowForwardIos';
+import ProjectsInfo from '../assets/ProjectsInfo';
+import ProjectsCards from '../components/ProjectsCards';
 import '../style/Project.css';
 
-class Projects extends Component {
-  render() {
-    return (
-      <main className="main-project-container">
-        <main className="contanier">
-          <section className="javascript-container">
-            <h1 className="text-typing"> Projetos </h1>
-          </section>
-          <section className="project-contanier">
-            <section className="card-project">
-              <img src={todoList} alt="Imagem de referencia de um projeto" />
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
-              </p>
-            </section>
-            <section className="card-project">
-              <img src={todoList} alt="Imagem de referencia de um projeto" />
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
-              </p>
-            </section>
-            <section className="card-project">
-              <img src={todoList} alt="Imagem de referencia de um projeto" />
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
-              </p>
-            </section>
-          </section>
-        </main>
-      </main>
-    );
+function Projects() {
+  const initialMargin = 40;
+  const [moveValue, setMoveValue] = useState(initialMargin);
+
+  function scrollListLeft() {
+    let scrollLeft = moveValue + Math.round(window.innerWidth / 2);
+    if (scrollLeft > 0) {
+      scrollLeft = initialMargin;
+    }
+    setMoveValue(scrollLeft);
   }
+
+  function scrollListRigth() {
+    const scrollRigth = moveValue - Math.round(window.innerWidth / 2);
+    setMoveValue(scrollRigth);
+  }
+
+  return (
+    <main className="main-project-container">
+      <section className="title-container">
+        <h1 className="text-typing"> Projetos </h1>
+      </section>
+      <section className="carousel">
+        <section className="cards-containers" style={ { marginLeft: moveValue } }>
+          <button
+            type="button"
+            className="arrow-left"
+            onClick={ scrollListRigth }
+          >
+            <ArrowForwardIos style={ { color: 'white' } } />
+          </button>
+          <button
+            type="button"
+            className="arrow-rigth"
+            onClick={ scrollListLeft }
+          >
+            <ArrowBackIos style={ { color: 'white' } } />
+          </button>
+          {
+            ProjectsInfo.map(({ id, title, image, content }) => (
+              <ProjectsCards
+                key={ id }
+                title={ title }
+                image={ image }
+                content={ content }
+              />
+            ))
+          }
+        </section>
+      </section>
+    </main>
+  );
 }
 
 export default Projects;

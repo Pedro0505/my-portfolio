@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -75,10 +74,14 @@ describe('Testando a navegação da paǵina', () => {
 describe('Testando o footer', () => {
   test('Se o texto aparece na tela e corresponde ao esperado', () => {
     renderWithRouter(<App />);
-    const credits = screen.getByRole('heading', { level: 3, name: /desenvolvido e estilizado por pedro/i });
+    const credits = screen.getByRole('heading',
+      { level: 3, name: /desenvolvido e estilizado por pedro/i,
+      });
     expect(credits).toBeInTheDocument();
 
-    const developed = screen.getByRole('heading', { level: 3, name: /feito com react e css/i });
+    const developed = screen.getByRole('heading',
+      { level: 3, name: /feito com react e css/i,
+      });
     expect(developed).toBeInTheDocument();
   });
 });
@@ -106,8 +109,8 @@ describe('Testando a funcionalidade da seleção de linguas', () => {
   });
   test('Testando o paragrafo', () => {
     renderWithRouter(<App />);
-    const selected = screen.getByTestId('language-selected');
-    userEvent.selectOptions(selected, 'English');
+    const selected = screen.getByRole('option', { name: 'English' });
+    userEvent.click(selected);
 
     const paragraph = screen.getByText(/my name is Pedro, and this is my portfolio./i);
     expect(paragraph).toBeInTheDocument();
