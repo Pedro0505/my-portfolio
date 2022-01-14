@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import AboutMe from './pages/AboutMe';
 import Contacts from './pages/Contacts';
@@ -13,7 +13,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import { NavBarProvider } from './context/NavBarContext';
 import NavBar from './components/NavBar';
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <LanguageProvider>
@@ -22,11 +22,11 @@ class App extends React.Component {
             <Header />
             <NavBar />
             <Switch>
-              <Route path="/contacts" component={Contacts} />
-              <Route path="/projects" component={Projects} />
-              <Route path="/about" component={AboutMe} />
-              <Route path="/" exact component={Home} />
-              <Route path="/*" component={NotFound} />
+              <Route path="/contacts" component={ Contacts } />
+              <Route path="/projects" component={ Projects } />
+              <Route path="/about" component={ AboutMe } />
+              <Route path="/" exact component={ Home } />
+              <Route path="/*" component={ NotFound } />
             </Switch>
             <Footer />
           </NavBarProvider>

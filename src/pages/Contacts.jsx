@@ -16,19 +16,19 @@ function Contacts() {
       </section>
       <section className="link-contanier">
         {
-            ContactsInfo.map((e) => (
-              <a href={e.url} key={e.id} target="_blank" rel="noreferrer">
-                <img
-                  src={e.image}
-                  alt={e.alt}
-                  width={e.width}
-                />
-                <p className={(theme === 'dark') ? 'ligth' : 'dark'}>
-                  { e.content }
-                </p>
-              </a>
-            ))
-          }
+          ContactsInfo.map((e) => (
+            <a href={ e.url } key={ e.id } target="_blank" rel="noreferrer">
+              <img
+                src={ e.image }
+                alt={ e.alt }
+                width={ e.width }
+              />
+              <p className={ (theme === 'dark') ? 'ligth' : 'dark' }>
+                { e.content }
+              </p>
+            </a>
+          ))
+        }
       </section>
     </main>
   );

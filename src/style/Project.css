@@ -1,39 +1,120 @@
 :root {
-  --dark: rgb(44, 43, 43);
+  --card-background: #274472;
+  --icons-background-color: #c3e0e5;
+  --icons-color: #000;
 }
 
 .main-project-container {
-  margin: 25px;
+  margin-top: 100px;
 }
 
-.contanier .project-contanier {
+.cards-containers {
   display: flex;
+  margin-top: 35px;
+  justify-content: center;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
-.javascript-container {
-  margin-top: 70px;
-}
-
-.contanier .project-contanier .card-project {
-  display: flex;
-  flex-direction: column;
-  width: 330px;
+.cards-projects {
+  width: 350px;
   height: fit-content;
-  background-color: var(--dark);
-  margin: 30px;
-  color: white;
+  margin-right: 30px;
+  padding: 20px 30px 40px;
+  background-color: var(--card-background);
 }
 
-.contanier .project-contanier p {
-  margin-bottom: 50px;
+.cards-projects:hover {
+  width: 390px;
+  height: 580px;
+  transition: all 100ms;
 }
 
-.contanier .card-project img {
-  width: 300px;
-  margin: 10px 0 25px;
+.project-description {
+  width: 100%;
+  text-align: justify;
 }
 
-.contanier .project-contanier .card-project img,
-.contanier .project-contanier .card-project p {
-  margin-left: 15px;
+.main-project-container img {
+  width: 100%;
+}
+
+.title-project {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  overflow-x: hidden;
+  display: flex;
+  height: fit-content;
+  width: 100vw;
+  margin-bottom: 120px;
+  scroll-behavior: smooth;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  width: 100vw;
+}
+
+.arrow-rigth,
+.arrow-left {
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  height: 585px;
+  width: 40px;
+  opacity: 0;
+  transition: all 600ms;
+}
+
+.arrow-rigth {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.arrow-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cards-containers:hover .arrow-left,
+.cards-containers:hover .arrow-rigth {
+  opacity: 1;
+}
+
+.icons-projects {
+  margin-right: 10px;
+  background-color: var(--icons-background-color);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icons-color);
+}
+
+.container-icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 794px) {
+  .arrow-rigth,
+  .arrow-left {
+    opacity: 1;
+  }
 }

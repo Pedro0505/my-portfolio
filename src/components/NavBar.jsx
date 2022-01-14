@@ -8,17 +8,15 @@ function NavBar() {
   const { toggleNav } = useContext(NavBarContext);
 
   return (
-    <>
-      <nav className={((toggleNav !== 'hide') ? 'show nav-bar' : 'hide nav-bar')}>
-        <section className="header-nav">
-          <ButtonNav />
-          <h2>Pedro Henrique</h2>
-        </section>
-        <nav className="links-group">
-          { toggleNav !== 'hide' && <LinkNavigation /> }
-        </nav>
+    <nav className={ ((toggleNav !== 'hide') ? 'show nav-bar' : 'hide nav-bar') }>
+      <section className="header-nav">
+        <ButtonNav />
+        <h2>Pedro Henrique</h2>
+      </section>
+      <nav className="links-group">
+        { toggleNav !== 'hide' && <LinkNavigation /> }
       </nav>
-    </>
+    </nav>
   );
 }
 

@@ -8,22 +8,22 @@ function CardsNavegation({ image }) {
   return (
     <nav className="container-icons">
       <a
-        href={image}
+        href={ image }
         target="_blank"
         rel="noreferrer"
         className="icons-projects"
         title="Ir para o repositório do projeto"
       >
-        <GitHubIcon style={{ fontSize: '2.5em' }} />
+        <GitHubIcon style={ { fontSize: '2.5em' } } />
       </a>
       <a
-        href={image}
+        href={ image }
         target="_blank"
         rel="noreferrer"
         className="icons-projects"
         title="Ir para o deploy"
       >
-        <ArrowForwardIcon style={{ fontSize: '2.5em' }} />
+        <ArrowForwardIcon style={ { fontSize: '2.5em' } } />
       </a>
     </nav>
   );
