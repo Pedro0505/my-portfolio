@@ -10,7 +10,7 @@ export default class NotFound extends Component {
     return (
       <div className="conteiner-not-found">
         <h1>{ headingH1 }</h1>
-        <img src={ImageNotFound} alt="Not Found" />
+        <img src={ ImageNotFound } alt="Not Found" />
       </div>
     );
   }

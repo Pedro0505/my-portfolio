@@ -52,27 +52,6 @@
   margin: 30px;
 }
 
-@media screen and (max-width: 794px) {
-  .contanier-contacts section img {
-    width: 70px;
-  }
-
-  .contanier-contacts section img:hover {
-    width: 90px;
-    transition: all ease-in-out 500ms;
-  }
-
-  .contanier-contacts section h1 {
-    font-size: 50px;
-  }
-
-  .contanier-contacts section h1::after,
-  .contanier-contacts section a p::after {
-    content: "";
-    position: static;
-  }
-}
-
 @keyframes git {
   to {
     transform: translateY(calc(40vh - 150px));
@@ -94,5 +73,26 @@
   100% {
     left: 100%;
     width: 0%;
+  }
+}
+
+@media screen and (max-width: 794px) {
+  .contanier-contacts section img {
+    width: 70px;
+  }
+
+  .contanier-contacts section img:hover {
+    width: 90px;
+    transition: all ease-in-out 500ms;
+  }
+
+  .contanier-contacts section h1 {
+    font-size: 50px;
+  }
+
+  .contanier-contacts section h1::after,
+  .contanier-contacts section a p::after {
+    content: "";
+    position: static;
   }
 }

@@ -14,9 +14,10 @@ section.contanier-typing {
 section .text-typing {
   display: inline-block;
   max-width: fit-content;
-  animation: typing 2s ease-in-out forwards, blink 1s ease-in-out infinite;
+  animation: typing 2s ease-in-out forwards, blink 800ms ease-in-out infinite;
   overflow: hidden;
   white-space: nowrap;
+  border-right: 2px solid var(--ligth);
   max-height: fit-content;
 }
 
@@ -43,8 +44,9 @@ section p.text-typing {
     border-right: 2px solid var(--ligth);
   }
 
-  50% {
-    border-right: 2px var(--dark);
+  40%,
+  60% {
+    border-right: 2px solid rgb(21, 32, 43);
   }
 
   to {

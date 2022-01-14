@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import React from 'react';
 import { screen } from '@testing-library/react';
 import renderWithRouter from '../services/renderWithRouter';
@@ -19,15 +18,16 @@ describe('Teste da página Not Found', () => {
   test('Testando se a imagem aparece na tela', () => {
     const { history } = renderWithRouter(<App />);
 
-    history.push('/wrongplace');
+    history.push('/wrongplace2');
 
     const img = screen.getByRole('img', { name: /not found/i });
     expect(img).toBeInTheDocument();
   });
-  test('Testando se ao ir para uma rota diferente das existentes aparece na tela a mensagem de NotFound', () => {
+  test(`Testando se ao ir para uma rota diferente 
+  das existentes aparece na tela a mensagem de NotFound`, () => {
     const { history } = renderWithRouter(<App />);
 
-    history.push('/wrongplace');
+    history.push('/wrongplace3');
 
     const text = screen.getByRole('heading', {
       level: 1,

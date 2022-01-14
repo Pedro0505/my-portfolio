@@ -13,7 +13,7 @@ function Header() {
     <header>
       <section>
         <ButtonNav />
-        <img src={logo} alt="Logo" />
+        <img src={ logo } alt="Logo" />
         <h1>Pedro Henrique</h1>
       </section>
       <section>

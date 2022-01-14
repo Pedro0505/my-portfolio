@@ -10,13 +10,19 @@ class Technologys extends Component {
       <section className="technologies">
         {
           TechnologysInfo.map((e) => (
-            <a href={e.url} className="card-technology" key={e.id} target="_blank" rel="noreferrer">
+            <a
+              href={ e.url }
+              className="card-technology"
+              key={ e.id }
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
-                src={e.images}
-                alt={e.alt}
-                width={e.width}
+                src={ e.images }
+                alt={ e.alt }
+                width={ e.width }
               />
-              <p className={(theme === 'dark') ? 'ligth' : 'dark'}>
+              <p className={ (theme === 'dark') ? 'ligth' : 'dark' }>
                 { e.content }
               </p>
             </a>

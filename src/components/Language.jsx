@@ -5,7 +5,11 @@ function Language() {
   const { handleLanguage, language } = useContext(LanguageContext);
 
   return (
-    <select value={language} data-testid="language-selected" onChange={({ target: { value } }) => handleLanguage(value)}>
+    <select
+      value={ language }
+      data-testid="language-selected"
+      onChange={ ({ target: { value } }) => handleLanguage(value) }
+    >
       <option value="Português" className="choiceLanguage">
         Português
       </option>
