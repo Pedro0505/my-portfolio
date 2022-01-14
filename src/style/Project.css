@@ -1,5 +1,7 @@
 :root {
-  --dark: rgb(44, 43, 43);
+  --card-background: #274472;
+  --icons-background-color: #c3e0e5;
+  --icons-color: #000;
 }
 
 .main-project-container {
@@ -10,12 +12,22 @@
   display: flex;
   margin-top: 35px;
   justify-content: center;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 .cards-projects {
   width: 350px;
   height: fit-content;
   margin-right: 30px;
+  padding: 20px 30px 40px;
+  background-color: var(--card-background);
+}
+
+.cards-projects:hover {
+  width: 390px;
+  height: 580px;
+  transition: all 100ms;
 }
 
 .project-description {
@@ -38,6 +50,7 @@
   height: fit-content;
   width: 100vw;
   margin-bottom: 120px;
+  scroll-behavior: smooth;
 }
 
 .title-container {
@@ -52,6 +65,10 @@
   position: absolute;
   border: none;
   cursor: pointer;
+  height: 585px;
+  width: 40px;
+  opacity: 0;
+  transition: all 600ms;
 }
 
 .arrow-rigth {
@@ -59,8 +76,6 @@
   align-items: center;
   justify-content: flex-end;
   right: 0;
-  height: 450px;
-  width: 30px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -69,20 +84,37 @@
   align-items: center;
   justify-content: center;
   left: 0;
-  height: 450px;
-  width: 30px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-@media screen and (max-width: 794px) {
-  .cards-projects {
-    width: 300px;
-    height: 150px;
-    margin-bottom: 350px;
-    margin-left: 30px;
-  }
+.cards-containers:hover .arrow-left,
+.cards-containers:hover .arrow-rigth {
+  opacity: 1;
+}
 
-  .main-project-container img {
-    width: 300px;
+.icons-projects {
+  margin-right: 10px;
+  background-color: var(--icons-background-color);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icons-color);
+}
+
+.container-icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 794px) {
+  .arrow-rigth,
+  .arrow-left {
+    opacity: 1;
   }
 }

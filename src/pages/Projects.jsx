@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIos from '@material-ui/icons/ArrowForwardIos';
 import ProjectsInfo from '../assets/ProjectsInfo';
@@ -6,21 +6,44 @@ import ProjectsCards from '../components/ProjectsCards';
 import '../style/Project.css';
 
 function Projects() {
-  const initialMargin = 40;
-  const [moveValue, setMoveValue] = useState(initialMargin);
+  const initialPercentage = 0.50;
+  const [move, setMove] = useState(0);
+  const [percentage, setPercentage] = useState(initialPercentage);
 
   function scrollListLeft() {
-    let scrollLeft = moveValue + Math.round(window.innerWidth / 2);
-    if (scrollLeft > 0) {
-      scrollLeft = initialMargin;
+    let scrollLeft = move - Math.round(window.innerWidth * percentage);
+    if (scrollLeft <= 0) {
+      scrollLeft = 0;
     }
-    setMoveValue(scrollLeft);
+    const element = document.querySelector('.carousel');
+    setMove(scrollLeft);
+    element.scrollTo(scrollLeft, 0);
   }
 
   function scrollListRigth() {
-    const scrollRigth = moveValue - Math.round(window.innerWidth / 2);
-    setMoveValue(scrollRigth);
+    let scrollRigth = move + Math.round(window.innerWidth * percentage);
+    const margin = 60;
+    const cardWidth = 380;
+    const listWidth = ProjectsInfo.length * cardWidth;
+    if ((listWidth - window.innerWidth) < scrollRigth) {
+      scrollRigth = (listWidth - window.innerWidth) + margin;
+    }
+    const element = document.querySelector('.carousel');
+    setMove(scrollRigth);
+    element.scrollTo(scrollRigth, 0);
   }
+
+  window.addEventListener('resize', () => {
+    const newPercentage = 0.80;
+    const screen = 800;
+    if (window.innerWidth < screen) return setPercentage(newPercentage);
+    setPercentage(initialPercentage);
+  });
+
+  useEffect(() => {
+    const element = document.querySelector('.carousel');
+    element.scrollTo(0, 0);
+  }, []);
 
   return (
     <main className="main-project-container">
@@ -28,7 +51,7 @@ function Projects() {
         <h1 className="text-typing"> Projetos </h1>
       </section>
       <section className="carousel">
-        <section className="cards-containers" style={ { marginLeft: moveValue } }>
+        <section className="cards-containers">
           <button
             type="button"
             className="arrow-left"

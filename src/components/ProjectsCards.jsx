@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
+import CardsNavegation from './CardsNavegation';
 
 function ProjectsCards({ title, image, content }) {
   return (
@@ -7,6 +8,7 @@ function ProjectsCards({ title, image, content }) {
       <h1 className="title-project">{title}</h1>
       <img src={ image } alt="Imagem do projeto" />
       <p className="project-description">{content}</p>
+      <CardsNavegation image={ image } />
     </section>
   );
 }
