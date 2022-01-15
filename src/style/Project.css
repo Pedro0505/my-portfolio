@@ -69,6 +69,7 @@
   width: 40px;
   opacity: 0;
   transition: all 600ms;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .arrow-rigth {
@@ -76,7 +77,6 @@
   align-items: center;
   justify-content: flex-end;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .arrow-left {
@@ -84,7 +84,6 @@
   align-items: center;
   justify-content: center;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cards-containers:hover .arrow-left,

@@ -7,6 +7,9 @@ import '../style/Project.css';
 
 function Projects() {
   const initialPercentage = 0.50;
+  const margin = 60;
+  const cardWidth = 380;
+  const listWidth = ProjectsInfo.length * cardWidth;
   const [move, setMove] = useState(0);
   const [percentage, setPercentage] = useState(initialPercentage);
 
@@ -22,9 +25,6 @@ function Projects() {
 
   function scrollListRigth() {
     let scrollRigth = move + Math.round(window.innerWidth * percentage);
-    const margin = 60;
-    const cardWidth = 380;
-    const listWidth = ProjectsInfo.length * cardWidth;
     if ((listWidth - window.innerWidth) < scrollRigth) {
       scrollRigth = (listWidth - window.innerWidth) + margin;
     }
@@ -52,20 +52,28 @@ function Projects() {
       </section>
       <section className="carousel">
         <section className="cards-containers">
-          <button
-            type="button"
-            className="arrow-left"
-            onClick={ scrollListLeft }
-          >
-            <ArrowBackIos style={ { color: 'white' } } />
-          </button>
-          <button
-            type="button"
-            className="arrow-rigth"
-            onClick={ scrollListRigth }
-          >
-            <ArrowForwardIos style={ { color: 'white' } } />
-          </button>
+          {
+            move !== 0 && (
+              <button
+                type="button"
+                className="arrow-left"
+                onClick={ scrollListLeft }
+              >
+                <ArrowBackIos style={ { color: 'white' } } />
+              </button>
+            )
+          }
+          {
+            (listWidth - window.innerWidth) + margin !== move && (
+              <button
+                type="button"
+                className="arrow-rigth"
+                onClick={ scrollListRigth }
+              >
+                <ArrowForwardIos style={ { color: 'white' } } />
+              </button>
+            )
+          }
           {
             ProjectsInfo.map(({ id, title, image, content }) => (
               <ProjectsCards

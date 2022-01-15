@@ -3,8 +3,13 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
 import renderWithRouter from '../services/renderWithRouter';
+import '@testing-library/jest-dom/extend-expect';
 
 window.scrollTo = jest.fn();
+
+beforeAll(() => {
+  Element.prototype.scrollTo = () => {};
+});
 
 describe('Teste da página de Home', () => {
   test('Testando se o conteúdo do texto está correto', () => {
@@ -27,16 +32,18 @@ describe('Teste da página de Home', () => {
 });
 
 describe('Testando a navegação da paǵina', () => {
-  afterEach(() => {
+  beforeEach(() => {
     jest.resetAllMocks();
   });
 
   afterAll(() => {
     jest.clearAllMocks();
   });
+
   test('Arrumando o problema do scrollTo', () => {
     window.scrollTo = jest.fn();
   });
+
   test('Testando o link de Página Inicial da paǵina', () => {
     const { history } = renderWithRouter(<App />);
     const btnHomePage = screen.getByRole('link', { name: /página inicial/i });
