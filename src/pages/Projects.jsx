@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectsInfo from '../assets/ProjectsInfo';
+import ProjectsInfo from '../data/ProjectsInfo';
 import ArrowMove from '../components/ArrowMove';
 import ProjectsCards from '../components/ProjectsCards';
 import '../style/Project.css';
@@ -14,12 +14,14 @@ function Projects() {
         <section className="cards-containers">
           <ArrowMove />
           {
-            ProjectsInfo.map(({ id, title, image, content }) => (
+            ProjectsInfo.map(({ id, title, image, content, repository, deploy }) => (
               <ProjectsCards
                 key={ id }
                 title={ title }
                 image={ image }
                 content={ content }
+                repository={ repository }
+                deploy={ deploy }
               />
             ))
           }

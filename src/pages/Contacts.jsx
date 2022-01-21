@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../context/LanguageContext';
 import { ThemeContext } from '../context/ThemeContext';
-import ContactsInfo from '../assets/ContactsInfo';
+import ContactsInfo from '../data/ContactsInfo';
 import '../style/Contacts.css';
 
 function Contacts() {
@@ -21,7 +21,6 @@ function Contacts() {
               <img
                 src={ e.image }
                 alt={ e.alt }
-                width={ e.width }
               />
               <p className={ (theme === 'dark') ? 'ligth' : 'dark' }>
                 { e.content }

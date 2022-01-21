@@ -9,6 +9,10 @@
   margin-top: 80px;
 }
 
+.contanier-contacts section img {
+  width: 150px;
+}
+
 .contanier-contacts section img:hover {
   width: 170px;
   transition: all ease-in-out 500ms;

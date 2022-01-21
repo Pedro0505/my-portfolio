@@ -5,7 +5,6 @@ const dataContacts = [
     image: 'https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/github-512.png',
     content: 'GitHub',
     alt: 'Logo GitHub',
-    width: '150',
   },
   {
     id: 1,
@@ -13,7 +12,6 @@ const dataContacts = [
     image: 'https://cdn-icons-png.flaticon.com/512/174/174857.png',
     content: 'Linkedin',
     alt: 'Logo do Linkedin',
-    width: '150',
   },
   {
     id: 2,
@@ -21,7 +19,6 @@ const dataContacts = [
     image: 'https://s2rio.com.br/wp-content/uploads/2016/11/gmail-logo-704x704.png',
     content: 'Gmail',
     alt: 'Logo do Gmail',
-    width: '150',
   },
 ];
 

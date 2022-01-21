@@ -14,16 +14,13 @@
 
 .about-infos {
   margin-top: 110px;
-  width: 100vw;
   height: 80vh;
 }
 
 .contanier-about section h1 {
   display: flex;
   justify-content: center;
-  animation: revel 2s ease forwards;
   margin: 25px 0 50px;
-  opacity: 0;
 }
 
 .card-technology {
@@ -35,14 +32,6 @@
   text-decoration: none;
   width: 150px;
   height: 35px;
-  opacity: 0;
-  animation: revel 2s ease forwards;
-}
-
-@keyframes revel {
-  to {
-    opacity: 1;
-  }
 }
 
 .card-technology p {

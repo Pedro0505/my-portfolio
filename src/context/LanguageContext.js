@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useState, createContext } from 'react';
-import Translation from '../assets/Translation';
+import Translation from '../data/Translation';
 import handleSave from '../services/storage';
 
 export const LanguageContext = createContext();

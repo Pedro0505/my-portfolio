@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TechnologysInfo from '../assets/TechnologysInfo';
+import TechnologysInfo from '../data/TechnologysInfo';
 import '../style/About.css';
 import { ThemeContext } from '../context/ThemeContext';
 

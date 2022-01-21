@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIos from '@material-ui/icons/ArrowForwardIos';
-import ProjectsInfo from '../assets/ProjectsInfo';
+import ProjectsInfo from '../data/ProjectsInfo';
 
 function ArrowMove() {
   const initialPercentage = 0.50;
   const margin = 60;
-  const cardWidth = 380;
+  const cardWidth = 450;
   const listWidth = ProjectsInfo.length * cardWidth;
   const [move, setMove] = useState(0);
   const [percentage, setPercentage] = useState(initialPercentage);
