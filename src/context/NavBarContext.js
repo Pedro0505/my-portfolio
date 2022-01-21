@@ -44,7 +44,10 @@ export function NavBarProvider({ children }) {
   window.addEventListener('resize', unmountLinks);
 
   const context = {
-    toggleNav, toogleAppears, handleClick, renderLinks,
+    toggleNav,
+    toogleAppears,
+    handleClick,
+    renderLinks,
   };
 
   return (

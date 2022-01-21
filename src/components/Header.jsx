@@ -8,7 +8,7 @@ import LinkNavigation from './LinkNavigation';
 import Theme from './Theme';
 
 function Header() {
-  const { toggleNav, renderLinks } = useContext(NavBarContext);
+  const { toggleNav, renderLinks, toogleAppears } = useContext(NavBarContext);
   return (
     <header>
       <section>
@@ -23,6 +23,11 @@ function Header() {
         <Language />
         <Theme />
       </section>
+      { toggleNav !== 'hide' && (
+        <button type="button" className="overlay" onClick={ toogleAppears }>
+          <span />
+        </button>
+      ) }
     </header>
   );
 }

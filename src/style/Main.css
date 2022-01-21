@@ -1,3 +1,21 @@
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(21, 32, 43);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 15px;
+}
+
+:root {
+  --background-dark: rgb(21, 32, 43);
+  --background-ligth: rgb(250, 250, 250);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,15 +47,11 @@ body {
   color: white;
 }
 
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgb(34, 39, 46);
-}
-
-::-webkit-scrollbar-thumb {
-  background: #fff;
-  border-radius: 15px;
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  border: none;
 }
