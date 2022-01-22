@@ -3,10 +3,11 @@ import React from 'react';
 import ArrowMove from './ArrowMove';
 
 function Carousel({ children }) {
+  const cardWidth = 450;
   return (
     <section className="carousel">
       <section className="cards-containers">
-        <ArrowMove />
+        { children.length * cardWidth >= window.innerWidth && <ArrowMove /> }
         { children }
       </section>
     </section>
