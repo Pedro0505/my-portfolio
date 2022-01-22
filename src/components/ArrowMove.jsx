@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIos from '@material-ui/icons/ArrowForwardIos';
-import ProjectsInfo from '../data/ProjectsInfo';
+import { LanguageContext } from '../context/LanguageContext';
 
 function ArrowMove() {
   const initialPercentage = 0.50;
-  const margin = 60;
-  const cardWidth = 450;
-  const listWidth = ProjectsInfo.length * cardWidth;
+  const { language, Translation } = useContext(LanguageContext);
+  const { project } = Translation[language];
   const [move, setMove] = useState(0);
   const [percentage, setPercentage] = useState(initialPercentage);
+  const margin = 60;
+  const cardWidth = 450;
+  const listWidth = project.length * cardWidth;
 
   function scrollListLeft() {
     let scrollLeft = move - Math.round(window.innerWidth * percentage);
