@@ -71,7 +71,7 @@ const langague = {
   },
   English: {
     footer: {
-      developed: 'Developed and styled by Pedro',
+      developed: 'Developed and styled by',
       credits: 'Made with React and CSS',
     },
     home: {

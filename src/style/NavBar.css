@@ -3,7 +3,7 @@
   left: 0;
   bottom: 0;
   background-color: rgb(31, 31, 31);
-  width: 50vw;
+  width: 65vw;
   height: 100vh;
   position: fixed;
   z-index: 4;
@@ -14,10 +14,13 @@
 
 .nav-bar a {
   margin-left: 15px;
+  margin-bottom: 10px;
   text-decoration: none;
   color: white;
   padding: 7px;
   width: fit-content;
+  display: flex;
+  align-items: center;
 }
 
 .nav-bar a:hover {

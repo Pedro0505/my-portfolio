@@ -1,12 +1,8 @@
-:root {
-  --dark: rgb(45, 51, 59);
-}
-
 header {
   width: 100vw;
   height: 70px;
   display: flex;
-  background-color: var(--dark);
+  background-color: rgb(45, 51, 59);
   color: white;
   justify-content: space-between;
   position: fixed;
@@ -31,6 +27,8 @@ header nav a {
   color: white;
   font-size: 10px;
   font-family: "Press Start 2P", cursive;
+  display: flex;
+  align-items: center;
 }
 
 .disable-link {
@@ -51,7 +49,7 @@ header nav a:hover {
 header section select {
   border-radius: 2px;
   color: white;
-  background-color: var(--dark);
+  background-color: rgb(45, 51, 59);
   margin-right: 20px;
 }
 

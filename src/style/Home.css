@@ -11,7 +11,6 @@ img.profile-picture {
   justify-content: space-around;
   margin-right: 130px;
   margin-top: 70px;
-  width: 100vw;
 }
 
 @media screen and (max-width: 1034px) {

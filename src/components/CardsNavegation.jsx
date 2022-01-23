@@ -1,13 +1,9 @@
-/* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import React from 'react';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 function CardsNavegation({ repository, deploy }) {
-  const [textGit, setTextGit] = useState('');
-  const [textRepo, setTextRepo] = useState('');
-
   return (
     <nav className="container-icons">
       <a
@@ -15,22 +11,18 @@ function CardsNavegation({ repository, deploy }) {
         target="_blank"
         rel="noreferrer"
         className="icons-projects"
-        onMouseEnter={ () => setTextGit('Ir para o repositório do projeto') }
-        onMouseLeave={ () => setTextGit('') }
+        title="Ir para o repositório do projeto"
       >
-        { textGit !== '' ? textGit : <GitHubIcon style={ { fontSize: '2.5em' } } /> }
+        <GitHubIcon style={ { fontSize: '2.5em' } } />
       </a>
       <a
         href={ deploy }
         target="_blank"
         rel="noreferrer"
         className="icons-projects"
-        onMouseEnter={ () => setTextRepo('Ir para o deploy') }
-        onMouseOut={ () => setTextRepo('') }
+        title="Ir para o deploy"
       >
-        { textRepo !== '' ? textRepo : (
-          <ArrowForwardIcon style={ { fontSize: '2.5em' } } />
-        )}
+        <ArrowForwardIcon style={ { fontSize: '2.5em' } } />
       </a>
     </nav>
   );
