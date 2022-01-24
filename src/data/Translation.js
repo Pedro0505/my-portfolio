@@ -50,7 +50,7 @@ const langague = {
       {
         id: 2,
         title: 'FrontEnd Online Store3',
-        repository: 'https://github.com/Pedro0505/projeto-frontd-online-store',
+        repository: 'https://github.com/Pedro0505/projeto-fronted-online-store',
         image: img,
         deploy: 'https://github.com/Pedro0505/projeto-frontd-online-store',
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
