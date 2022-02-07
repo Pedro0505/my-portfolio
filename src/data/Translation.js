@@ -82,7 +82,7 @@ const langague = {
         title: 'Projeto FrontEnd Online Store',
         repository: 'https://github.com/Pedro0505/projeto-frontend-online-store',
         deploy: 'https://pedro-silva-fonline-store.vercel.app',
-        image: img,
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/online-store.gif?raw=true',
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
         It has survived not only five centuries, but also the leap into electronic,`,
@@ -180,7 +180,7 @@ const langague = {
         title: 'Projeto FrontEnd Online Store',
         repository: 'https://github.com/Pedro0505/projeto-frontend-online-store',
         deploy: 'https://pedro-silva-fonline-store.vercel.app',
-        image: img,
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/online-store.gif?raw=true',
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
         It has survived not only five centuries, but also the leap into electronic,`,
