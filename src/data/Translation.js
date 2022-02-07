@@ -52,7 +52,7 @@ const langague = {
         title: 'Projeto Pixel Art',
         repository: 'https://github.com/Pedro0505/projeto-pixel-art',
         deploy: 'https://pedro-silva-pixel-art.vercel.app',
-        image: img,
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/pixel.gif?raw=true',
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
         It has survived not only five centuries, but also the leap into electronic,`,
@@ -62,7 +62,7 @@ const langague = {
         title: 'Projeto ToDo List',
         repository: 'https://github.com/Pedro0505/projeto-to-do-list',
         deploy: 'https://pedro-silva-todo-list.vercel.app',
-        image: img,
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/todo.gif?raw=true',
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
         It has survived not only five centuries, but also the leap into electronic,`,
@@ -150,7 +150,7 @@ const langague = {
         title: 'Projeto Pixel Art',
         repository: 'https://github.com/Pedro0505/projeto-pixel-art',
         deploy: 'https://pedro-silva-pixel-art.vercel.app',
-        image: img,
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/pixel.gif?raw=true',
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
         It has survived not only five centuries, but also the leap into electronic,`,
@@ -160,7 +160,7 @@ const langague = {
         title: 'Projeto ToDo List',
         repository: 'https://github.com/Pedro0505/projeto-to-do-list',
         deploy: 'https://pedro-silva-todo-list.vercel.app',
-        image: img,
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/todo.gif?raw=true',
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
         It has survived not only five centuries, but also the leap into electronic,`,
