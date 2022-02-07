@@ -15,7 +15,7 @@ function CardsNavegation({ repository, deploy }) {
         >
           <GitHubIcon className="icon" style={ { fontSize: '2.5em' } } />
         </a>
-        <a href={ deploy } target="_blank" rel="noreferrer">
+        <a href={ repository } target="_blank" rel="noreferrer">
           Ir para o repositório
         </a>
       </div>

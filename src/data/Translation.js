@@ -31,8 +31,8 @@ const langague = {
         id: 0,
         title: 'Projeto Cronômetro',
         repository: 'https://github.com/Pedro0505/Cronometro-React-TS',
-        deploy: 'http://cronometro-react-ts.vercel.app/',
-        image: img,
+        deploy: 'https://pedrodev-cronometro.vercel.app/',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/timer.png?raw=true',
         content: `Lorem Ipsum is simply dummy text of the printing and  the industrys the
         ,when an unknown printer took a galley of type and scrambled it to make a
         book.  It has survived not only five centuries, but also the leap into electron`,
@@ -41,8 +41,8 @@ const langague = {
         id: 1,
         title: 'Projeto Trivia Redux',
         repository: 'https://github.com/Pedro0505/projeto-trivia-redux',
-        deploy: 'pedro-silva-trivia-redux.vercel.app',
-        image: img,
+        deploy: 'https://pedro-silva-trivia-redux.vercel.app',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/ezgif.com-gif-maker.gif?raw=true',
         content: `try.Lorem Ipsum has been the 1500s,when an unknown printer took a 
         galley of type and scrambled it to make a typespecimen book. It has survived nonly
         five centuries, but also the leap into electronic,`,
@@ -51,7 +51,7 @@ const langague = {
         id: 2,
         title: 'Projeto Pixel Art',
         repository: 'https://github.com/Pedro0505/projeto-pixel-art',
-        deploy: 'pedro-silva-pixel-art.vercel.app',
+        deploy: 'https://pedro-silva-pixel-art.vercel.app',
         image: img,
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
@@ -61,7 +61,7 @@ const langague = {
         id: 3,
         title: 'Projeto ToDo List',
         repository: 'https://github.com/Pedro0505/projeto-to-do-list',
-        deploy: 'pedro-silva-todo-list.vercel.app',
+        deploy: 'https://pedro-silva-todo-list.vercel.app',
         image: img,
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
@@ -71,7 +71,7 @@ const langague = {
         id: 4,
         title: 'Projeto Recipe App',
         repository: 'https://github.com/Pedro0505/projeto-recipe-app',
-        deploy: 'projeto-recipe-app.vercel.app',
+        deploy: 'https://projeto-recipe-app.vercel.app',
         image: img,
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
@@ -81,7 +81,7 @@ const langague = {
         id: 5,
         title: 'Projeto FrontEnd Online Store',
         repository: 'https://github.com/Pedro0505/projeto-frontend-online-store',
-        deploy: 'pedro-silva-fonline-store.vercel.app',
+        deploy: 'https://pedro-silva-fonline-store.vercel.app',
         image: img,
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
@@ -129,8 +129,8 @@ const langague = {
         id: 0,
         title: 'Projeto Cronômetro',
         repository: 'https://github.com/Pedro0505/Cronometro-React-TS',
-        deploy: 'http://cronometro-react-ts.vercel.app/',
-        image: img,
+        deploy: 'https://pedrodev-cronometro.vercel.app/',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/timer.png?raw=true',
         content: `Lorem Ipsum is simply dummy text of the printing and  the industrys the
         ,when an unknown printer took a galley of type and scrambled it to make a
         book.  It has survived not only five centuries, but also the leap into electron`,
@@ -139,8 +139,8 @@ const langague = {
         id: 1,
         title: 'Projeto Trivia Redux',
         repository: 'https://github.com/Pedro0505/projeto-trivia-redux',
-        deploy: 'pedro-silva-trivia-redux.vercel.app',
-        image: img,
+        deploy: 'https://pedro-silva-trivia-redux.vercel.app',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/ezgif.com-gif-maker.gif?raw=true',
         content: `try.Lorem Ipsum has been the 1500s,when an unknown printer took a 
         galley of type and scrambled it to make a typespecimen book. It has survived nonly
         five centuries, but also the leap into electronic,`,
@@ -149,7 +149,7 @@ const langague = {
         id: 2,
         title: 'Projeto Pixel Art',
         repository: 'https://github.com/Pedro0505/projeto-pixel-art',
-        deploy: 'pedro-silva-pixel-art.vercel.app',
+        deploy: 'https://pedro-silva-pixel-art.vercel.app',
         image: img,
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
@@ -159,7 +159,7 @@ const langague = {
         id: 3,
         title: 'Projeto ToDo List',
         repository: 'https://github.com/Pedro0505/projeto-to-do-list',
-        deploy: 'pedro-silva-todo-list.vercel.app',
+        deploy: 'https://pedro-silva-todo-list.vercel.app',
         image: img,
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
@@ -169,7 +169,7 @@ const langague = {
         id: 4,
         title: 'Projeto Recipe App',
         repository: 'https://github.com/Pedro0505/projeto-recipe-app',
-        deploy: 'projeto-recipe-app.vercel.app',
+        deploy: 'https://projeto-recipe-app.vercel.app',
         image: img,
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
@@ -179,7 +179,7 @@ const langague = {
         id: 5,
         title: 'Projeto FrontEnd Online Store',
         repository: 'https://github.com/Pedro0505/projeto-frontend-online-store',
-        deploy: 'pedro-silva-fonline-store.vercel.app',
+        deploy: 'https://pedro-silva-fonline-store.vercel.app',
         image: img,
         content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
         of type and scrambled it to make a typespecimen book. 
