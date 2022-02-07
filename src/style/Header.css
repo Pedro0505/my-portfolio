@@ -2,7 +2,6 @@ header {
   width: 100vw;
   height: 70px;
   display: flex;
-  background-color: rgb(45, 51, 59);
   color: white;
   justify-content: space-between;
   position: fixed;
@@ -49,7 +48,6 @@ header nav a:hover {
 header section select {
   border-radius: 2px;
   color: white;
-  background-color: rgb(45, 51, 59);
   margin-right: 20px;
 }
 

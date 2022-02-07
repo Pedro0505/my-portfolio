@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { NavBarContext } from '../context/NavBarContext';
+import { ThemeContext } from '../context/ThemeContext';
 import logo from '../images/logo.svg';
+import logoLigth from '../images/logo-ligth.svg';
 import '../style/Header.css';
 import ButtonNav from './ButtonNav';
 import Language from './Language';
@@ -9,11 +11,19 @@ import Theme from './Theme';
 
 function Header() {
   const { toggleNav, renderLinks, toogleAppears } = useContext(NavBarContext);
+  const { theme } = useContext(ThemeContext);
   return (
-    <header>
+    <header
+      className={ (theme !== 'ligth') ? 'header-footer-color-ligth' : (
+        'header-footer-color-dark') }
+    >
       <section>
         <ButtonNav />
-        <img src={ logo } alt="Logo" />
+        {
+          theme === 'ligth' ? <img src={ logo } alt="Logo" /> : (
+            <img src={ logoLigth } alt="Logo" />
+          )
+        }
         <h1>Pedro Henrique</h1>
       </section>
       <section>
