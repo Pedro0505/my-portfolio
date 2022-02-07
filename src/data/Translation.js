@@ -32,7 +32,7 @@ const langague = {
         title: 'Projeto Cronômetro',
         repository: 'https://github.com/Pedro0505/Cronometro-React-TS',
         deploy: 'https://pedrodev-cronometro.vercel.app/',
-        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/timer.png?raw=true',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/timer.gif?raw=true',
         content: `Lorem Ipsum is simply dummy text of the printing and  the industrys the
         ,when an unknown printer took a galley of type and scrambled it to make a
         book.  It has survived not only five centuries, but also the leap into electron`,
@@ -42,7 +42,7 @@ const langague = {
         title: 'Projeto Trivia Redux',
         repository: 'https://github.com/Pedro0505/projeto-trivia-redux',
         deploy: 'https://pedro-silva-trivia-redux.vercel.app',
-        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/ezgif.com-gif-maker.gif?raw=true',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/trivia.gif?raw=true',
         content: `try.Lorem Ipsum has been the 1500s,when an unknown printer took a 
         galley of type and scrambled it to make a typespecimen book. It has survived nonly
         five centuries, but also the leap into electronic,`,
@@ -130,7 +130,7 @@ const langague = {
         title: 'Projeto Cronômetro',
         repository: 'https://github.com/Pedro0505/Cronometro-React-TS',
         deploy: 'https://pedrodev-cronometro.vercel.app/',
-        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/timer.png?raw=true',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/timer.gif?raw=true',
         content: `Lorem Ipsum is simply dummy text of the printing and  the industrys the
         ,when an unknown printer took a galley of type and scrambled it to make a
         book.  It has survived not only five centuries, but also the leap into electron`,
@@ -140,7 +140,7 @@ const langague = {
         title: 'Projeto Trivia Redux',
         repository: 'https://github.com/Pedro0505/projeto-trivia-redux',
         deploy: 'https://pedro-silva-trivia-redux.vercel.app',
-        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/ezgif.com-gif-maker.gif?raw=true',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/trivia.gif?raw=true',
         content: `try.Lorem Ipsum has been the 1500s,when an unknown printer took a 
         galley of type and scrambled it to make a typespecimen book. It has survived nonly
         five centuries, but also the leap into electronic,`,
