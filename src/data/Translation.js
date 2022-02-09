@@ -32,7 +32,7 @@ const langague = {
         deploy: 'https://pedrodev-cronometro.vercel.app/',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/timer.gif?raw=true',
         content: `Um timer feito com React TypeScript, foi minha primeira experiência com
-        o typescript que me ajudou a firmar conceitos da linguagem`,
+        o typescript que me ajudou a firmar conceitos da linguagem.`,
       },
       {
         id: 1,
@@ -40,9 +40,9 @@ const langague = {
         repository: 'https://github.com/Pedro0505/projeto-trivia-redux',
         deploy: 'https://pedro-silva-trivia-redux.vercel.app',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/trivia.gif?raw=true',
-        content: `Projeto feito em grupo onde usamos pela primeira vez o conceito de 
-        estado global, nesse projeto utilizamos o Redux para podermos usá-lo e aplicamos
-        o redux thunk para lidarmos com as requisições`,
+        content: `Projeto feito em grupo utilizando a metodologia ágil Scrum onde usamos 
+        pela  primeira vez o conceito de  estado global, nesse projeto utilizamos o Redux 
+        para podermos usá-lo e aplicamos o redux thunk para lidarmos com as requisições.`,
       },
       {
         id: 2,
@@ -50,9 +50,9 @@ const langague = {
         repository: 'https://github.com/Pedro0505/projeto-pixel-art',
         deploy: 'https://pedro-silva-pixel-art.vercel.app',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/pixel.gif?raw=true',
-        content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
-        of type and scrambled it to make a typespecimen book. 
-        It has survived not only five centuries, but also the leap into electronic,`,
+        content: `Esse foi o primeiro projeto que fiz manipulando o DOM e feito somente 
+        com Javascript, Html5 e CSS a aplicação consiste em conseguir desenhar pixel
+        arts simples usando o browser.`,
       },
       {
         id: 3,
@@ -60,9 +60,9 @@ const langague = {
         repository: 'https://github.com/Pedro0505/projeto-to-do-list',
         deploy: 'https://pedro-silva-todo-list.vercel.app',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/todo.gif?raw=true',
-        content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
-        of type and scrambled it to make a typespecimen book. 
-        It has survived not only five centuries, but also the leap into electronic,`,
+        content: `Aplicação feita com Javascript, Html5 e CSS foi um dos primeiros 
+        projetos que fiz manipulando o DOM, a aplicação é um To Do List com algumas
+        funcionalidades.`,
       },
       // {
       //   id: 4,
@@ -80,9 +80,9 @@ const langague = {
         repository: 'https://github.com/Pedro0505/projeto-frontend-online-store',
         deploy: 'https://pedro-silva-fonline-store.vercel.app',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/online-store.gif?raw=true',
-        content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
-        of type and scrambled it to make a typespecimen book. 
-        It has survived not only five centuries, but also the leap into electronic,`,
+        content: `Projeto em grupo onde utilizamos a metodologia ágil Scrum para 
+        o desenvolvimento, nessa aplicação usamos a Api do mercado livre para criarmos
+        uma pequena lojinha virtual.`,
       },
     ],
     about: [
