@@ -40,9 +40,9 @@ const langague = {
         repository: 'https://github.com/Pedro0505/projeto-trivia-redux',
         deploy: 'https://pedro-silva-trivia-redux.vercel.app',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/trivia.gif?raw=true',
-        content: `try.Lorem Ipsum has been the 1500s,when an unknown printer took a 
-        galley of type and scrambled it to make a typespecimen book. It has survived nonly
-        five centuries, but also the leap into electronic,`,
+        content: `Projeto feito em grupo onde usamos pela primeira vez o conceito de 
+        estado global, nesse projeto utilizamos o Redux para podermos usá-lo e aplicamos
+        o redux thunk para lidarmos com as requisições`,
       },
       {
         id: 2,
