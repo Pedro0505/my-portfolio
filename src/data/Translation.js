@@ -128,9 +128,8 @@ const langague = {
         repository: 'https://github.com/Pedro0505/Cronometro-React-TS',
         deploy: 'https://pedrodev-cronometro.vercel.app/',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/timer.gif?raw=true',
-        content: `Lorem Ipsum is simply dummy text of the printing and  the industrys the
-        ,when an unknown printer took a galley of type and scrambled it to make a
-        book.  It has survived not only five centuries, but also the leap into electron`,
+        content: `A timer made with React TypeScript, it was my first experience with
+        the typescript that helped me to establish concepts of the language.`,
       },
       {
         id: 1,
@@ -138,9 +137,9 @@ const langague = {
         repository: 'https://github.com/Pedro0505/projeto-trivia-redux',
         deploy: 'https://pedro-silva-trivia-redux.vercel.app',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/trivia.gif?raw=true',
-        content: `try.Lorem Ipsum has been the 1500s,when an unknown printer took a 
-        galley of type and scrambled it to make a typespecimen book. It has survived nonly
-        five centuries, but also the leap into electronic,`,
+        content: `Projeto feito em grupo utilizando a metodologia ágil Scrum onde usamos 
+        pela  primeira vez o conceito de  estado global, nesse projeto utilizamos o Redux 
+        para podermos usá-lo e aplicamos o redux thunk para lidarmos com as requisições.`,
       },
       {
         id: 2,
@@ -158,9 +157,9 @@ const langague = {
         repository: 'https://github.com/Pedro0505/projeto-to-do-list',
         deploy: 'https://pedro-silva-todo-list.vercel.app',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/todo.gif?raw=true',
-        content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
-        of type and scrambled it to make a typespecimen book. 
-        It has survived not only five centuries, but also the leap into electronic,`,
+        content: `This was the first project that I did manipulating the DOM and done only
+        with Javascript, Html5 and CSS the application consists of being able to draw 
+        pixel simple arts using the browser.`,
       },
       // {
       //   id: 4,
@@ -178,9 +177,9 @@ const langague = {
         repository: 'https://github.com/Pedro0505/projeto-frontend-online-store',
         deploy: 'https://pedro-silva-fonline-store.vercel.app',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/online-store.gif?raw=true',
-        content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
-        of type and scrambled it to make a typespecimen book. 
-        It has survived not only five centuries, but also the leap into electronic,`,
+        content: `Group project where we use the agile Scrum methodology to
+        development, in this application we use the free market API to create
+        a small virtual store.`,
       },
     ],
     about: [
