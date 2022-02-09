@@ -1,5 +1,3 @@
-const img = 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/todo-list.png?raw=true,content';
-
 const langague = {
   Português: {
     footer: {
@@ -67,16 +65,16 @@ const langague = {
         of type and scrambled it to make a typespecimen book. 
         It has survived not only five centuries, but also the leap into electronic,`,
       },
-      {
-        id: 4,
-        title: 'Projeto Recipe App',
-        repository: 'https://github.com/Pedro0505/projeto-recipe-app',
-        deploy: 'https://projeto-recipe-app.vercel.app',
-        image: img,
-        content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
-        of type and scrambled it to make a typespecimen book. 
-        It has survived not only five centuries, but also the leap into electronic,`,
-      },
+      // {
+      //   id: 4,
+      //   title: 'Projeto Recipe App',
+      //   repository: 'https://github.com/Pedro0505/projeto-recipe-app',
+      //   deploy: 'https://projeto-recipe-app.vercel.app',
+      //   image: img,
+      //   content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley
+      //   of type and scrambled it to make a typespecimen book.
+      //   It has survived not only five centuries, but also the leap into electronic,`,
+      // },
       {
         id: 5,
         title: 'Projeto FrontEnd Online Store',
@@ -165,16 +163,16 @@ const langague = {
         of type and scrambled it to make a typespecimen book. 
         It has survived not only five centuries, but also the leap into electronic,`,
       },
-      {
-        id: 4,
-        title: 'Projeto Recipe App',
-        repository: 'https://github.com/Pedro0505/projeto-recipe-app',
-        deploy: 'https://projeto-recipe-app.vercel.app',
-        image: img,
-        content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
-        of type and scrambled it to make a typespecimen book. 
-        It has survived not only five centuries, but also the leap into electronic,`,
-      },
+      // {
+      //   id: 4,
+      //   title: 'Projeto Recipe App',
+      //   repository: 'https://github.com/Pedro0505/projeto-recipe-app',
+      //   deploy: 'https://projeto-recipe-app.vercel.app',
+      //   image: img,
+      //   content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley
+      //   of type and scrambled it to make a typespecimen book.
+      //   It has survived not only five centuries, but also the leap into electronic,`,
+      // },
       {
         id: 5,
         title: 'Projeto FrontEnd Online Store',
