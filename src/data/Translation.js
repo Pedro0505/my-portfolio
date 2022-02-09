@@ -31,9 +31,8 @@ const langague = {
         repository: 'https://github.com/Pedro0505/Cronometro-React-TS',
         deploy: 'https://pedrodev-cronometro.vercel.app/',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/timer.gif?raw=true',
-        content: `Lorem Ipsum is simply dummy text of the printing and  the industrys the
-        ,when an unknown printer took a galley of type and scrambled it to make a
-        book.  It has survived not only five centuries, but also the leap into electron`,
+        content: `Um timer feito com React TypeScript, foi minha primeira experiência com
+        o typescript que me ajudou a firmar conceitos da linguagem`,
       },
       {
         id: 1,
