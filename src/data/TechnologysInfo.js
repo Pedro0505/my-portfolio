@@ -53,7 +53,31 @@ const dataTechnologys = [
     content: 'Redux',
     width: '22px',
     alt: 'Logo do Redux',
-    url: 'https://redux.js.org/',
+    url: 'https://github.com/Pedro0505/projeto-trivia-redux',
+  },
+  {
+    id: 7,
+    images: 'https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png',
+    content: 'TypeScript',
+    width: '22px',
+    alt: 'Logo do TypeScript',
+    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=typescript&sort=',
+  },
+  {
+    id: 8,
+    images: 'https://mlohrktvfr9b.i.optimole.com/scftOdE.tVDx~16b5e/w:702/h:702/q:90/https://www.nerdstickers.com.br/wp-content/uploads/2021/03/adesivo-00-figma-ns.png',
+    content: 'Figma',
+    width: '22px',
+    alt: 'Logo do Figma',
+    url: 'https://www.figma.com/',
+  },
+  {
+    id: 9,
+    images: 'https://miro.medium.com/max/1400/1*FeiTcE7xAIKhNrRa-2_oiQ.png',
+    content: 'SASS',
+    width: '22px',
+    alt: 'Logo do SASS',
+    url: 'https://github.com/Pedro0505/Cronometro-React-TS',
   },
 ];
 
