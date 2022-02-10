@@ -79,6 +79,14 @@ const dataTechnologys = [
     alt: 'Logo do SASS',
     url: 'https://github.com/Pedro0505/Cronometro-React-TS',
   },
+  {
+    id: 10,
+    images: 'https://nx.dev/documentation/shared/jest-logo.png',
+    content: 'Jest',
+    width: '22px',
+    alt: 'Logo do Jest',
+    url: 'https://jestjs.io/pt-BR/',
+  },
 ];
 
 export default dataTechnologys;
