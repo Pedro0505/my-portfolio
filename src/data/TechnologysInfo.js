@@ -87,6 +87,14 @@ const dataTechnologys = [
     alt: 'Logo do Jest',
     url: 'https://jestjs.io/pt-BR/',
   },
+  {
+    id: 11,
+    images: 'https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png',
+    content: 'Docker',
+    width: '22px',
+    alt: 'Logo do Docker',
+    url: 'https://www.docker.com/',
+  },
 ];
 
 export default dataTechnologys;
