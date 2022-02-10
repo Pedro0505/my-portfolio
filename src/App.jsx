@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import AboutMe from './pages/AboutMe';
 import Contacts from './pages/Contacts';
 import Home from './pages/Home';
@@ -20,13 +20,13 @@ function App() {
         <NavBarProvider>
           <Header />
           <NavBar />
-          <Routes>
-            <Route path="contacts" element={ <Contacts /> } />
-            <Route path="projects" element={ <Projects /> } />
-            <Route path="about" element={ <AboutMe /> } />
-            <Route path="/" element={ <Home /> } />
-            <Route path="*" element={ <NotFound /> } />
-          </Routes>
+          <Switch>
+            <Route path="/contacts" component={ Contacts } />
+            <Route path="/projects" component={ Projects } />
+            <Route path="/about" component={ AboutMe } />
+            <Route path="/" exact component={ Home } />
+            <Route path="/*" component={ NotFound } />
+          </Switch>
           <Footer />
         </NavBarProvider>
       </ThemeProvider>
