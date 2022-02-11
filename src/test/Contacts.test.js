@@ -10,8 +10,6 @@ window.scrollTo = jest.fn();
 
 beforeEach(() => {
   renderWithRouter(<App />);
-  const btnLink = screen.getByRole('link', { name: /contatos/i });
-  userEvent.click(btnLink);
 });
 
 describe('Teste da página de Contatos', () => {
@@ -51,5 +49,12 @@ describe('Teste da página de Contatos', () => {
 
     const paragraphGmail = screen.getByText(/gmail/i);
     expect(paragraphGmail).toBeInTheDocument();
+  });
+  test('Testando a tradução da página de contatos', () => {
+    const selected = screen.getByTestId('language-selected');
+    userEvent.selectOptions(selected, 'English');
+
+    const credits = screen.getByRole('heading', { level: 1, name: /contacts/i });
+    expect(credits).toBeInTheDocument();
   });
 });

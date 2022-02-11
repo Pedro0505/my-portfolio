@@ -7,7 +7,7 @@ describe('Teste da página Not Found', () => {
   test('Testando se o conteúdo do texto está correto', () => {
     const { history } = renderWithRouter(<App />);
 
-    history.push('/wrongplace');
+    history.push('wrongplace');
 
     const text = screen.getByRole('heading', {
       level: 1,
@@ -18,7 +18,7 @@ describe('Teste da página Not Found', () => {
   test('Testando se a imagem aparece na tela', () => {
     const { history } = renderWithRouter(<App />);
 
-    history.push('/wrongplace2');
+    history.push('wrongplace2');
 
     const img = screen.getByRole('img', { name: /not found/i });
     expect(img).toBeInTheDocument();
@@ -27,7 +27,7 @@ describe('Teste da página Not Found', () => {
   das existentes aparece na tela a mensagem de NotFound`, () => {
     const { history } = renderWithRouter(<App />);
 
-    history.push('/wrongplace3');
+    history.push('wrongplace3');
 
     const text = screen.getByRole('heading', {
       level: 1,

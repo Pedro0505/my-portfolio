@@ -62,11 +62,4 @@ describe('Testando a funcionalidade da seleção de linguas', () => {
       { level: 3, name: /made with react and css/i });
     expect(developed).toBeInTheDocument();
   });
-  test('Testando a página de contatos', () => {
-    const btnLink = screen.getByRole('link', { name: /contacts/i });
-    userEvent.click(btnLink);
-
-    const credits = screen.getByRole('heading', { level: 1, name: /contacts/i });
-    expect(credits).toBeInTheDocument();
-  });
 });

@@ -20,15 +20,15 @@ function LinkNavigation() {
         <Home style={ { fontSize: '2em', marginRight: '10px' } } />
         { navHome }
       </Link>
-      <Link onClick={ handleClick } to="/about">
+      <Link onClick={ handleClick } to="about">
         <Person style={ { fontSize: '2em', marginRight: '10px' } } />
         { navAbout }
       </Link>
-      <Link onClick={ handleClick } to="/contacts">
+      <Link onClick={ handleClick } to="contacts">
         <Call style={ { fontSize: '2em', marginRight: '10px' } } />
         { navContacts }
       </Link>
-      <Link onClick={ handleClick } to="/projects">
+      <Link onClick={ handleClick } to="projects">
         <PostAdd style={ { fontSize: '2em', marginRight: '10px' } } />
         { navProjects }
       </Link>
