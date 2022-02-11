@@ -2,12 +2,12 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
-import renderWithRouter from '../services/renderWithRouter';
+import renderWithRouter from './utils/renderWithRouter';
 
 window.scrollTo = jest.fn();
 
 beforeEach(() => {
-  renderWithRouter(<App />);
+  renderWithRouter(<App />, '/');
   const selected = screen.getByTestId('language-selected');
   userEvent.selectOptions(selected, 'English');
 });

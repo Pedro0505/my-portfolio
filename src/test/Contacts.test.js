@@ -1,15 +1,14 @@
 /* eslint-disable no-undef */
-
 import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import renderWithRouter from '../services/renderWithRouter';
 import App from '../App';
+import renderWithRouter from './utils/renderWithRouter';
 
 window.scrollTo = jest.fn();
 
 beforeEach(() => {
-  renderWithRouter(<App />);
+  renderWithRouter(<App />, '/contacts');
 });
 
 describe('Teste da página de Contatos', () => {
