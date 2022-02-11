@@ -1,17 +1,14 @@
 /* eslint-disable no-undef */
-
 import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import renderWithRouter from '../services/renderWithRouter';
 import App from '../App';
+import renderWithRouter from './utils/renderWithRouter';
 
 window.scrollTo = jest.fn();
 
 beforeEach(() => {
-  renderWithRouter(<App />);
-  const btnLink = screen.getByRole('link', { name: /contatos/i });
-  userEvent.click(btnLink);
+  renderWithRouter(<App />, '/contacts');
 });
 
 describe('Teste da página de Contatos', () => {
@@ -51,5 +48,12 @@ describe('Teste da página de Contatos', () => {
 
     const paragraphGmail = screen.getByText(/gmail/i);
     expect(paragraphGmail).toBeInTheDocument();
+  });
+  test('Testando a tradução da página de contatos', () => {
+    const selected = screen.getByTestId('language-selected');
+    userEvent.selectOptions(selected, 'English');
+
+    const credits = screen.getByRole('heading', { level: 1, name: /contacts/i });
+    expect(credits).toBeInTheDocument();
   });
 });

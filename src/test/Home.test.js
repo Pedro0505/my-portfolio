@@ -2,7 +2,7 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
-import renderWithRouter from '../services/renderWithRouter';
+import renderWithRouter from './utils/renderWithRouter';
 import '@testing-library/jest-dom/extend-expect';
 
 window.scrollTo = jest.fn();

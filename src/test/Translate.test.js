@@ -2,12 +2,12 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
-import renderWithRouter from '../services/renderWithRouter';
+import renderWithRouter from './utils/renderWithRouter';
 
 window.scrollTo = jest.fn();
 
 beforeEach(() => {
-  renderWithRouter(<App />);
+  renderWithRouter(<App />, '/');
   const selected = screen.getByTestId('language-selected');
   userEvent.selectOptions(selected, 'English');
 });
@@ -61,12 +61,5 @@ describe('Testando a funcionalidade da seleção de linguas', () => {
     const developed = screen.getByRole('heading',
       { level: 3, name: /made with react and css/i });
     expect(developed).toBeInTheDocument();
-  });
-  test('Testando a página de contatos', () => {
-    const btnLink = screen.getByRole('link', { name: /contacts/i });
-    userEvent.click(btnLink);
-
-    const credits = screen.getByRole('heading', { level: 1, name: /contacts/i });
-    expect(credits).toBeInTheDocument();
   });
 });
