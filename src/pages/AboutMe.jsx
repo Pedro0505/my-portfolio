@@ -7,11 +7,11 @@ function AboutMe() {
   const { aboutme: { headingAbout, headingSkills } } = Translation[language];
   return (
     <main className="contanier-about">
-      <section className="about-infos">
-        <h1>{ headingAbout }</h1>
+      <section className="about-infos container-typing-about">
+        <h1 className="typing-about">{ headingAbout }</h1>
       </section>
-      <section className="container-skills">
-        <h1>{ headingSkills }</h1>
+      <section className="container-skills container-typing-about">
+        <h1 className="typing-about">{ headingSkills }</h1>
         <Technologys />
       </section>
     </main>
