@@ -24,6 +24,7 @@ const langague = {
       headingAbout: 'Um Pouco Sobre Mim...',
       headingSkills: 'Minhas Habilidades',
     },
+    projectHeading: 'Projetos',
     project: [
       {
         id: 0,
@@ -121,6 +122,7 @@ const langague = {
       headingAbout: 'A Little About Myself...',
       headingSkills: 'My skills',
     },
+    projectHeading: 'Projects',
     project: [
       {
         id: 0,
