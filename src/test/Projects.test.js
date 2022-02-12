@@ -1,6 +1,50 @@
 /* eslint-disable no-undef */
+import React from 'react';
+import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import App from '../App';
+import Translation from '../data/Translation';
+import renderWithRouter from './utils/renderWithRouter';
 
-describe('', () => {
-  test('', () => {
+const { Português: { project: projeto } } = Translation;
+const { English: { project } } = Translation;
+
+beforeAll(() => {
+  Element.prototype.scrollTo = () => {};
+});
+
+describe('Teste da página de projetos em português', () => {
+  beforeEach(() => {
+    renderWithRouter(<App />, '/projects');
+  });
+
+  test('Se o título aparece na tela', () => {
+    const heading = screen.getByTestId('heading-project');
+    expect(heading).toBeInTheDocument();
+  });
+  test('Se os projetos estão aparecendo', () => {
+    projeto.forEach((e) => {
+      const projectContent = screen.getByTestId(`${e.title}-${e.id}`);
+      expect(projectContent).toBeInTheDocument();
+    });
+  });
+});
+
+describe('Teste da página de projetos em inglês', () => {
+  beforeEach(() => {
+    renderWithRouter(<App />, '/projects');
+    const selected = screen.getByTestId('language-selected');
+    userEvent.selectOptions(selected, 'English');
+  });
+
+  test('Se o título aparece na tela', () => {
+    const heading = screen.getByTestId('heading-project');
+    expect(heading).toBeInTheDocument();
+  });
+  test('Se os projetos estão aparecendo', () => {
+    project.forEach((e) => {
+      const projectContent = screen.getByTestId(`${e.title}-${e.id}`);
+      expect(projectContent).toBeInTheDocument();
+    });
   });
 });
