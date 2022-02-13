@@ -95,6 +95,14 @@ const dataTechnologys = [
     alt: 'Logo do Docker',
     url: 'https://www.docker.com/',
   },
+  {
+    id: 12,
+    images: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png',
+    content: 'NodeJs',
+    width: '22px',
+    alt: 'Logo do NodeJs',
+    url: 'https://nodejs.dev/',
+  },
 ];
 
 export default dataTechnologys;
