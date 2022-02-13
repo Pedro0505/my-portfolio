@@ -16,6 +16,7 @@ class Technologys extends Component {
               key={ e.id }
               target="_blank"
               rel="noreferrer"
+              data-testid={ `${e.content}-${e.id}` }
             >
               <img
                 src={ e.images }
