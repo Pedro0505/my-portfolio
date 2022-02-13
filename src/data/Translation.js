@@ -120,7 +120,7 @@ const langague = {
     },
     aboutme: {
       headingAbout: 'A Little About Myself...',
-      headingSkills: 'My skills',
+      headingSkills: 'My Skills',
     },
     projectHeading: 'Projects',
     project: [
