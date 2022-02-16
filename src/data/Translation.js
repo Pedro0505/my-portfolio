@@ -21,7 +21,18 @@ const langague = {
       navProjects: 'Projetos',
     },
     aboutme: {
-      headingAbout: 'Um Pouco Sobre Mim...',
+      about: {
+        headingAbout: 'Um Pouco Sobre Mim...',
+        content: `Olá!!! Meu nome é Pedro e aqui eu vou contantar um pouco da
+        minha história... Eu tenho 18 anos, sou de Recife capital de Pernambuco,
+        entrei no mundo da programação em julho de 2021, quando comecei a estudar
+        pela Trybe, onde me apaixonei por essa área, a minha decisão de entrar para
+        o mundo da programação veio após um período de indecisão do que fazer depois
+        de terminar a escola, me vi entrando em uma faculdade que não me encaixava,
+        então quando descobri sobre a Trybe eu logo percebi que era nesse lugar que eu
+        queria me formar e programar era algo que eu queria fazer pelo resto da minha
+        vida. E assim iniciou minha jornada nesse incrível mundo.`,
+      },
       headingSkills: 'Minhas Habilidades',
     },
     projectHeading: 'Projetos',
@@ -119,7 +130,12 @@ const langague = {
       navProjects: 'Projects',
     },
     aboutme: {
-      headingAbout: 'A Little About Myself...',
+      about: {
+        headingAbout: 'A Little About Myself...',
+        content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley
+        of type and scrambled it to make a typespecimen book.
+        It has survived not only five centuries, but also the leap into electronic,`,
+      },
       headingSkills: 'My Skills',
     },
     projectHeading: 'Projects',

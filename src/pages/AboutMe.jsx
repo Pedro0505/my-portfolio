@@ -4,11 +4,14 @@ import { LanguageContext } from '../context/LanguageContext';
 
 function AboutMe() {
   const { language, Translation } = useContext(LanguageContext);
-  const { aboutme: { headingAbout, headingSkills } } = Translation[language];
+  const { aboutme: { about, headingSkills } } = Translation[language];
   return (
     <main className="contanier-about">
       <section className="about-infos container-typing-about">
-        <h1 className="typing-about">{ headingAbout }</h1>
+        <h1 className="typing-about">{ about.headingAbout }</h1>
+        <div className="conteiner-content-about">
+          <p className="content-about">{ about.content }</p>
+        </div>
       </section>
       <section className="container-skills container-typing-about">
         <h1 className="typing-about">{ headingSkills }</h1>

@@ -56,11 +56,13 @@ header section select {
     display: none;
   }
 
-  header section h1 {
-    display: none;
-  }
-
   .menu-button {
     display: block;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  header section h1 {
+    display: none;
   }
 }
