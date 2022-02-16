@@ -132,9 +132,15 @@ const langague = {
     aboutme: {
       about: {
         headingAbout: 'A Little About Myself...',
-        content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley
-        of type and scrambled it to make a typespecimen book.
-        It has survived not only five centuries, but also the leap into electronic,`,
+        content: `Hi!!! My name is Pedro and here I'm going to tell you a little 
+        bit of my story... I'm 18 years old, I'm from Recife, capital of Pernambuco, 
+        I entered the programming world in July 2021, when I started studying at Trybe, 
+        where I fell in love with In this area, my decision to enter the world of 
+        programming came after a period of indecision of what to do after finishing 
+        school, I found myself entering a college that didn't fit me, so when I found 
+        out about Trybe I soon realized that it was this place where I wanted to graduate 
+        and programming was something I wanted to do for the rest of my life. And so began
+        my journey in this amazing world.`,
       },
       headingSkills: 'My Skills',
     },
