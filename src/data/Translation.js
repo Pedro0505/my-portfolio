@@ -70,7 +70,7 @@ const langague = {
         title: 'Projeto Recipe App',
         repository: 'https://github.com/Pedro0505/projeto-recipe-app',
         deploy: 'https://projeto-recipe-app.vercel.app',
-        image: '',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/recipe-app.png?raw=true',
         content: `Projeto desenvolvido em grupo, onde nós usamos ReactJs com Context Api, 
         onde fizemos teste de integração para a aplicação, nele desenvolvemos um app 
         de receitas.`,
@@ -119,7 +119,9 @@ const langague = {
         repository: 'https://github.com/Pedro0505/web-chat',
         deploy: '',
         image: 'https://www.nerdsite.com.br/wp-content/uploads/2021/12/luffy-wano.jpg',
-        content: 'A',
+        content: `Um projeto onde desenvolvi um chat em tempo real, usando ReactJs 
+        com Context Api no frontend, e para backend utilizei NodeJs com Express e 
+        Socket.Io. (Ainda está em desenvolvimento)`,
         textDeploy: 'Sem deploy...',
         textRepository: textRepositoryPt,
       },
@@ -191,7 +193,7 @@ const langague = {
         title: 'Projeto Recipe App',
         repository: 'https://github.com/Pedro0505/projeto-recipe-app',
         deploy: 'https://projeto-recipe-app.vercel.app',
-        image: '',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/recipe-app.png?raw=true',
         content: `Project developed as a group, where we used ReactJs with Context 
         Api, where we did integration testing for the application, in which we developed 
         a recipe app.`,
@@ -240,7 +242,9 @@ const langague = {
         repository: 'https://github.com/Pedro0505/web-chat',
         deploy: '',
         image: 'https://i.pinimg.com/originals/f0/af/cb/f0afcbce7ed4a7df7b822964501bf995.jpg',
-        content: 'A',
+        content: `A project where I developed a real-time chat, using ReactJs with 
+        Context Api on the frontend, and for the backend I used NodeJs with Express 
+        and Socket.Io. (Still in development)`,
         textDeploy: 'No deploy yet...',
         textRepository: textRepositoryEn,
       },
