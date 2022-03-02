@@ -118,7 +118,7 @@ const langague = {
         title: 'Projeto Web Chat',
         repository: 'https://github.com/Pedro0505/web-chat',
         deploy: '',
-        image: 'https://www.nerdsite.com.br/wp-content/uploads/2021/12/luffy-wano.jpg',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/web-chat.png?raw=true',
         content: `Um projeto onde desenvolvi um chat em tempo real, usando ReactJs 
         com Context Api no frontend, e para backend utilizei NodeJs com Express e 
         Socket.Io. (Ainda está em desenvolvimento)`,
@@ -241,7 +241,7 @@ const langague = {
         title: 'Projeto Web Chat',
         repository: 'https://github.com/Pedro0505/web-chat',
         deploy: '',
-        image: 'https://i.pinimg.com/originals/f0/af/cb/f0afcbce7ed4a7df7b822964501bf995.jpg',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/web-chat.png?raw=true',
         content: `A project where I developed a real-time chat, using ReactJs with 
         Context Api on the frontend, and for the backend I used NodeJs with Express 
         and Socket.Io. (Still in development)`,
