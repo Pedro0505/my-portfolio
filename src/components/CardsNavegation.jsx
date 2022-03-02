@@ -3,7 +3,7 @@ import React from 'react';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-function CardsNavegation({ repository, deploy }) {
+function CardsNavegation({ repository, deploy, textDeploy, textRepository }) {
   return (
     <nav className="container-icons">
       <div className="icon-content">
@@ -16,7 +16,7 @@ function CardsNavegation({ repository, deploy }) {
           <GitHubIcon className="icon" style={ { fontSize: '2.5em' } } />
         </a>
         <a href={ repository } target="_blank" rel="noreferrer">
-          Ir para o repositório
+          {textRepository}
         </a>
       </div>
 
@@ -30,7 +30,7 @@ function CardsNavegation({ repository, deploy }) {
           <ArrowForwardIcon className="icon" style={ { fontSize: '2.5em' } } />
         </a>
         <a href={ deploy } target="_blank" rel="noreferrer">
-          Ir para o deploy
+          {textDeploy}
         </a>
       </div>
     </nav>
@@ -40,6 +40,8 @@ function CardsNavegation({ repository, deploy }) {
 CardsNavegation.propTypes = {
   repository: PropTypes.string.isRequired,
   deploy: PropTypes.string.isRequired,
+  textRepository: PropTypes.string.isRequired,
+  textDeploy: PropTypes.string.isRequired,
 };
 
 export default CardsNavegation;

@@ -20,7 +20,9 @@ function Projects() {
       </section>
       <Carousel>
         {
-          project.map(({ id, title, image, content, repository, deploy }) => (
+          project.map(({
+            id, title, image, content, repository, deploy, textDeploy, textRepository,
+          }) => (
             <ProjectsCards
               key={ id }
               title={ title }
@@ -29,6 +31,8 @@ function Projects() {
               content={ content }
               repository={ repository }
               deploy={ deploy }
+              textRepository={ textRepository }
+              textDeploy={ textDeploy }
             />
           ))
         }

@@ -1,3 +1,8 @@
+const textDeployPt = 'Ir para o deploy';
+const textRepositoryPt = 'Ir para o repositório';
+const textDeployEn = 'Go to deploy';
+const textRepositoryEn = 'Go to repository';
+
 const langague = {
   Português: {
     footer: {
@@ -45,6 +50,8 @@ const langague = {
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/timer.gif?raw=true',
         content: `Um timer feito com React TypeScript, foi minha primeira experiência com
         o typescript que me ajudou a firmar conceitos da linguagem.`,
+        textDeploy: textDeployPt,
+        textRepository: textRepositoryPt,
       },
       {
         id: 1,
@@ -55,17 +62,21 @@ const langague = {
         content: `Projeto feito em grupo utilizando a metodologia ágil Scrum onde usamos 
         pela  primeira vez o conceito de  estado global, nesse projeto utilizamos o Redux 
         para podermos usá-lo e aplicamos o redux thunk para lidarmos com as requisições.`,
+        textDeploy: textDeployPt,
+        textRepository: textRepositoryPt,
       },
-      // {
-      //   id: 2,
-      //   title: 'Projeto Recipe App',
-      //   repository: 'https://github.com/Pedro0505/projeto-recipe-app',
-      //   deploy: 'https://projeto-recipe-app.vercel.app',
-      //   image: img,
-      //   content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley
-      //   of type and scrambled it to make a typespecimen book.
-      //   It has survived not only five centuries, but also the leap into electronic,`,
-      // },
+      {
+        id: 2,
+        title: 'Projeto Recipe App',
+        repository: 'https://github.com/Pedro0505/projeto-recipe-app',
+        deploy: 'https://projeto-recipe-app.vercel.app',
+        image: '',
+        content: `Projeto desenvolvido em grupo, onde nós usamos ReactJs com Context Api, 
+        onde fizemos teste de integração para a aplicação, nele desenvolvemos um app 
+        de receitas.`,
+        textDeploy: textDeployPt,
+        textRepository: textRepositoryPt,
+      },
       {
         id: 3,
         title: 'Projeto FrontEnd Online Store',
@@ -75,6 +86,8 @@ const langague = {
         content: `Projeto em grupo onde utilizamos a metodologia ágil Scrum para 
         o desenvolvimento, nessa aplicação usamos a Api do mercado livre para criarmos
         uma pequena lojinha virtual.`,
+        textDeploy: textDeployPt,
+        textRepository: textRepositoryPt,
       },
       {
         id: 4,
@@ -85,6 +98,8 @@ const langague = {
         content: `Esse foi o primeiro projeto que fiz manipulando o DOM e feito somente 
         com Javascript, Html5 e CSS a aplicação consiste em conseguir desenhar pixel
         arts simples usando o browser.`,
+        textDeploy: textDeployPt,
+        textRepository: textRepositoryPt,
       },
       {
         id: 5,
@@ -95,16 +110,18 @@ const langague = {
         content: `Aplicação feita com Javascript, Html5 e CSS foi um dos primeiros 
         projetos que fiz manipulando o DOM, a aplicação é um To Do List com algumas
         funcionalidades.`,
-      },
-    ],
-    about: [
-      {
-        img: '',
-        content: '',
+        textDeploy: textDeployPt,
+        textRepository: textRepositoryPt,
       },
       {
-        img: '',
-        content: '',
+        id: 6,
+        title: 'Projeto Web Chat',
+        repository: 'https://github.com/Pedro0505/web-chat',
+        deploy: '',
+        image: 'https://www.nerdsite.com.br/wp-content/uploads/2021/12/luffy-wano.jpg',
+        content: 'A',
+        textDeploy: 'Sem deploy...',
+        textRepository: textRepositoryPt,
       },
     ],
   },
@@ -154,6 +171,8 @@ const langague = {
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/timer.gif?raw=true',
         content: `A timer made with React TypeScript, it was my first experience with
         the typescript that helped me to establish concepts of the language.`,
+        textDeploy: textDeployEn,
+        textRepository: textRepositoryEn,
       },
       {
         id: 1,
@@ -164,17 +183,21 @@ const langague = {
         content: `Projeto feito em grupo utilizando a metodologia ágil Scrum onde usamos 
         pela  primeira vez o conceito de  estado global, nesse projeto utilizamos o Redux 
         para podermos usá-lo e aplicamos o redux thunk para lidarmos com as requisições.`,
+        textDeploy: textDeployEn,
+        textRepository: textRepositoryEn,
       },
-      // {
-      //   id: 2,
-      //   title: 'Projeto Recipe App',
-      //   repository: 'https://github.com/Pedro0505/projeto-recipe-app',
-      //   deploy: 'https://projeto-recipe-app.vercel.app',
-      //   image: img,
-      //   content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley
-      //   of type and scrambled it to make a typespecimen book.
-      //   It has survived not only five centuries, but also the leap into electronic,`,
-      // },
+      {
+        id: 2,
+        title: 'Projeto Recipe App',
+        repository: 'https://github.com/Pedro0505/projeto-recipe-app',
+        deploy: 'https://projeto-recipe-app.vercel.app',
+        image: '',
+        content: `Project developed as a group, where we used ReactJs with Context 
+        Api, where we did integration testing for the application, in which we developed 
+        a recipe app.`,
+        textDeploy: textDeployEn,
+        textRepository: textRepositoryEn,
+      },
       {
         id: 3,
         title: 'Projeto FrontEnd Online Store',
@@ -184,6 +207,8 @@ const langague = {
         content: `Group project where we use the agile Scrum methodology to
         development, in this application we use the free market API to create
         a small virtual store.`,
+        textDeploy: textDeployEn,
+        textRepository: textRepositoryEn,
       },
       {
         id: 4,
@@ -191,9 +216,11 @@ const langague = {
         repository: 'https://github.com/Pedro0505/projeto-pixel-art',
         deploy: 'https://pedro-silva-pixel-art.vercel.app',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/pixel.gif?raw=true',
-        content: `Lorem Ipsum is the 1500s,when an unknown printer took a galley 
-        of type and scrambled it to make a typespecimen book. 
-        It has survived not only five centuries, but also the leap into electronic,`,
+        content: `This was the first project that I did manipulating the DOM and done only
+        with Javascript, Html5 and CSS the application consists of being able to draw 
+        pixel simple arts using the browser.`,
+        textDeploy: textDeployEn,
+        textRepository: textRepositoryEn,
       },
       {
         id: 5,
@@ -201,19 +228,21 @@ const langague = {
         repository: 'https://github.com/Pedro0505/projeto-to-do-list',
         deploy: 'https://pedro-silva-todo-list.vercel.app',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/todo.gif?raw=true',
-        content: `This was the first project that I did manipulating the DOM and done only
-        with Javascript, Html5 and CSS the application consists of being able to draw 
-        pixel simple arts using the browser.`,
-      },
-    ],
-    about: [
-      {
-        img: '',
-        content: '',
+        content: `Application made with Javascript, Html5 and CSS was one of the first
+        projects I made manipulating the DOM, the application is a To Do List with some
+        functionalities.`,
+        textDeploy: textDeployEn,
+        textRepository: textRepositoryEn,
       },
       {
-        img: '',
-        content: '',
+        id: 6,
+        title: 'Projeto Web Chat',
+        repository: 'https://github.com/Pedro0505/web-chat',
+        deploy: '',
+        image: 'https://i.pinimg.com/originals/f0/af/cb/f0afcbce7ed4a7df7b822964501bf995.jpg',
+        content: 'A',
+        textDeploy: 'No deploy yet...',
+        textRepository: textRepositoryEn,
       },
     ],
   },

@@ -19,6 +19,7 @@
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "object-curly-newline": [0, { "multiline": true, "minProperties": 4 }],
         "import/no-extraneous-dependencies": [0, {"devDependencies": [".test.js", ".spec.js", ".js"]}],
-        "no-console": ["off"]
+        "no-console": ["off"],
+        "max-lines": "off"
     }
 }
