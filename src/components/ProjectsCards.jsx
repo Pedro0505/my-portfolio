@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import CardsNavegation from './CardsNavegation';
 
 function ProjectsCards(
-  { title, image, content, repository, deploy, testId, textDeploy, textRepository },
+  { title, image, content, dislable,
+    repository, deploy, testId, textDeploy, textRepository },
 ) {
   return (
     <section className="cards-projects">
@@ -15,10 +16,15 @@ function ProjectsCards(
         deploy={ deploy }
         textDeploy={ textDeploy }
         textRepository={ textRepository }
+        dislable={ dislable }
       />
     </section>
   );
 }
+
+ProjectsCards.defaultProps = {
+  dislable: false,
+};
 
 ProjectsCards.propTypes = {
   content: PropTypes.string.isRequired,
@@ -29,6 +35,7 @@ ProjectsCards.propTypes = {
   testId: PropTypes.string.isRequired,
   textDeploy: PropTypes.string.isRequired,
   textRepository: PropTypes.string.isRequired,
+  dislable: PropTypes.bool,
 };
 
 export default ProjectsCards;

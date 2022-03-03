@@ -3,7 +3,7 @@ import React from 'react';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-function CardsNavegation({ repository, deploy, textDeploy, textRepository }) {
+function CardsNavegation({ repository, deploy, textDeploy, textRepository, dislable }) {
   return (
     <nav className="container-icons">
       <div className="icon-content">
@@ -26,10 +26,16 @@ function CardsNavegation({ repository, deploy, textDeploy, textRepository }) {
           target="_blank"
           rel="noreferrer"
           className="icons-projects"
+          style={ dislable ? { pointerEvents: 'none' } : { cursor: 'pointer' } }
         >
           <ArrowForwardIcon className="icon" style={ { fontSize: '2.5em' } } />
         </a>
-        <a href={ deploy } target="_blank" rel="noreferrer">
+        <a
+          href={ deploy }
+          target="_blank"
+          rel="noreferrer"
+          style={ dislable ? { pointerEvents: 'none' } : { cursor: 'pointer' } }
+        >
           {textDeploy}
         </a>
       </div>
@@ -37,11 +43,16 @@ function CardsNavegation({ repository, deploy, textDeploy, textRepository }) {
   );
 }
 
+CardsNavegation.defaultProps = {
+  dislable: false,
+};
+
 CardsNavegation.propTypes = {
   repository: PropTypes.string.isRequired,
   deploy: PropTypes.string.isRequired,
   textRepository: PropTypes.string.isRequired,
   textDeploy: PropTypes.string.isRequired,
+  dislable: PropTypes.bool,
 };
 
 export default CardsNavegation;

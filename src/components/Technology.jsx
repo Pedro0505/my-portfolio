@@ -9,14 +9,14 @@ class Technologys extends Component {
     return (
       <section className="technologies">
         {
-          TechnologysInfo.map((e) => (
+          TechnologysInfo.map((e, index) => (
             <a
               href={ e.url }
               className="card-technology"
-              key={ e.id }
+              key={ index }
               target="_blank"
               rel="noreferrer"
-              data-testid={ `${e.content}-${e.id}` }
+              data-testid={ `${e.content}-${index}` }
             >
               <img
                 src={ e.images }

@@ -21,18 +21,20 @@ function Projects() {
       <Carousel>
         {
           project.map(({
-            id, title, image, content, repository, deploy, textDeploy, textRepository,
-          }) => (
+            title, image, dislable,
+            content, repository, deploy, textDeploy, textRepository,
+          }, index) => (
             <ProjectsCards
-              key={ id }
+              key={ `${title}-${index}` }
               title={ title }
               image={ image }
-              testId={ `${title}-${id}` }
+              testId={ `${title}-${index}` }
               content={ content }
               repository={ repository }
               deploy={ deploy }
               textRepository={ textRepository }
               textDeploy={ textDeploy }
+              dislable={ dislable }
             />
           ))
         }

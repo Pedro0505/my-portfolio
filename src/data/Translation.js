@@ -43,7 +43,18 @@ const langague = {
     projectHeading: 'Projetos',
     project: [
       {
-        id: 0,
+        title: 'Projeto Web Chat',
+        repository: 'https://github.com/Pedro0505/web-chat',
+        deploy: '',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/web-chat.png?raw=true',
+        content: `Um projeto onde desenvolvi um chat em tempo real, usando ReactJs 
+        com Context Api no frontend, e para backend utilizei NodeJs com Express e 
+        Socket.Io. (Ainda está em desenvolvimento)`,
+        textDeploy: 'Sem deploy...',
+        textRepository: textRepositoryPt,
+        dislable: true,
+      },
+      {
         title: 'Projeto Cronômetro',
         repository: 'https://github.com/Pedro0505/Cronometro-React-TS',
         deploy: 'https://pedrodev-cronometro.vercel.app/',
@@ -54,7 +65,6 @@ const langague = {
         textRepository: textRepositoryPt,
       },
       {
-        id: 1,
         title: 'Projeto Trivia Redux',
         repository: 'https://github.com/Pedro0505/projeto-trivia-redux',
         deploy: 'https://pedro-silva-trivia-redux.vercel.app',
@@ -66,7 +76,6 @@ const langague = {
         textRepository: textRepositoryPt,
       },
       {
-        id: 2,
         title: 'Projeto Recipe App',
         repository: 'https://github.com/Pedro0505/projeto-recipe-app',
         deploy: 'https://projeto-recipe-app.vercel.app',
@@ -78,7 +87,6 @@ const langague = {
         textRepository: textRepositoryPt,
       },
       {
-        id: 3,
         title: 'Projeto FrontEnd Online Store',
         repository: 'https://github.com/Pedro0505/projeto-frontend-online-store',
         deploy: 'https://pedro-silva-fonline-store.vercel.app',
@@ -90,7 +98,6 @@ const langague = {
         textRepository: textRepositoryPt,
       },
       {
-        id: 4,
         title: 'Projeto Pixel Art',
         repository: 'https://github.com/Pedro0505/projeto-pixel-art',
         deploy: 'https://pedro-silva-pixel-art.vercel.app',
@@ -102,7 +109,6 @@ const langague = {
         textRepository: textRepositoryPt,
       },
       {
-        id: 5,
         title: 'Projeto ToDo List',
         repository: 'https://github.com/Pedro0505/projeto-to-do-list',
         deploy: 'https://pedro-silva-todo-list.vercel.app',
@@ -111,18 +117,6 @@ const langague = {
         projetos que fiz manipulando o DOM, a aplicação é um To Do List com algumas
         funcionalidades.`,
         textDeploy: textDeployPt,
-        textRepository: textRepositoryPt,
-      },
-      {
-        id: 6,
-        title: 'Projeto Web Chat',
-        repository: 'https://github.com/Pedro0505/web-chat',
-        deploy: '',
-        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/web-chat.png?raw=true',
-        content: `Um projeto onde desenvolvi um chat em tempo real, usando ReactJs 
-        com Context Api no frontend, e para backend utilizei NodeJs com Express e 
-        Socket.Io. (Ainda está em desenvolvimento)`,
-        textDeploy: 'Sem deploy...',
         textRepository: textRepositoryPt,
       },
     ],
@@ -166,7 +160,18 @@ const langague = {
     projectHeading: 'Projects',
     project: [
       {
-        id: 0,
+        title: 'Projeto Web Chat',
+        repository: 'https://github.com/Pedro0505/web-chat',
+        deploy: '',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/web-chat.png?raw=true',
+        content: `A project where I developed a real-time chat, using ReactJs with 
+        Context Api on the frontend, and for the backend I used NodeJs with Express 
+        and Socket.Io. (Still in development)`,
+        textDeploy: 'No deploy yet...',
+        textRepository: textRepositoryEn,
+        dislable: true,
+      },
+      {
         title: 'Projeto Cronômetro',
         repository: 'https://github.com/Pedro0505/Cronometro-React-TS',
         deploy: 'https://pedrodev-cronometro.vercel.app/',
@@ -177,7 +182,6 @@ const langague = {
         textRepository: textRepositoryEn,
       },
       {
-        id: 1,
         title: 'Projeto Trivia Redux',
         repository: 'https://github.com/Pedro0505/projeto-trivia-redux',
         deploy: 'https://pedro-silva-trivia-redux.vercel.app',
@@ -189,7 +193,6 @@ const langague = {
         textRepository: textRepositoryEn,
       },
       {
-        id: 2,
         title: 'Projeto Recipe App',
         repository: 'https://github.com/Pedro0505/projeto-recipe-app',
         deploy: 'https://projeto-recipe-app.vercel.app',
@@ -201,7 +204,6 @@ const langague = {
         textRepository: textRepositoryEn,
       },
       {
-        id: 3,
         title: 'Projeto FrontEnd Online Store',
         repository: 'https://github.com/Pedro0505/projeto-frontend-online-store',
         deploy: 'https://pedro-silva-fonline-store.vercel.app',
@@ -213,7 +215,6 @@ const langague = {
         textRepository: textRepositoryEn,
       },
       {
-        id: 4,
         title: 'Projeto Pixel Art',
         repository: 'https://github.com/Pedro0505/projeto-pixel-art',
         deploy: 'https://pedro-silva-pixel-art.vercel.app',
@@ -225,7 +226,6 @@ const langague = {
         textRepository: textRepositoryEn,
       },
       {
-        id: 5,
         title: 'Projeto ToDo List',
         repository: 'https://github.com/Pedro0505/projeto-to-do-list',
         deploy: 'https://pedro-silva-todo-list.vercel.app',
@@ -234,18 +234,6 @@ const langague = {
         projects I made manipulating the DOM, the application is a To Do List with some
         functionalities.`,
         textDeploy: textDeployEn,
-        textRepository: textRepositoryEn,
-      },
-      {
-        id: 6,
-        title: 'Projeto Web Chat',
-        repository: 'https://github.com/Pedro0505/web-chat',
-        deploy: '',
-        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/web-chat.png?raw=true',
-        content: `A project where I developed a real-time chat, using ReactJs with 
-        Context Api on the frontend, and for the backend I used NodeJs with Express 
-        and Socket.Io. (Still in development)`,
-        textDeploy: 'No deploy yet...',
         textRepository: textRepositoryEn,
       },
     ],
