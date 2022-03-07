@@ -16,8 +16,8 @@ describe('Testando a página about me', () => {
   });
 
   test('Se as tecnologia aparecem na tela', () => {
-    Technologys.forEach((e) => {
-      const projectContent = screen.getByTestId(`${e.content}-${e.id}`);
+    Technologys.forEach((e, index) => {
+      const projectContent = screen.getByTestId(`${e.content}-${index}`);
       expect(projectContent).toBeInTheDocument();
     });
   });

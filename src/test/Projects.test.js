@@ -23,8 +23,8 @@ describe('Teste da página de projetos em português', () => {
     expect(heading).toBeInTheDocument();
   });
   test('Se os projetos estão aparecendo', () => {
-    projeto.forEach((e) => {
-      const projectContent = screen.getByTestId(`${e.title}-${e.id}`);
+    projeto.forEach((e, index) => {
+      const projectContent = screen.getByTestId(`${e.title}-${index}`);
       expect(projectContent).toBeInTheDocument();
     });
   });
@@ -42,8 +42,8 @@ describe('Teste da página de projetos em inglês', () => {
     expect(heading).toBeInTheDocument();
   });
   test('Se os projetos estão aparecendo', () => {
-    project.forEach((e) => {
-      const projectContent = screen.getByTestId(`${e.title}-${e.id}`);
+    project.forEach((e, index) => {
+      const projectContent = screen.getByTestId(`${e.title}-${index}`);
       expect(projectContent).toBeInTheDocument();
     });
   });
