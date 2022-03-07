@@ -44,7 +44,7 @@ const langague = {
     project: [
       {
         title: 'Projeto Web Chat',
-        repository: 'https://github.com/Pedro0505/web-chat',
+        repository: 'https://github.com/Pedro0505/web-chat-front',
         deploy: '',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/web-chat.png?raw=true',
         content: `Um projeto onde desenvolvi um chat em tempo real, usando ReactJs 
@@ -161,7 +161,7 @@ const langague = {
     project: [
       {
         title: 'Projeto Web Chat',
-        repository: 'https://github.com/Pedro0505/web-chat',
+        repository: 'https://github.com/Pedro0505/web-chat-front',
         deploy: '',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/web-chat.png?raw=true',
         content: `A project where I developed a real-time chat, using ReactJs with 

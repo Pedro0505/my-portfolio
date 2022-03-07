@@ -132,10 +132,10 @@
 }
 
 .icon-content:hover {
-  animation: revel-contacts 200ms ease-in-out forwards;
+  animation: revel-project 200ms ease-in-out forwards;
 }
 
-@keyframes revel-contacts {
+@keyframes revel-project {
   0% {
     border-radius: 50%;
     width: 16.5%;
