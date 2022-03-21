@@ -77,7 +77,7 @@ const dataTechnologys = [
     url: 'https://jestjs.io/pt-BR/',
   },
   {
-    images: 'https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png',
+    images: 'https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png',
     content: 'Docker',
     width: '22px',
     alt: 'Logo do Docker',
