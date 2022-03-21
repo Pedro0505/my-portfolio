@@ -44,15 +44,14 @@ const langague = {
     project: [
       {
         title: 'Projeto Web Chat',
-        repository: 'https://github.com/Pedro0505/web-chat-front',
-        deploy: '',
+        repository: 'https://github.com/Pedro0505/web-chat-frontend',
+        deploy: 'https://pedro-web-chat.vercel.app',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/web-chat.png?raw=true',
         content: `Um projeto onde desenvolvi um chat em tempo real, usando ReactJs 
         com Context Api no frontend, e para backend utilizei NodeJs com Express e 
         Socket.Io. (Ainda está em desenvolvimento)`,
-        textDeploy: 'Sem deploy...',
+        textDeploy: textDeployPt,
         textRepository: textRepositoryPt,
-        dislable: true,
       },
       {
         title: 'Projeto Cronômetro',

@@ -1,6 +1,5 @@
 img.profile-picture {
   border-radius: 50%;
-  margin: 50px;
   box-shadow: 0 0 0 2px black;
   width: 30vw;
   height: 30vw;
@@ -9,8 +8,8 @@ img.profile-picture {
 .main-contanier {
   display: flex;
   justify-content: space-around;
-  margin-right: 130px;
-  margin-top: 70px;
+  height: 90vh;
+  align-items: center;
 }
 
 @media screen and (max-width: 1034px) {
