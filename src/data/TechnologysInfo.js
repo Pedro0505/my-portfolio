@@ -90,6 +90,20 @@ const dataTechnologys = [
     alt: 'Logo do NodeJs',
     url: 'https://nodejs.dev/',
   },
+  {
+    images: 'https://avatars.githubusercontent.com/u/17219288?s=280&v=4',
+    content: 'Prisma',
+    width: '22px',
+    alt: 'Logo do Primsa Orm',
+    url: 'https://github.com/Pedro0505/project-manager-backend',
+  },
+  {
+    images: 'https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png',
+    content: 'Sequelize',
+    width: '22px',
+    alt: 'Logo do Sequelize',
+    url: 'https://sequelize.org/',
+  },
 ];
 
 export default dataTechnologys;
