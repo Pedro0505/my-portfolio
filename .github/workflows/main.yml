@@ -17,3 +17,23 @@ jobs:
 
       - name: Executando o lint
         run: npx eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx
+
+  tests:
+    runs-on: ubuntu-20.04
+    needs: [eslint]
+    steps:
+      - name: Verifica o repositório do Git
+        uses: actions/checkout@v2
+
+      - name: Cria a imagem
+        run: docker build -t portifolio:dev .
+
+      - name: Sobe o container
+        run: docker run -dit -p 3000:3000 --name portifolio portifolio:dev
+
+      - name: Executa os testes
+        run: docker exec -t portifolio npm test
+
+      - name: Derruba o container
+        if: always()
+        run: docker rm --force portifolio
