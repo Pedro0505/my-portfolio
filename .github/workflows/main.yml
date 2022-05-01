@@ -1,0 +1,19 @@
+on: [pull_request]
+
+jobs:
+  eslint:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Verifica o repositório do Git
+        uses: actions/checkout@v2
+
+      - name: Instala o node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Instalando as dependências
+        run: npm install
+
+      - name: Executando o lint
+        run: npx eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx
