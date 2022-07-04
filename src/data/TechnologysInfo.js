@@ -81,14 +81,14 @@ const dataTechnologys = [
     content: 'Docker',
     width: '22px',
     alt: 'Logo do Docker',
-    url: 'https://www.docker.com/',
+    url: 'https://github.com/Pedro0505/project-manager-backend',
   },
   {
     images: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png',
     content: 'NodeJs',
     width: '22px',
     alt: 'Logo do NodeJs',
-    url: 'https://nodejs.dev/',
+    url: 'https://github.com/Pedro0505/project-manager-backend',
   },
   {
     images: 'https://avatars.githubusercontent.com/u/17219288?s=280&v=4',
@@ -103,6 +103,20 @@ const dataTechnologys = [
     width: '22px',
     alt: 'Logo do Sequelize',
     url: 'https://sequelize.org/',
+  },
+  {
+    images: 'https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/4c25ed0f-3ece-44b9-b132-5ea729439f61_1600x900.png',
+    content: 'Next.js',
+    width: '22px',
+    alt: 'Logo do Next.Js',
+    url: 'https://github.com/Pedro0505/project-manager-frontend/',
+  },
+  {
+    images: 'https://www.cypress.io/static/cypress-io-logo-social-share-8fb8a1db3cdc0b289fad927694ecb415.png',
+    content: 'Cypress',
+    width: '22px',
+    alt: 'Logo do Cypress',
+    url: 'https://github.com/Pedro0505/project-manager-frontend/',
   },
 ];
 
