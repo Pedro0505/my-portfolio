@@ -30,3 +30,8 @@ Inicie o servidor
 ```bash
   npm start
 ```
+# Stacks Utilizadas
+
+- React
+- React Testing Library
+- Material Ui Icons
