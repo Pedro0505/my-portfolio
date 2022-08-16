@@ -26,7 +26,7 @@ export function ThemeProvider({ children }) {
   }
 
   useEffect(() => {
-    const choice = localStorage.getItem('theme') || 'ligth';
+    const choice = localStorage.getItem('theme') || 'dark';
     toogleTheme(choice);
   }, []);
 
