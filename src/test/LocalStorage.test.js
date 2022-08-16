@@ -16,7 +16,7 @@ describe('Testando o localStorage', () => {
   });
   test('Se ao iniciar a pagina o item é o tema', () => {
     const storage = localStorage.getItem('theme');
-    expect(storage).toBe('ligth');
+    expect(storage).toBe('dark');
     expect(storage).not.toBe(null);
   });
   test('Se ao iniciar a pagina não foi salvo a língua', () => {
@@ -35,6 +35,6 @@ describe('Testando o localStorage', () => {
     userEvent.click(btnTheme);
     const storage = localStorage.getItem('theme');
     expect(storage).not.toBe(null);
-    expect(storage).toBe('dark');
+    expect(storage).toBe('ligth');
   });
 });
