@@ -102,7 +102,7 @@ const dataTechnologys = [
     content: 'Sequelize',
     width: '22px',
     alt: 'Logo do Sequelize',
-    url: 'https://sequelize.org/',
+    url: 'https://github.com/Pedro0505/Trybe-Futebol-Clube',
   },
   {
     images: 'https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/4c25ed0f-3ece-44b9-b132-5ea729439f61_1600x900.png',
