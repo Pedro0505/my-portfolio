@@ -15,7 +15,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
 }
 
 .content-about {
@@ -67,7 +66,7 @@
 
 .about-infos {
   margin-top: 130px;
-  height: 80vh;
+  margin-bottom: 70px;
 }
 
 .contanier-about section h1 {
