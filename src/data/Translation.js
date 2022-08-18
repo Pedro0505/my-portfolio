@@ -100,7 +100,7 @@ const langague = {
         title: 'Projeto Pixel Art',
         repository: 'https://github.com/Pedro0505/projeto-pixel-art',
         deploy: 'https://pedro-silva-pixel-art.vercel.app',
-        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/pixel.gif?raw=true',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/pixel-art.gif?raw=true',
         content: `Esse foi o primeiro projeto que fiz manipulando o DOM e feito somente 
         com Javascript, Html5 e CSS a aplicação consiste em conseguir desenhar pixel
         arts simples usando o browser.`,

@@ -112,7 +112,7 @@ const dataTechnologys = [
     url: 'https://github.com/Pedro0505/project-manager-frontend/',
   },
   {
-    images: 'https://www.cypress.io/static/cypress-io-logo-social-share-8fb8a1db3cdc0b289fad927694ecb415.png',
+    images: 'https://iconape.com/wp-content/files/gj/370774/svg/370774.svg',
     content: 'Cypress',
     width: '22px',
     alt: 'Logo do Cypress',
