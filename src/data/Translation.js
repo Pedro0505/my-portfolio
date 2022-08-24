@@ -43,6 +43,18 @@ const langague = {
     projectHeading: 'Projetos',
     project: [
       {
+        title: 'Mape',
+        repository: 'https://github.com/Pedro0505/project-manager-frontend',
+        dislable: true,
+        deploy: '',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/project-manager.gif?raw=true',
+        content: `Project Manager é um clone FullStack do Trello. Nele você pode criar um quadro no 
+        estilo Kanban com todas as funcionalidades de CRUD dos cartões, listas e espaços de trabalho; 
+        funcionalidades de arrastar e soltar e autenticação com Auth0.`,
+        textDeploy: 'Sem deploy por enquanto',
+        textRepository: textRepositoryPt,
+      },
+      {
         title: 'Projeto Web Chat',
         repository: 'https://github.com/Pedro0505/web-chat-frontend',
         deploy: 'https://pedro-web-chat.vercel.app',
@@ -159,16 +171,27 @@ const langague = {
     projectHeading: 'Projects',
     project: [
       {
+        title: 'Mape',
+        repository: 'https://github.com/Pedro0505/project-manager-frontend',
+        dislable: true,
+        deploy: '',
+        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/project-manager.gif?raw=true',
+        content: `Project Manager is a FullStack clone of Trello. In it you can create a Kanban-style 
+        board with all the CRUD features of cards, lists and workspaces; drag and drop functionality 
+        and authentication with Auth0.`,
+        textDeploy: 'No deploy yet ):',
+        textRepository: textRepositoryPt,
+      },
+      {
         title: 'Projeto Web Chat',
         repository: 'https://github.com/Pedro0505/web-chat-front',
-        deploy: '',
+        deploy: 'https://pedro-web-chat.vercel.app',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/web-chat.png?raw=true',
         content: `A project where I developed a real-time chat, using ReactJs with 
         Context Api on the frontend, and for the backend I used NodeJs with Express 
         and Socket.Io. (Still in development)`,
-        textDeploy: 'No deploy yet...',
+        textDeploy: textDeployEn,
         textRepository: textRepositoryEn,
-        dislable: true,
       },
       {
         title: 'Projeto Cronômetro',
