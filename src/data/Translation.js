@@ -208,9 +208,9 @@ const langague = {
         repository: 'https://github.com/Pedro0505/projeto-trivia-redux',
         deploy: 'https://pedro-silva-trivia-redux.vercel.app',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/trivia.gif?raw=true',
-        content: `Projeto feito em grupo utilizando a metodologia ágil Scrum onde usamos 
-        pela  primeira vez o conceito de  estado global, nesse projeto utilizamos o Redux 
-        para podermos usá-lo e aplicamos o redux thunk para lidarmos com as requisições.`,
+        content: `Project made using the agile methodology Scrum in a groupfor the first time the 
+        concept of global state, in this project we use Reduxso we can use it and apply redux thunk 
+        to handle the requests.`,
         textDeploy: textDeployEn,
         textRepository: textRepositoryEn,
       },
