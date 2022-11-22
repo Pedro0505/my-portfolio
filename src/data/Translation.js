@@ -54,6 +54,16 @@ const langague = {
         textRepository: textRepositoryPt,
       },
       {
+        title: 'Ng.Bank',
+        repository: 'https://github.com/Pedro0505/ng-bank',
+        deploy: '',
+        image: 'https://github.com/Pedro0505/ng-bank/blob/main/public/presentation.gif?raw=true',
+        content: `Projeto full-stack que simula um banco digital, com login, registro, autenticação JWT, transações entre contas e histórico dessas transações.`,
+        textDeploy: 'Sem deploy ainda :(',
+        textRepository: textRepositoryPt,
+        dislable: true,
+      },
+      {
         title: 'Projeto Web Chat',
         repository: 'https://github.com/Pedro0505/web-chat-frontend',
         deploy: 'https://pedro-web-chat.vercel.app',
@@ -179,6 +189,16 @@ const langague = {
         and authentication with Auth0.`,
         textDeploy: textDeployEn,
         textRepository: textRepositoryPt,
+      },
+      {
+        title: 'Ng.Bank',
+        repository: 'https://github.com/Pedro0505/ng-bank',
+        deploy: '',
+        image: 'https://github.com/Pedro0505/ng-bank/blob/main/public/presentation.gif?raw=true',
+        content: `Full-stack project that simulates a digital bank, with login, registration, JWT authentication, transactions between accounts and history of these transactions.`,
+        textDeploy: 'No deploy yet :(',
+        textRepository: textRepositoryEn,
+        dislable: true,
       },
       {
         title: 'Projeto Web Chat',
