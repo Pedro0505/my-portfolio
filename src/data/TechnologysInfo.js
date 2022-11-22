@@ -14,11 +14,18 @@ const dataTechnologys = [
     url: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS',
   },
   {
-    images: 'https://digitalents.com.br/wp-content/uploads/2016/03/js-logo.png',
+    images: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png',
     content: 'JavaScript',
     width: '24px',
     alt: 'Logo do JavaScript',
     url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=javascript&sort=',
+  },
+  {
+    images: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png',
+    content: 'Java',
+    width: '24px',
+    alt: 'Logo do Java',
+    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=java&sort=',
   },
   {
     images: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg',
@@ -70,7 +77,7 @@ const dataTechnologys = [
     url: 'https://github.com/Pedro0505/Cronometro-React-TS',
   },
   {
-    images: 'https://nx.dev/documentation/shared/jest-logo.png',
+    images: 'https://www.jetbrains.com/webstorm/guide/static/5fffc5841d0abba2e6684f13fe6d003f/jest.svg',
     content: 'Jest',
     width: '22px',
     alt: 'Logo do Jest',
