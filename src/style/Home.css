@@ -22,5 +22,6 @@ img.profile-picture {
     align-items: center;
     flex-direction: column;
     margin: 220px 0;
+    height: 30vh;
   }
 }
