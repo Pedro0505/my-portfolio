@@ -29,7 +29,7 @@ const langague = {
       about: {
         headingAbout: 'Um Pouco Sobre Mim...',
         content: `Olá!!! Meu nome é Pedro e aqui eu vou contantar um pouco da
-        minha história... Eu tenho 18 anos, sou de Recife capital de Pernambuco,
+        minha história... Eu tenho 19 anos, sou de Recife capital de Pernambuco,
         entrei no mundo da programação em julho de 2021, quando comecei a estudar
         pela Trybe, onde me apaixonei por essa área, a minha decisão de entrar para
         o mundo da programação veio após um período de indecisão do que fazer depois
@@ -166,7 +166,7 @@ const langague = {
       about: {
         headingAbout: 'A Little About Myself...',
         content: `Hi!!! My name is Pedro and here I'm going to tell you a little 
-        bit of my story... I'm 18 years old, I'm from Recife, capital of Pernambuco, 
+        bit of my story... I'm 19 years old, I'm from Recife, capital of Pernambuco, 
         I entered the programming world in July 2021, when I started studying at Trybe, 
         where I fell in love with In this area, my decision to enter the world of 
         programming came after a period of indecision of what to do after finishing 
