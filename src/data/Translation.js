@@ -45,13 +45,14 @@ const langague = {
       {
         title: 'Mape',
         repository: 'https://github.com/Pedro0505/project-manager-frontend',
-        deploy: 'https://mape-front.vercel.app',
+        deploy: '',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/project-manager.gif?raw=true',
         content: `Project Manager é um clone FullStack do Trello. Nele você pode criar um quadro no 
         estilo Kanban com todas as funcionalidades de CRUD dos cartões, listas e espaços de trabalho; 
         funcionalidades de arrastar e soltar e autenticação com Auth0.`,
-        textDeploy: textDeployPt,
+        textDeploy: 'Sem deploy ainda :(',
         textRepository: textRepositoryPt,
+        dislable: true
       },
       {
         title: 'Ng.Bank',
@@ -182,13 +183,14 @@ const langague = {
       {
         title: 'Mape',
         repository: 'https://github.com/Pedro0505/project-manager-frontend',
-        deploy: 'https://mape-front.vercel.app',
+        deploy: '',
         image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/project-manager.gif?raw=true',
         content: `Project Manager is a FullStack clone of Trello. In it you can create a Kanban-style 
         board with all the CRUD features of cards, lists and workspaces; drag and drop functionality 
         and authentication with Auth0.`,
-        textDeploy: textDeployEn,
-        textRepository: textRepositoryPt,
+        textDeploy: 'No deploy yet :(',
+        textRepository: textRepositoryEn,
+        dislable: true,
       },
       {
         title: 'Ng.Bank',
