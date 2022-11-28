@@ -12,7 +12,6 @@
   display: flex;
   margin-top: 35px;
   justify-content: center;
-  margin-left: 35px;
   margin-right: 35px;
 }
 
@@ -56,6 +55,7 @@
   height: fit-content;
   margin-bottom: 120px;
   scroll-behavior: smooth;
+  margin-left: 35px;
 }
 
 .title-container {
@@ -156,14 +156,16 @@
   }
 }
 
-@media screen and (max-width: 794px) {
+@media screen and (max-width: 840px) {
   .arrow-rigth,
   .arrow-left {
-    opacity: 1;
+    display: none;
   }
-}
 
-@media screen and (max-width: 499px) {
+  .carousel {
+    overflow-x: auto;
+  }
+
   .icon-content:hover {
     animation: none;
   }
