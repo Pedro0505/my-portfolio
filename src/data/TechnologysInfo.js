@@ -49,6 +49,13 @@ const dataTechnologys = [
     url: 'https://git-scm.com/',
   },
   {
+    images: 'https://spring.io/images/spring-initializr-4291cc0115eb104348717b82161a81de.svg',
+    content: 'Spring Boot',
+    width: '22px',
+    alt: 'Logo do Spring Boot',
+    url: 'https://github.com/Pedro0505/workshop-springboot',
+  },
+  {
     images: 'https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png',
     content: 'Redux',
     width: '22px',
