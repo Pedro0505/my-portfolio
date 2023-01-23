@@ -1,7 +1,7 @@
 const dataContacts = [
   {
     id: 0,
-    url: 'https://github.com/Pedro0505?tab=repositories',
+    url: 'https://github.com/Pedro0505',
     image: 'https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/github-512.png',
     content: 'GitHub',
     alt: 'Logo GitHub',

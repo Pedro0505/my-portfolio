@@ -14,7 +14,7 @@ function Footer() {
     >
       <h3>
         { developed }
-        <a href="https://github.com/Pedro0505?tab=repositories" target="_blank" rel="noreferrer"> Pedro </a>
+        <a href="https://github.com/Pedro0505" target="_blank" rel="noreferrer"> Pedro </a>
       </h3>
       <h3>{ credits }</h3>
     </footer>
