@@ -49,7 +49,7 @@ const dataTechnologys = [
     url: 'https://git-scm.com/',
   },
   {
-    images: 'https://spring.io/images/spring-initializr-4291cc0115eb104348717b82161a81de.svg',
+    images: 'https://devkico.itexto.com.br/wp-content/uploads/2014/08/spring-boot-project-logo.png',
     content: 'Spring Boot',
     width: '22px',
     alt: 'Logo do Spring Boot',
