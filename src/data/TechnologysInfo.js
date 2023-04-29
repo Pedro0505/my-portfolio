@@ -84,7 +84,7 @@ const dataTechnologys = [
     url: 'https://github.com/Pedro0505/Cronometro-React-TS',
   },
   {
-    images: 'https://www.jetbrains.com/webstorm/guide/static/5fffc5841d0abba2e6684f13fe6d003f/jest.svg',
+    images: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
     content: 'Jest',
     width: '22px',
     alt: 'Logo do Jest',
@@ -119,7 +119,7 @@ const dataTechnologys = [
     url: 'https://github.com/Pedro0505/Trybe-Futebol-Clube',
   },
   {
-    images: 'https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/4c25ed0f-3ece-44b9-b132-5ea729439f61_1600x900.png',
+    images: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
     content: 'Next.js',
     width: '22px',
     alt: 'Logo do Next.Js',
@@ -131,6 +131,20 @@ const dataTechnologys = [
     width: '22px',
     alt: 'Logo do Cypress',
     url: 'https://github.com/Pedro0505/project-manager-frontend/',
+  },
+  {
+    images: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg',
+    content: 'Nest.js',
+    width: '22px',
+    alt: 'Logo do Nest.js',
+    url: 'https://github.com/Pedro0505/Focus-List',
+  },
+  {
+    images: 'https://seeklogo.com/images/R/rabbitmq-logo-25641A76DE-seeklogo.com.png',
+    content: 'RabbitMq',
+    width: '22px',
+    alt: 'Logo do RabbitMq',
+    url: 'https://github.com/Pedro0505/Focus-List',
   },
 ];
 
