@@ -166,6 +166,37 @@
     overflow-x: auto;
   }
 
+  .icons-projects {
+    margin: 0;
+  }
+
+  .icon-content {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .container-icons {
+    flex-direction: column;
+  }
+
+  .icon-content a {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .container-icons,
+  .icon-content a {
+    display: block;
+  }
+
+  .icon-content a:nth-child(1) {
+    margin: 0 30px;
+  }
+
+  .icon-content:nth-child(1) {
+    margin-bottom: 10px;
+  }
+
   .icon-content:hover {
     animation: none;
   }
