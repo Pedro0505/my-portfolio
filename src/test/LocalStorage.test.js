@@ -35,6 +35,6 @@ describe('Testando o localStorage', () => {
     userEvent.click(btnTheme);
     const storage = localStorage.getItem('theme');
     expect(storage).not.toBe(null);
-    expect(storage).toBe('ligth');
+    expect(storage).toBe('light');
   });
 });

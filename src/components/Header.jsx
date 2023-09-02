@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { NavBarContext } from '../context/NavBarContext';
 import { ThemeContext } from '../context/ThemeContext';
 import logo from '../images/logo.svg';
-import logoLigth from '../images/logo-ligth.svg';
+import logoLight from '../images/logo-light.svg';
 import '../style/Header.css';
 import ButtonNav from './ButtonNav';
 import Language from './Language';
@@ -14,14 +14,14 @@ function Header() {
   const { theme } = useContext(ThemeContext);
   return (
     <header
-      className={ (theme !== 'ligth') ? 'header-footer-color-ligth' : (
+      className={ (theme !== 'light') ? 'header-footer-color-light' : (
         'header-footer-color-dark') }
     >
       <section>
         <ButtonNav />
         {
-          theme === 'ligth' ? <img src={ logo } alt="Logo" /> : (
-            <img src={ logoLigth } alt="Logo" />
+          theme === 'light' ? <img src={ logo } alt="Logo" /> : (
+            <img src={ logoLight } alt="Logo" />
           )
         }
         <h1>Pedro Henrique</h1>

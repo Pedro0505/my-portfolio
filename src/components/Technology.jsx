@@ -23,7 +23,7 @@ class Technologys extends Component {
                 alt={ e.alt }
                 width={ e.width }
               />
-              <p className={ (theme === 'dark') ? 'ligth' : 'dark' }>
+              <p className={ (theme === 'dark') ? 'light' : 'dark' }>
                 { e.content }
               </p>
             </a>

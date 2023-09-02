@@ -22,7 +22,7 @@ function Contacts() {
                 src={ e.image }
                 alt={ e.alt }
               />
-              <p className={ (theme === 'dark') ? 'ligth' : 'dark' }>
+              <p className={ (theme === 'dark') ? 'light' : 'dark' }>
                 { e.content }
               </p>
             </a>
