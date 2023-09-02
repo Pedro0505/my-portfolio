@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { useEffect, useState, createContext } from 'react';
+import React, { useEffect, useState, createContext, useMemo } from 'react';
 import Translation from '../data/Translation';
 import handleSave from '../services/storage';
 
@@ -18,8 +18,12 @@ export function LanguageProvider({ children }) {
     setLanguage(idiom);
   }
 
+  const contextValue = useMemo(() => ({
+    language, handleLanguage, Translation,
+  }), [language]);
+
   return (
-    <LanguageContext.Provider value={ { language, handleLanguage, Translation } }>
+    <LanguageContext.Provider value={ contextValue }>
       { children }
     </LanguageContext.Provider>
   );

@@ -28,7 +28,7 @@
   animation: typing-about 2s ease-in-out forwards, blink-about 800ms ease-in-out infinite;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid var(--ligth);
+  border-right: 2px solid var(--light);
   max-height: fit-content;
 }
 
@@ -44,7 +44,7 @@
 
 @keyframes blink-about {
   from {
-    border-right: 2px solid var(--ligth);
+    border-right: 2px solid var(--light);
   }
 
   40%,
@@ -53,7 +53,7 @@
   }
 
   to {
-    border-right: 2px solid var(--ligth);
+    border-right: 2px solid var(--light);
   }
 }
 

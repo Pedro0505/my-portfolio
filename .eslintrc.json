@@ -3,7 +3,10 @@
         "browser": true,
         "es2021": true
     },
-    "extends": "trybe-frontend",
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -15,11 +18,14 @@
         "react"
     ],
     "rules": {
-        "react/prefer-stateless-function": [0],
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "object-curly-newline": [0, { "multiline": true, "minProperties": 4 }],
-        "import/no-extraneous-dependencies": [0, {"devDependencies": [".test.js", ".spec.js", ".js"]}],
-        "no-console": ["off"],
-        "max-lines": "off"
+      "react/prefer-stateless-function": [0],
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "object-curly-newline": [0, { "multiline": true, "minProperties": 4 }],
+      "import/no-extraneous-dependencies": [0, {"devDependencies": [".test.js", ".spec.js", ".js"]}],
+      "no-console": ["off"],
+      "max-lines": "off",
+      "react/jsx-curly-spacing": "off",
+      "consistent-return": "off",
+      "react/no-array-index-key": "off"
     }
 }

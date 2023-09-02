@@ -9,7 +9,7 @@ function Footer() {
   const { footer: { developed, credits } } = Translation[language];
   return (
     <footer
-      className={ (theme !== 'ligth') ? 'header-footer-color-ligth' : (
+      className={ (theme !== 'light') ? 'header-footer-color-light' : (
         'header-footer-color-dark') }
     >
       <h3>
