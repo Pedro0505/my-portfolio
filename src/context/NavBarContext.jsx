@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useMemo, useState } from 'react';
 import bodySelector from '../services/selector';
 
 export const NavBarContext = createContext();
@@ -43,15 +43,15 @@ export function NavBarProvider({ children }) {
 
   window.addEventListener('resize', unmountLinks);
 
-  const context = {
+  const contextValue = useMemo(() => ({
     toggleNav,
     toogleAppears,
     handleClick,
     renderLinks,
-  };
+  }), [toggleNav, renderLinks]);
 
   return (
-    <NavBarContext.Provider value={ context }>
+    <NavBarContext.Provider value={ contextValue }>
       { children }
     </NavBarContext.Provider>
   );
