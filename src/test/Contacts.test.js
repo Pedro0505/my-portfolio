@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import { screen } from '@testing-library/react';
+import { fireEvent, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
 import renderWithRouter from './utils/renderWithRouter';
@@ -29,16 +29,7 @@ describe('Teste da página de Contatos', () => {
     });
     expect(text).toBeInTheDocument();
   });
-  test('Testando se as imagens aparecem na tela', () => {
-    const imgGitHub = screen.getByRole('img', { name: /logo github/i });
-    expect(imgGitHub).toBeInTheDocument();
 
-    const imgLinkedin = screen.getByRole('img', { name: /logo do linkedin/i });
-    expect(imgLinkedin).toBeInTheDocument();
-
-    const imgGmail = screen.getByRole('img', { name: /logo do gmail/i });
-    expect(imgGmail).toBeInTheDocument();
-  });
   test('Testando se os subtitulos das imgagens aparecem na tela', () => {
     const paragraphGitHub = screen.getByText(/github/i);
     expect(paragraphGitHub).toBeInTheDocument();

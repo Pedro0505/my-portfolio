@@ -10,7 +10,7 @@ function ProjectsCards(
   return (
     <section className="cards-projects">
       <h1 className="title-project">{title}</h1>
-      <LazyImage src={image} alt="Imagem do projeto" />
+      <LazyImage src={image} alt="Imagem do projeto" width="100%" height="180px" style={{ marginBottom: '20px' }} />
       <p className="project-description" data-testid={ testId }>{content}</p>
       <CardsNavegation
         repository={ repository }

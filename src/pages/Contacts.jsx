@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../context/LanguageContext';
 import { ThemeContext } from '../context/ThemeContext';
+import LazyImage from '../components/LazyImage';
 import ContactsInfo from '../data/ContactsInfo';
 import '../style/Contacts.css';
 
@@ -18,10 +19,7 @@ function Contacts() {
         {
           ContactsInfo.map((e) => (
             <a href={ e.url } key={ e.id } target="_blank" rel="noreferrer">
-              <img
-                src={ e.image }
-                alt={ e.alt }
-              />
+              <LazyImage src={e.image} alt={e.alt} width="150px" height="150px" />
               <p className={ (theme === 'dark') ? 'light' : 'dark' }>
                 { e.content }
               </p>

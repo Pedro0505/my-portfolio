@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import TechnologysInfo from '../data/TechnologysInfo';
 import '../style/About.css';
 import { ThemeContext } from '../context/ThemeContext';
+import LazyImage from './LazyImage';
 
 class Technologys extends Component {
   render() {
@@ -18,11 +19,7 @@ class Technologys extends Component {
               rel="noreferrer"
               data-testid={ `${e.content}-${index}` }
             >
-              <img
-                src={ e.images }
-                alt={ e.alt }
-                width={ e.width }
-              />
+              <LazyImage src={e.images} alt="Imagem do projeto" width={e.width} height="15px" />
               <p className={ (theme === 'dark') ? 'light' : 'dark' }>
                 { e.content }
               </p>
