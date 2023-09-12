@@ -188,6 +188,7 @@
 
   .carousel {
     overflow-x: auto;
+    margin-left: 15px;
   }
 
   .icons-projects {
