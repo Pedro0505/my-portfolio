@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CardsNavegation from './CardsNavegation';
+import LazyImage from './LazyImage';
 
 function ProjectsCards(
   { title, image, content, dislable,
@@ -9,7 +10,7 @@ function ProjectsCards(
   return (
     <section className="cards-projects">
       <h1 className="title-project">{title}</h1>
-      <img src={ image } alt="Imagem do projeto" />
+      <LazyImage src={image} alt="Imagem do projeto" width="100%" height="180px" style={{ marginBottom: '20px' }} />
       <p className="project-description" data-testid={ testId }>{content}</p>
       <CardsNavegation
         repository={ repository }

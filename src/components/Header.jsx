@@ -17,11 +17,11 @@ function Header() {
       className={ (theme !== 'light') ? 'header-footer-color-light' : (
         'header-footer-color-dark') }
     >
-      <section>
+      <section className="no-select-text">
         <ButtonNav />
         {
-          theme === 'light' ? <img src={ logo } alt="Logo" /> : (
-            <img src={ logoLight } alt="Logo" />
+          theme === 'light' ? <img src={ logo } alt="Logo" className="no-select-img" /> : (
+            <img src={ logoLight } alt="Logo" className="no-select-img" />
           )
         }
         <h1>Pedro Henrique</h1>
