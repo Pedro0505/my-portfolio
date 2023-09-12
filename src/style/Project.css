@@ -232,4 +232,8 @@
   .cards-projects {
     height: 580px;
   }
+
+  .cards-containers {
+    margin-bottom: 10px;
+  }
 }
