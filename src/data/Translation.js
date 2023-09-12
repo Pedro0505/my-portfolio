@@ -6,6 +6,8 @@ import trivia from '../images/trivia.gif';
 import projectManager from '../images/project-manager.gif';
 import webChat from '../images/web-chat.png';
 import recipeApp from '../images/recipe-app.png';
+import trybeFutebolClub from '../images/trybe-futebol-club.gif';
+import ngBank from '../images/ng-bank.gif';
 
 const textDeployPt = 'Ir para o deploy';
 const textRepositoryPt = 'Ir para o repositório';
@@ -68,7 +70,7 @@ const langague = {
         title: 'Ng.Bank',
         repository: 'https://github.com/Pedro0505/ng-bank',
         deploy: '',
-        image: 'https://github.com/Pedro0505/ng-bank/blob/main/public/presentation.gif?raw=true',
+        image: ngBank,
         content: `Projeto full-stack que simula um banco digital, com login, registro, autenticação JWT, transações entre contas e histórico dessas transações.`,
         textDeploy: 'Sem deploy ainda :(',
         textRepository: textRepositoryPt,
@@ -78,7 +80,7 @@ const langague = {
         title: 'Trybe Futebol Club',
         repository: 'https://github.com/Pedro0505/Trybe-Futebol-Clube',
         deploy: '',
-        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/trybe-futebol-club.gif?raw=true',
+        image: trybeFutebolClub,
         content: `Projeto de avaliação do módulo de back-end do Trybe onde eu desenvolvi uma Api para uma aplicação front-end já preparada, onde minha Api o alimentava com as informações vindas do banco de dados.`,
         textDeploy: 'Sem deploy ainda :(',
         textRepository: textRepositoryPt,
@@ -215,7 +217,7 @@ const langague = {
         title: 'Ng.Bank',
         repository: 'https://github.com/Pedro0505/ng-bank',
         deploy: '',
-        image: 'https://github.com/Pedro0505/ng-bank/blob/main/public/presentation.gif?raw=true',
+        image: ngBank,
         content: `Full-stack project that simulates a digital bank, with login, registration, JWT authentication, transactions between accounts and history of these transactions.`,
         textDeploy: 'No deploy yet :(',
         textRepository: textRepositoryEn,
@@ -225,7 +227,7 @@ const langague = {
         title: 'Trybe Futebol Club',
         repository: 'https://github.com/Pedro0505/Trybe-Futebol-Clube',
         deploy: '',
-        image: 'https://github.com/Pedro0505/my-portfolio/blob/main/src/images/trybe-futebol-club.gif?raw=true',
+        image: trybeFutebolClub,
         content: `Trybe's back-end module evaluation project where I developed an Api for an already prepared front-end application, where my Api fed it with information coming from the database.`,
         textDeploy: 'No deploy yet :(',
         textRepository: textRepositoryEn,
