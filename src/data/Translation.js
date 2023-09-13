@@ -8,13 +8,16 @@ import webChat from '../images/web-chat.png';
 import recipeApp from '../images/recipe-app.png';
 import trybeFutebolClub from '../images/trybe-futebol-club.gif';
 import ngBank from '../images/ng-bank.gif';
+import loanHelper from '../images/loan-helper.gif';
+import blog from '../images/blog.png';
+import calculateAge from '../services/calculateAge';
 
 const textDeployPt = 'Ir para o deploy';
 const textRepositoryPt = 'Ir para o repositório';
 const textDeployEn = 'Go to deploy';
 const textRepositoryEn = 'Go to repository';
 
-const age = new Date().getFullYear() - 2003;
+const age = calculateAge(new Date('05/05/2003'));
 
 const langague = {
   Português: {
@@ -77,6 +80,26 @@ const langague = {
         dislable: true,
       },
       {
+        title: 'Blog',
+        repository: 'https://github.com/Pedro0505/blog-web',
+        deploy: '',
+        image: blog,
+        content: `Projeto de um blog pessoal simples para postar algumas ideias, feito com React para o front e NestJs para o back. (Ainda está em desenvolvimento)`,
+        textDeploy: 'Sem deploy ainda :(',
+        textRepository: textRepositoryPt,
+        dislable: true,
+      },
+      {
+        title: 'Laon Helper',
+        repository: 'https://github.com/Pedro0505/chat-bot-lexart-labs',
+        deploy: 'https://chat-bot-lexart-labs.vercel.app/',
+        image: loanHelper,
+        content: `O projeto consiste em um bot que ajuda você a fazer seu primeiro empréstimo, tirando suas possíveis dúvidas.`,
+        textDeploy: textDeployEn,
+        textRepository: textRepositoryEn,
+        dislable: false,
+      },
+      {
         title: 'Trybe Futebol Club',
         repository: 'https://github.com/Pedro0505/Trybe-Futebol-Clube',
         deploy: '',
@@ -93,7 +116,7 @@ const langague = {
         image: webChat,
         content: `Um projeto onde desenvolvi um chat em tempo real, usando ReactJs 
         com Context Api no frontend, e para backend utilizei NodeJs com Express e 
-        Socket.Io. (Ainda está em desenvolvimento)`,
+        Socket.Io.`,
         textDeploy: textDeployPt,
         textRepository: textRepositoryPt,
       },
@@ -224,6 +247,26 @@ const langague = {
         dislable: true,
       },
       {
+        title: 'Blog',
+        repository: 'https://github.com/Pedro0505/blog-web',
+        deploy: '',
+        image: blog,
+        content: `Project for a simple personal blog to post some ideas, made with React for the front and NestJs for the back. (Still in development)`,
+        textDeploy: 'No deploy yet :(',
+        textRepository: textRepositoryEn,
+        dislable: true,
+      },
+      {
+        title: 'Laon Helper',
+        repository: 'https://github.com/Pedro0505/chat-bot-lexart-labs',
+        deploy: 'https://chat-bot-lexart-labs.vercel.app/',
+        image: loanHelper,
+        content: `The application consists of a bot that helps you make your first loan, clearing your possible doubts.`,
+        textDeploy: textDeployEn,
+        textRepository: textRepositoryEn,
+        dislable: false,
+      },
+      {
         title: 'Trybe Futebol Club',
         repository: 'https://github.com/Pedro0505/Trybe-Futebol-Clube',
         deploy: '',
@@ -240,7 +283,7 @@ const langague = {
         image: webChat,
         content: `A project where I developed a real-time chat, using ReactJs with 
         Context Api on the frontend, and for the backend I used NodeJs with Express 
-        and Socket.Io. (Still in development)`,
+        and Socket.Io.`,
         textDeploy: textDeployEn,
         textRepository: textRepositoryEn,
       },
