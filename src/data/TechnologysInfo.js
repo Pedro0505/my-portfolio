@@ -1,151 +1,151 @@
 const dataTechnologys = [
   {
-    images: 'https://logodownload.org/wp-content/uploads/2016/10/html5-logo-10.png',
+    images: 'logo_do_html',
     content: 'Html5',
     width: '22px',
     alt: 'Logo do Html',
-    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=html&sort=',
+    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=html&sort='
   },
   {
-    images: 'https://logospng.org/download/css-3/logo-css-3-2048.png',
+    images: 'logo_do_css',
     content: 'CSS',
     width: '25px',
     alt: 'Logo do CSS',
-    url: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS',
+    url: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS'
   },
   {
-    images: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png',
+    images: 'logo_do_javascript',
     content: 'JavaScript',
     width: '24px',
     alt: 'Logo do JavaScript',
-    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=javascript&sort=',
+    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=javascript&sort='
   },
   {
-    images: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png',
+    images: 'logo_do_java',
     content: 'Java',
     width: '24px',
     alt: 'Logo do Java',
-    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=java&sort=',
+    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=java&sort='
   },
   {
-    images: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg',
+    images: 'logo_do_react',
     content: 'React',
     width: '26px',
     alt: 'Logo do React',
-    url: 'https://pt-br.reactjs.org/',
+    url: 'https://pt-br.reactjs.org/'
   },
   {
-    images: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
+    images: 'logo_do_github',
     content: 'GitHub',
     width: '22px',
     alt: 'Logo do GitHub',
-    url: 'https://github.com/',
+    url: 'https://github.com/'
   },
   {
-    images: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png',
+    images: 'logo_do_git',
     content: 'Git',
     width: '22px',
     alt: 'Logo do Git',
-    url: 'https://git-scm.com/',
+    url: 'https://git-scm.com/'
   },
   {
-    images: 'https://devkico.itexto.com.br/wp-content/uploads/2014/08/spring-boot-project-logo.png',
+    images: 'logo_do_spring_boot',
     content: 'Spring Boot',
     width: '22px',
     alt: 'Logo do Spring Boot',
-    url: 'https://github.com/Pedro0505/workshop-springboot',
+    url: 'https://github.com/Pedro0505/workshop-springboot'
   },
   {
-    images: 'https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png',
+    images: 'logo_do_redux',
     content: 'Redux',
     width: '22px',
     alt: 'Logo do Redux',
-    url: 'https://github.com/Pedro0505/projeto-trivia-redux',
+    url: 'https://github.com/Pedro0505/projeto-trivia-redux'
   },
   {
-    images: 'https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png',
+    images: 'logo_do_typescript',
     content: 'TypeScript',
     width: '22px',
     alt: 'Logo do TypeScript',
-    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=typescript&sort=',
+    url: 'https://github.com/Pedro0505?tab=repositories&q=&type=&language=typescript&sort='
   },
   {
-    images: 'https://mlohrktvfr9b.i.optimole.com/scftOdE.tVDx~16b5e/w:702/h:702/q:90/https://www.nerdstickers.com.br/wp-content/uploads/2021/03/adesivo-00-figma-ns.png',
+    images: 'logo_do_figma',
     content: 'Figma',
     width: '22px',
     alt: 'Logo do Figma',
-    url: 'https://www.figma.com/',
+    url: 'https://www.figma.com/'
   },
   {
-    images: 'https://miro.medium.com/max/1400/1*FeiTcE7xAIKhNrRa-2_oiQ.png',
+    images: 'logo_do_sass',
     content: 'SASS',
     width: '22px',
     alt: 'Logo do SASS',
-    url: 'https://github.com/Pedro0505/Cronometro-React-TS',
+    url: 'https://github.com/Pedro0505/Cronometro-React-TS'
   },
   {
-    images: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
+    images: 'logo_do_jest',
     content: 'Jest',
     width: '22px',
     alt: 'Logo do Jest',
-    url: 'https://jestjs.io/pt-BR/',
+    url: 'https://jestjs.io/pt-BR/'
   },
   {
-    images: 'https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png',
+    images: 'logo_do_docker',
     content: 'Docker',
     width: '22px',
     alt: 'Logo do Docker',
-    url: 'https://github.com/Pedro0505/project-manager-backend',
+    url: 'https://github.com/Pedro0505/project-manager-backend'
   },
   {
-    images: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png',
+    images: 'logo_do_nodejs',
     content: 'NodeJs',
     width: '22px',
     alt: 'Logo do NodeJs',
-    url: 'https://github.com/Pedro0505/project-manager-backend',
+    url: 'https://github.com/Pedro0505/project-manager-backend'
   },
   {
-    images: 'https://avatars.githubusercontent.com/u/17219288?s=280&v=4',
+    images: 'logo_do_prisma_orm',
     content: 'Prisma',
     width: '22px',
-    alt: 'Logo do Primsa Orm',
-    url: 'https://github.com/Pedro0505/project-manager-backend',
+    alt: 'Logo do Prisma Orm',
+    url: 'https://github.com/Pedro0505/project-manager-backend'
   },
   {
-    images: 'https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png',
+    images: 'logo_do_sequelize',
     content: 'Sequelize',
     width: '22px',
     alt: 'Logo do Sequelize',
-    url: 'https://github.com/Pedro0505/Trybe-Futebol-Clube',
+    url: 'https://github.com/Pedro0505/Trybe-Futebol-Clube'
   },
   {
-    images: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+    images: 'logo_do_next',
     content: 'Next.js',
     width: '22px',
     alt: 'Logo do Next.Js',
-    url: 'https://github.com/Pedro0505/project-manager-frontend/',
+    url: 'https://github.com/Pedro0505/project-manager-frontend/'
   },
   {
-    images: 'https://iconape.com/wp-content/files/gj/370774/svg/370774.svg',
+    images: 'logo_do_cypress',
     content: 'Cypress',
     width: '22px',
     alt: 'Logo do Cypress',
-    url: 'https://github.com/Pedro0505/project-manager-frontend/',
+    url: 'https://github.com/Pedro0505/project-manager-frontend/'
   },
   {
-    images: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg',
+    images: 'logo_do_nest_js',
     content: 'Nest.js',
     width: '22px',
     alt: 'Logo do Nest.js',
-    url: 'https://github.com/Pedro0505/Focus-List',
+    url: 'https://github.com/Pedro0505/Focus-List'
   },
   {
-    images: 'https://seeklogo.com/images/R/rabbitmq-logo-25641A76DE-seeklogo.com.png',
+    images: 'logo_do_rabbitmq',
     content: 'RabbitMq',
     width: '22px',
     alt: 'Logo do RabbitMq',
-    url: 'https://github.com/Pedro0505/Focus-List',
-  },
+    url: 'https://github.com/Pedro0505/Focus-List'
+  }
 ];
 
 export default dataTechnologys;

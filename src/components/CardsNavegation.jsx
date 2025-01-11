@@ -20,25 +20,29 @@ function CardsNavegation({ repository, deploy, textDeploy, textRepository, disla
         </a>
       </div>
 
-      <div className="icon-content">
-        <a
-          href={ deploy }
-          target="_blank"
-          rel="noreferrer"
-          className="icons-projects"
-          style={ dislable ? { pointerEvents: 'none' } : { cursor: 'pointer' } }
-        >
-          <ArrowForwardIcon className="icon" style={ { fontSize: '2.5em' } } />
-        </a>
-        <a
-          href={ deploy }
-          target="_blank"
-          rel="noreferrer"
-          style={ dislable ? { pointerEvents: 'none' } : { cursor: 'pointer' } }
-        >
-          {textDeploy}
-        </a>
-      </div>
+      {
+        !dislable && (
+          <div className="icon-content">
+            <a
+              href={ deploy }
+              target="_blank"
+              rel="noreferrer"
+              className="icons-projects"
+              style={ dislable ? { pointerEvents: 'none' } : { cursor: 'pointer' } }
+            >
+              <ArrowForwardIcon className="icon" style={ { fontSize: '2.5em' } } />
+            </a>
+            <a
+              href={ deploy }
+              target="_blank"
+              rel="noreferrer"
+              style={ dislable ? { pointerEvents: 'none' } : { cursor: 'pointer' } }
+            >
+              {textDeploy}
+            </a>
+          </div>
+        )
+      }
     </nav>
   );
 }

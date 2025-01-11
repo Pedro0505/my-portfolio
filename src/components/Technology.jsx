@@ -10,21 +10,24 @@ class Technologys extends Component {
     return (
       <section className="technologies">
         {
-          TechnologysInfo.map((e, index) => (
-            <a
-              href={ e.url }
-              className="card-technology"
-              key={ index }
-              target="_blank"
-              rel="noreferrer"
-              data-testid={ `${e.content}-${index}` }
-            >
-              <LazyImage src={e.images} alt="Imagem do projeto" width={e.width} height="15px" />
-              <p className={ (theme === 'dark') ? 'light' : 'dark' }>
-                { e.content }
-              </p>
-            </a>
-          ))
+          TechnologysInfo.map((e, index) => {
+            const src = `/${e.images}.jpg`;
+            return (
+              <a
+                href={ e.url }
+                className="card-technology"
+                key={ index }
+                target="_blank"
+                rel="noreferrer"
+                data-testid={ `${e.content}-${index}` }
+              >
+                <LazyImage src={src} alt="Imagem do projeto" width={e.width} height="15px" />
+                <p className={ (theme === 'dark') ? 'light' : 'dark' }>
+                  { e.content }
+                </p>
+              </a>
+            );
+          })
         }
       </section>
     );
